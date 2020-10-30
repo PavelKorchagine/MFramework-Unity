@@ -6,6 +6,9 @@ using System.Collections.Generic;
 
 namespace MFramework_Unity.Tools
 {
+    /// <summary>
+    /// FileTool
+    /// </summary>
     public class FileTool
     {
         #region 文件与路径的增加删除创建
@@ -15,7 +18,7 @@ namespace MFramework_Unity.Tools
         /// <summary>
         /// 创建文件
         /// </summary>
-        /// <param name="filePath">文件路径</param>
+        /// <param name="filepath">文件路径</param>
         /// <param name="bytes">文件内容</param>
         public static void CreatFile(string filepath, byte[] bytes)
         {
@@ -56,7 +59,7 @@ namespace MFramework_Unity.Tools
         /// <summary>
         /// 判断有没有这个路径，如果没有则创建它
         /// </summary>
-        /// <param name="filepath"></param>
+        /// <param name="path"></param>
         public static void CreatPath(string path)
         {
             if (!Directory.Exists(path))
@@ -514,6 +517,10 @@ namespace MFramework_Unity.Tools
 
     }
 
+    /// <summary>
+    /// FileExecuteHandle
+    /// </summary>
+    /// <param name="filePath"></param>
     public delegate void FileExecuteHandle(string filePath);
 
 }

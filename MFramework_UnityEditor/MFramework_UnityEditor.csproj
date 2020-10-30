@@ -79,7 +79,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Extend\PathUtilEditor.cs" />
+    <Compile Include="Base\MonoDriver\MonoDriverEditor.cs" />
+    <Compile Include="Tools\IO\PathUtilEditor.cs" />
     <Compile Include="Tools\Loom\LoomEditor.cs" />
     <Compile Include="Tools\ObjectPool\ObjectPoolManagerEditor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

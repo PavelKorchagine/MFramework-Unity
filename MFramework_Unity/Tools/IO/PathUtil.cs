@@ -76,6 +76,12 @@ namespace MFramework_Unity.Tools
             return builder.ToString();
         }
 
+        /// <summary>
+        /// Combine
+        /// </summary>
+        /// <param name="path1"></param>
+        /// <param name="path2"></param>
+        /// <returns></returns>
         public static string Combine(string path1, string path2)
         {
             string result = Path.Combine(path1, path2);
@@ -259,6 +265,12 @@ namespace MFramework_Unity.Tools
         //}
 #endif
 
+        /// <summary>
+        /// Combine1
+        /// </summary>
+        /// <param name="str1"></param>
+        /// <param name="str2"></param>
+        /// <returns></returns>
         public static string Combine1(string str1, string str2)
         {
             str1.Replace("/", "\\");
@@ -266,11 +278,23 @@ namespace MFramework_Unity.Tools
             return Path.Combine(str1, str2);
         }
 
+        /// <summary>
+        /// Combine1
+        /// </summary>
+        /// <param name="str1"></param>
+        /// <param name="str2"></param>
+        /// <param name="str3"></param>
+        /// <returns></returns>
         public static string Combine1(string str1, string str2, string str3)
         {
             return Path.Combine(str1, str2);
         }
 
+        /// <summary>
+        /// Normallize
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
         public static string Normallize(this string str)
         {
             if (Application.platform == RuntimePlatform.Android)

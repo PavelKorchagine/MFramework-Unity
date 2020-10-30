@@ -11,6 +11,9 @@ using System;
 
 namespace MFramework_Unity.Tools
 {
+    /// <summary>
+    /// DOTweenTimerManager
+    /// </summary>
     public class DOTweenTimerManager : MonoBehaviour
     {
         #region Instance
@@ -48,6 +51,9 @@ namespace MFramework_Unity.Tools
         }
         #endregion
 
+        /// <summary>
+        /// SayHello
+        /// </summary>
         public void SayHello()
         {
             Debug.LogWarningFormat("[{0}] say: Hello，World !! {1}", this, System.DateTime.Now);
@@ -57,12 +63,23 @@ namespace MFramework_Unity.Tools
         public static readonly Queue<Transform> delayTrans = new Queue<Transform>();
         public static readonly Dictionary<TweenCallback, Transform> delayActionDict = new Dictionary<TweenCallback, Transform>();
 
+        /// <summary>
+        /// AddDelayCallback
+        /// </summary>
+        /// <param name="callbackAction"></param>
+        /// <param name="delayDur"></param>
+        /// <param name="isFocusAdd"></param>
         public static void AddDelayCallback(Action callbackAction, float delayDur, bool isFocusAdd = false)
         {
             TweenCallback callback = () => callbackAction();
             _AddDelayCallback(callback, delayDur, isFocusAdd);
          
         }
+
+        /// <summary>
+        /// AddDelayCallback
+        /// </summary>
+        /// <param name="callbackAction"></param>
         public static void AddDelayCallback(Action callbackAction)
         {
             TweenCallback callback = () => callbackAction();

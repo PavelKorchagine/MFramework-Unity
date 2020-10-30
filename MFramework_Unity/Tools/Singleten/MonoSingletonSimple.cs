@@ -4,12 +4,19 @@ using UnityEngine;
 
 namespace MFramework_Unity.Tools
 {
+    /// <summary>
+    /// MonoSingletonSimple
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class MonoSingletonSimple<T> : MonoBehaviour where T : MonoBehaviour
     {
         private static T _instance;
 
         private static object _lock = new object();
 
+        /// <summary>
+        /// Instance
+        /// </summary>
         public static T Instance
         {
             get
@@ -47,6 +54,9 @@ namespace MFramework_Unity.Tools
 
         private static bool applicationIsQuitting = false;
 
+        /// <summary>
+        /// OnDestroy
+        /// </summary>
         public void OnDestroy()
         {
             applicationIsQuitting = true;

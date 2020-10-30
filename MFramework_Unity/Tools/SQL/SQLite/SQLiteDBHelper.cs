@@ -51,6 +51,7 @@ namespace MFramework_Unity.Tools
         /// <summary>  
         /// 对SQLite数据库执行增删改操作，返回受影响的行数。  
         /// </summary>  
+        /// <param name="dbPath">dbPath</param>  
         /// <param name="sql">要执行的增删改的SQL语句</param>  
         /// <param name="parameters">执行增删改语句所需要的参数，参数必须以它们在SQL语句中的顺序为准</param>  
         /// <returns></returns>  
@@ -96,6 +97,7 @@ namespace MFramework_Unity.Tools
         /// 执行一个查询语句，返回一个关联的SQLiteDataReader实例  
         /// </summary>  
         /// <param name="sql">要执行的查询语句</param>  
+        /// <param name="dbPath">dbPath</param>  
         /// <param name="parameters">执行SQL查询语句所需要的参数，参数必须以它们在SQL语句中的顺序为准</param>  
         /// <returns></returns>  
         public static SqliteDataReader ExecuteReader(string dbPath, string sql, SqliteParameter[] parameters)
@@ -114,6 +116,7 @@ namespace MFramework_Unity.Tools
         /// 执行一个查询语句，返回一个包含查询结果的DataTable  
         /// </summary>  
         /// <param name="sql">要执行的查询语句</param>  
+        /// <param name="dbPath">dbPath</param>  
         /// <param name="parameters">执行SQL查询语句所需要的参数，参数必须以它们在SQL语句中的顺序为准</param>  
         /// <returns></returns>  
         public static DataTable ExecuteDataTable(string dbPath, string sql, SqliteParameter[] parameters)
@@ -138,6 +141,7 @@ namespace MFramework_Unity.Tools
         /// 执行一个查询语句，返回查询结果的第一行第一列  
         /// </summary>  
         /// <param name="sql">要执行的查询语句</param>  
+        /// <param name="dbPath">dbPath</param>  
         /// <param name="parameters">执行SQL查询语句所需要的参数，参数必须以它们在SQL语句中的顺序为准</param>  
         /// <returns></returns>  
         public static DataTable ExecuteScalar(string dbPath, string sql, SqliteParameter[] parameters)

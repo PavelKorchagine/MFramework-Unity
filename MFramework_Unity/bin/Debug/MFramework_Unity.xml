@@ -9,9 +9,291 @@
             BaseManager
             </summary>
         </member>
+        <member name="F:MFramework_Unity.BaseManager.facade">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.Get">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnInit(System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="paras"></param>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnInit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnEnter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnExit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnResetRealtime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnUpdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnLateUpdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnFixedUpdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnGOjDestroy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.Reset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.Awake">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnEnable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnDisable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.Start">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.Update">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.LateUpdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.FixedUpdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnApplicationPause(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="pause"></param>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnDestroy">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:MFramework_Unity.Facade">
             <summary>
             GameFacade
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.Facade.Instance">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Facade.hasDicts">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Facade.hashtable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Facade.Awake">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Facade.Start">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Facade.OnDestroy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Facade.Update">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.BaseMono">
+            <summary>
+            所有Mono物体组件的基类
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.BaseMono.autoToInit">
+            <summary>
+            自动初始化
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnValidate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.Reset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.Awake">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnDestroy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnEnable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnDisable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.Start">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnPreRender">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnPostRender">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnApplicationFocus(System.Boolean)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnApplicationPause(System.Boolean)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnApplicationQuit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnAwake">
+            <summary>
+            OnAwake 在自动初始化时，带参的OnInit方法传入的是null
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnGODestroy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnStart">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnUpdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnFixUpdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnLateUpdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnCreate">
+            <summary>
+            OnCreate
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnGet">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnReset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnInit(System.Object[])">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnInit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnEnter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnExit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnDie">
+            <summary>
+            
             </summary>
         </member>
         <member name="T:MFramework_Unity.BaseMonoAbstract">
@@ -24,27 +306,64 @@
             driver
             </summary>
         </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnValidate">
+            <summary>
+            OnValidate
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.Reset">
+            <summary>
+            Reset
+            </summary>
+        </member>
         <member name="M:MFramework_Unity.BaseMonoAbstract.Awake">
             <summary>
-            
+            Awake
             </summary>
         </member>
         <member name="M:MFramework_Unity.BaseMonoAbstract.OnDestroy">
             <summary>
-            
+            OnDestroy
             </summary>
         </member>
         <member name="M:MFramework_Unity.BaseMonoAbstract.OnEnable">
             <summary>
-            
+            OnEnable
             </summary>
         </member>
         <member name="M:MFramework_Unity.BaseMonoAbstract.OnDisable">
             <summary>
-            
+            OnDisable
             </summary>
         </member>
         <member name="M:MFramework_Unity.BaseMonoAbstract.Start">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnPreRender">
+            <summary>
+            OnPreRender
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnPostRender">
+            <summary>
+            OnPostRender
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnApplicationFocus(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="focus"></param>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnApplicationPause(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="pause"></param>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnApplicationQuit">
             <summary>
             
             </summary>
@@ -60,31 +379,6 @@
             </summary>
         </member>
         <member name="M:MFramework_Unity.BaseMonoAbstract.OnLateUpdateAbstract">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:MFramework_Unity.BaseMonoAbstract.OnInit">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:MFramework_Unity.BaseMonoAbstract.OnInit(System.Object[])">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:MFramework_Unity.BaseMonoAbstract.OnGet">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:MFramework_Unity.BaseMonoAbstract.OnDie">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:MFramework_Unity.BaseMonoAbstract.OnReset">
             <summary>
             
             </summary>
@@ -119,6 +413,177 @@
             
             </summary>
         </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnCreate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnGet">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnReset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnInit(System.Object[])">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnInit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnEnter">
+            <summary>
+            OnEnter
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnExit">
+            <summary>
+            OnExit
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnDie">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.MonoDriver">
+            <summary>
+            MonoDriver
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.MonoDriver.CloneBaseMonoColl">
+            <summary>
+            CloneBaseMonoColl
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.MonoDriver.Register(MFramework_Unity.BaseMonoAbstract)">
+            <summary>
+            Register
+            </summary>
+            <param name="baseMono"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.MonoDriver.Remove(MFramework_Unity.BaseMonoAbstract)">
+            <summary>
+            Remove
+            </summary>
+            <param name="baseMono"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.MonoDriver.Clear">
+            <summary>
+            Clear
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.MonoDriver.GetLastItem">
+            <summary>
+            GetLastItem
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.MonoDriver.Update">
+            <summary>
+            Update
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.MonoDriver.FixedUpdate">
+            <summary>
+            FixedUpdate
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.MonoDriver.LateUpdate">
+            <summary>
+            LateUpdate
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.InterateBaseModule">
+            <summary>
+            模块化
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseModule.OnInit(System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseModule.OnInit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseModule.ListenMethod(System.Type,System.Int64,System.Object)">
+            <summary>
+            ListenMethod
+            </summary>
+            <param name="observeType"></param>
+            <param name="code"></param>
+            <param name="msg"></param>
+        </member>
+        <member name="T:MFramework_Unity.InterateBaseMono">
+            <summary>
+            InterateBaseMono
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseMono.OnAwake">
+            <summary>
+            OnAwake
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseMono.OnGODestroy">
+            <summary>
+            OnGODestroy
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseMono.OnEnable">
+            <summary>
+            OnEnable
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseMono.OnDisable">
+            <summary>
+            OnDisable
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseMono.OnStart">
+            <summary>
+            OnStart
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseMono.OnUpdate">
+            <summary>
+            OnUpdate
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseMono.OnInit(System.Object[])">
+            <summary>
+            有参数的初始化方法
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseMono.OnInit">
+            <summary>
+            无参数的初始化方法
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseMono.OnEnter">
+            <summary>
+            进入/启用/激活 方法
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseMono.OnExit">
+            <summary>
+            退出/禁止/灭活 方法
+            </summary>
+        </member>
         <member name="T:MFramework_Unity.DefaultEventTBController">
             <summary>
             EventTriggerButton
@@ -129,7 +594,7 @@
             
             </summary>
         </member>
-        <member name="M:MFramework_Unity.DefaultEventTBController.Start">
+        <member name="M:MFramework_Unity.DefaultEventTBController.OnStart">
             <summary>
             Start
             </summary>
@@ -466,12 +931,12 @@
             RemoveAllTouchStateListeners
             </summary>
         </member>
-        <member name="M:MFramework_Unity.EventTriggerButton.Awake">
+        <member name="M:MFramework_Unity.EventTriggerButton.OnAwake">
             <summary>
             Awake
             </summary>
         </member>
-        <member name="M:MFramework_Unity.EventTriggerButton.Update">
+        <member name="M:MFramework_Unity.EventTriggerButton.OnUpdate">
             <summary>
             Update
             </summary>
@@ -505,34 +970,116 @@
             </summary>
             <param name="trigger"></param>
         </member>
-        <member name="T:MFramework_Unity.UIBase">
+        <member name="T:MFramework_Unity.UIBaseMono">
             <summary>
             UIBase
             </summary>
         </member>
-        <member name="T:MFramework_Unity.UIPanelBase">
+        <member name="M:MFramework_Unity.UIBaseMono.OnAwake">
+            <summary>
+            OnAwake
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIBaseMono.OnGODestroy">
+            <summary>
+            OnGODestroy
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIBaseMono.OnEnable">
+            <summary>
+            OnEnable
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIBaseMono.OnDisable">
+            <summary>
+            OnDisable
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIBaseMono.OnStart">
+            <summary>
+            OnStart
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIBaseMono.OnUpdate">
+            <summary>
+            OnUpdate
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIBaseMono.OnInit(System.Object[])">
+            <summary>
+            有参数的初始化方法
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:MFramework_Unity.UIBaseMono.OnInit">
+            <summary>
+            无参数的初始化方法
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIBaseMono.OnEnter">
+            <summary>
+            进入/启用/激活 方法
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIBaseMono.OnExit">
+            <summary>
+            退出/禁止/灭活 方法
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.UIBasePanel">
             <summary>
             UIPanelBase
             </summary>
         </member>
-        <member name="M:MFramework_Unity.UIPanelBase.OnEnter">
+        <member name="F:MFramework_Unity.UIBasePanel.isFirstEnter">
+            <summary>
+            isFirstEnter
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.UIBasePanel.rectTran">
+            <summary>
+            rectTran
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIBasePanel.GetComponentOV">
+            <summary>
+            GetComponentOV
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIBasePanel.OnInit(System.Object[])">
+            <summary>
+            OnInit
+            </summary>
+            <param name="paras"></param>
+        </member>
+        <member name="M:MFramework_Unity.UIBasePanel.OnInit">
+            <summary>
+            OnInit
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIBasePanel.OnEnter">
             <summary>
             界面被显示出来 被实例化时
             </summary>
         </member>
-        <member name="M:MFramework_Unity.UIPanelBase.OnPause">
+        <member name="M:MFramework_Unity.UIBasePanel.OnPause">
             <summary>
             界面暂停
             </summary>
         </member>
-        <member name="M:MFramework_Unity.UIPanelBase.OnResume">
+        <member name="M:MFramework_Unity.UIBasePanel.OnResume">
             <summary>
             界面继续
             </summary>
         </member>
-        <member name="M:MFramework_Unity.UIPanelBase.OnExit">
+        <member name="M:MFramework_Unity.UIBasePanel.OnExit">
             <summary>
             界面不显示,退出这个界面，界面被关系
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIBasePanel.FirstOnEnter">
+            <summary>
+            FirstOnEnter
             </summary>
         </member>
         <member name="T:MFramework_Unity.Tools.CSharpExtension2">
@@ -816,19 +1363,102 @@
             <param name="localscale"></param>
             <param name="parent"></param>
         </member>
-        <member name="T:MFramework_Unity.Tools.IMonoCreate">
+        <member name="T:MFramework_Unity.Tools.Loom">
             <summary>
-            
+            Loom
             </summary>
         </member>
-        <member name="M:MFramework_Unity.Tools.IMonoCreate.OnMonoCreate">
+        <member name="P:MFramework_Unity.Tools.Loom.Current">
             <summary>
-            
+            Current
             </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.Loom.maxThreads">
+            <summary>
+            最大线程数
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.Loom.DelayedQueueItem">
+            <summary>
+            延迟方法队列元素
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.Loom.DelayedQueueItem.time">
+            <summary>
+            延迟时间
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.Loom.DelayedQueueItem.action">
+            <summary>
+            延迟方法
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.Loom.SayHello">
+            <summary>
+            SayHello
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.Tools.Loom.GetActions">
+            <summary>
+            GetActions
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.Loom.QueueOnMainThread(System.Action)">
+            <summary>
+            QueueOnMainThread
+            </summary>
+            <param name="action"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.Loom.QueueOnMainThread(System.Action,System.Single)">
+            <summary>
+            QueueOnMainThread
+            </summary>
+            <param name="action"></param>
+            <param name="time"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.Loom.RunAsync(System.Action)">
+            <summary>
+            RunAsync
+            </summary>
+            <param name="a"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MFramework_Unity.Tools.NetTool">
+            <summary>
+            NetTool
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.NetTool.HttpPost(System.String)">
+            <summary>
+            HttpPost
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.NetTool.HttpPost(System.String,System.String)">
+            <summary>
+            HttpPost
+            </summary>
+            <param name="url"></param>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.NetTool.HttpPost(System.String,System.Byte[])">
+            <summary>
+            HttpPost
+            </summary>
+            <param name="url"></param>
+            <param name="data"></param>
+            <returns></returns>
         </member>
         <member name="M:MFramework_Unity.Tools.NetTool.HttpGet(System.String,System.String)">
             <summary>
             GET请求与获取结果
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.RealConfigs">
+            <summary>
+            RealConfigs
             </summary>
         </member>
         <member name="T:MFramework_Unity.Tools.RealConfigsManager">
@@ -866,11 +1496,131 @@
             SayHello
             </summary>
         </member>
+        <member name="T:MFramework_Unity.Tools.SQLBaseManager">
+            <summary>
+            SQLBaseManager
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLBaseManager.#ctor">
+            <summary>
+            SQLBaseManager
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLBaseManager.Connect(System.String)">
+            <summary>
+            Connect
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLBaseManager.Close">
+            <summary>
+            Close
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLBaseManager.Dispose">
+            <summary>
+            Dispose
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.SQLiteManager">
+            <summary>
+            SQLiteManager
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.SQLiteManager.connection">
+            <summary>
+            SqliteConnection
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLiteManager.#ctor">
+            <summary>
+            SQLiteManager
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLiteManager.CreateDB(System.String)">
+            <summary>
+            CreateDB
+            </summary>
+            <param name="_dbPath"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLiteManager.DeleteDB(System.String)">
+            <summary>
+            DeleteDB
+            </summary>
+            <param name="_dbPath"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLiteManager.GetSqlConnectState">
+            <summary>
+            GetSqlConnectState
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLiteManager.Connect(System.String)">
+            <summary>
+            Connect
+            </summary>
+            <param name="_path"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLiteManager.Test">
+            <summary>
+            Test
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLiteManager.TestCreateTable(System.String)">
+            <summary>
+            TestCreateTable
+            </summary>
+            <param name="tableName"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLiteManager.Dispose">
+            <summary>
+            Dispose
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.SqliteConnectionExtension">
+            <summary>
+            SqliteConnectionExtension
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SqliteConnectionExtension.CreateAndExecuteCommand(Mono.Data.Sqlite.SqliteConnection,System.String,System.String@)">
+            <summary>
+            CreateAndExecuteCommandc
+            </summary>
+            <param name="connection"></param>
+            <param name="cmdStr"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
         <member name="M:MFramework_Unity.Tools.SqliteConnectionExtension.Order(Mono.Data.Sqlite.SqliteConnection,System.String@)">
             <summary>
             整理数据库
             </summary>
             <param name="connection"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.SqliteTool">
+            <summary>
+            SqliteTool
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SqliteTool.GetExecuteReaderStr(System.String,System.String)">
+            <summary>
+            GetExecuteReaderStr
+            </summary>
+            <param name="_type"></param>
+            <param name="_name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SqliteTool.CreateDB(System.String)">
+            <summary>
+            CreateDB
+            </summary>
+            <param name="_dbName"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SqliteTool.DeleteDB(System.String)">
+            <summary>
+            DeleteDB
+            </summary>
+            <param name="_dbName"></param>
         </member>
         <member name="M:MFramework_Unity.Tools.SqliteTool.ChangeTableName(Mono.Data.Sqlite.SqliteConnection,System.String,System.String)">
             <summary>
@@ -996,11 +1746,16 @@
             <param name="key"></param>
             <returns></returns>
         </member>
+        <member name="T:MFramework_Unity.Tools.FileTool">
+            <summary>
+            FileTool
+            </summary>
+        </member>
         <member name="M:MFramework_Unity.Tools.FileTool.CreatFile(System.String,System.Byte[])">
             <summary>
             创建文件
             </summary>
-            <param name="filePath">文件路径</param>
+            <param name="filepath">文件路径</param>
             <param name="bytes">文件内容</param>
         </member>
         <member name="M:MFramework_Unity.Tools.FileTool.CreateDirectory(System.String)">
@@ -1019,7 +1774,7 @@
             <summary>
             判断有没有这个路径，如果没有则创建它
             </summary>
-            <param name="filepath"></param>
+            <param name="path"></param>
         </member>
         <member name="M:MFramework_Unity.Tools.FileTool.DeleteDirectory(System.String)">
             <summary>
@@ -1142,6 +1897,12 @@
             <param name="name"></param>
             <param name="expandNames"></param>
             <returns></returns>
+        </member>
+        <member name="T:MFramework_Unity.Tools.FileExecuteHandle">
+            <summary>
+            FileExecuteHandle
+            </summary>
+            <param name="filePath"></param>
         </member>
         <member name="T:MFramework_Unity.Tools.CameraExtension">
             <summary>
@@ -1487,6 +2248,14 @@
             <param name="expandName"></param>
             <returns></returns>
         </member>
+        <member name="M:MFramework_Unity.Tools.PathUtil.Combine(System.String,System.String)">
+            <summary>
+            Combine
+            </summary>
+            <param name="path1"></param>
+            <param name="path2"></param>
+            <returns></returns>
+        </member>
         <member name="M:MFramework_Unity.Tools.PathUtil.GetTemporaryCacheFolderPath">
             <summary>
             Retrieves Application.temporaryCachePath depends on the given platform.
@@ -1531,6 +2300,30 @@
             <summary>
             
             </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.PathUtil.Combine1(System.String,System.String)">
+            <summary>
+            Combine1
+            </summary>
+            <param name="str1"></param>
+            <param name="str2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.PathUtil.Combine1(System.String,System.String,System.String)">
+            <summary>
+            Combine1
+            </summary>
+            <param name="str1"></param>
+            <param name="str2"></param>
+            <param name="str3"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.PathUtil.Normallize(System.String)">
+            <summary>
+            Normallize
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
         </member>
         <member name="T:MFramework_Unity.Tools.RayExtensionCast">
             <summary>
@@ -1699,6 +2492,11 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.SayHello">
+            <summary>
+            SayHello
+            </summary>
+        </member>
         <member name="M:MFramework_Unity.Tools.ResourceIOTool.ReadStringByFile(System.String)">
             <summary>
             ReadStringByFile
@@ -1720,6 +2518,15 @@
             <param name="path"></param>
             <returns></returns>
         </member>
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.ReadTextureByFile(System.String,System.Int32,System.Int32)">
+            <summary>
+            ReadTextureByFile
+            </summary>
+            <param name="path"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+            <returns></returns>
+        </member>
         <member name="M:MFramework_Unity.Tools.ResourceIOTool.ResourceLoadAsync(System.String,MFramework_Unity.Tools.LoadCallBack)">
             <summary>
             ResourceLoadAsync
@@ -1727,12 +2534,122 @@
             <param name="path"></param>
             <param name="callback"></param>
         </member>
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.MonoLoadMethod(System.String,MFramework_Unity.Tools.LoadCallBack)">
+            <summary>
+            MonoLoadMethod
+            </summary>
+            <param name="path"></param>
+            <param name="callback"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.MonoLoadByResourcesAsync(System.String,MFramework_Unity.Tools.LoadCallBack)">
+            <summary>
+            MonoLoadByResourcesAsync
+            </summary>
+            <param name="path"></param>
+            <param name="callback"></param>
+            <returns></returns>
+        </member>
         <member name="M:MFramework_Unity.Tools.ResourceIOTool.AssetsBundleLoadAsync(System.String,MFramework_Unity.Tools.AssetBundleLoadCallBack)">
             <summary>
             异步加载单个assetsbundle
             </summary>
             <param name="path"></param>
             <param name="callback"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.MonoLoadAssetsBundleMethod(System.String,MFramework_Unity.Tools.AssetBundleLoadCallBack)">
+            <summary>
+            MonoLoadAssetsBundleMethod
+            </summary>
+            <param name="path"></param>
+            <param name="callback"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.MonoLoadByAssetsBundleAsync(System.String,MFramework_Unity.Tools.AssetBundleLoadCallBack)">
+            <summary>
+            MonoLoadByAssetsBundleAsync
+            </summary>
+            <param name="path"></param>
+            <param name="callback"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.WriteStringByFile(System.String,System.String)">
+            <summary>
+            写操作 web Player 不支持写操作
+            </summary>
+            <param name="path"></param>
+            <param name="content"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.WriteTexture2DByFile(System.String,UnityEngine.Texture2D)">
+            <summary>
+            WriteTexture2DByFile
+            </summary>
+            <param name="path"></param>
+            <param name="texture"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.DeleteFile(System.String)">
+            <summary>
+            DeleteFile
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.CreateFile(System.String,System.Byte[])">
+            <summary>
+            CreateFile
+            </summary>
+            <param name="path"></param>
+            <param name="byt"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.AssetBundleLoadCallBack">
+            <summary>
+            AssetBundleLoadCallBack
+            </summary>
+            <param name="state"></param>
+            <param name="bundlle"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.UnityRequestCallBack">
+            <summary>
+            UnityRequestCallBack
+            </summary>
+            <param name="loadState"></param>
+            <param name="www"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.LoadCallBack">
+            <summary>
+            LoadCallBack
+            </summary>
+            <param name="loadState"></param>
+            <param name="resObject"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.LoadState">
+            <summary>
+            LoadState
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.Tools.LoadState.CompleteState">
+            <summary>
+            CompleteState
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.LoadState.isDone">
+            <summary>
+            isDone
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.LoadState.progress">
+            <summary>
+            progress
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.LoadState.UpdateProgress(UnityEngine.ResourceRequest)">
+            <summary>
+            UpdateProgress
+            </summary>
+            <param name="resourceRequest"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.LoadState.UpdateProgress(UnityEngine.AssetBundleCreateRequest)">
+            <summary>
+            UpdateProgress
+            </summary>
+            <param name="assetBundleCreateRequest"></param>
         </member>
         <member name="T:MFramework_Unity.Tools.TranformExtension">
             <summary>
@@ -2172,6 +3089,27 @@
             <typeparam name="T"></typeparam>
             <param name="objectPool"></param>
         </member>
+        <member name="T:MFramework_Unity.Tools.MonoSingleton`1">
+            <summary>
+            MonoSingleton
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:MFramework_Unity.Tools.MonoSingleton`1.Instance">
+            <summary>
+            Instance
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.MonoSingleton`1.Awake">
+            <summary>
+            Awake
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.MonoSingleton`1.DestroyInstance">
+            <summary>
+            DestroyInstance
+            </summary>
+        </member>
         <member name="M:MFramework_Unity.Tools.MonoSingleton`1.ClearDestroy">
             <summary>
             清除 _destroyed 锁
@@ -2186,7 +3124,47 @@
             </summary>
         </member>
         <member name="M:MFramework_Unity.Tools.MonoSingleton`1.OnInit">
-            <summary>Awake 初始化完成之后 </summary>
+            <summary>
+             Awake 初始化完成之后
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.AutoSingletonAttribute">
+            <summary>
+            AutoSingletonAttribute
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.AutoSingletonAttribute.autoCreate">
+            <summary>
+            autoCreate 是否自动创建单例
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.AutoSingletonAttribute.resPath">
+            <summary>
+            resPath 从指定的预制体路径生成单例
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.AutoSingletonAttribute.#ctor(System.Boolean,System.String)">
+            <summary>
+            AutoSingletonAttribute
+            </summary>
+            <param name="_autoCreate"></param>
+            <param name="_resPath"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.MonoSingletonSimple`1">
+            <summary>
+            MonoSingletonSimple
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:MFramework_Unity.Tools.MonoSingletonSimple`1.Instance">
+            <summary>
+            Instance
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.MonoSingletonSimple`1.OnDestroy">
+            <summary>
+            OnDestroy
+            </summary>
         </member>
         <member name="T:MFramework_Unity.Tools.SQLiteDBHelper">
             <summary>  
@@ -2198,6 +3176,7 @@
             <summary>  
             对SQLite数据库执行增删改操作，返回受影响的行数。  
             </summary>  
+            <param name="dbPath">dbPath</param>  
             <param name="sql">要执行的增删改的SQL语句</param>  
             <param name="parameters">执行增删改语句所需要的参数，参数必须以它们在SQL语句中的顺序为准</param>  
             <returns></returns>  
@@ -2207,6 +3186,7 @@
             执行一个查询语句，返回一个关联的SQLiteDataReader实例  
             </summary>  
             <param name="sql">要执行的查询语句</param>  
+            <param name="dbPath">dbPath</param>  
             <param name="parameters">执行SQL查询语句所需要的参数，参数必须以它们在SQL语句中的顺序为准</param>  
             <returns></returns>  
         </member>
@@ -2215,6 +3195,7 @@
             执行一个查询语句，返回一个包含查询结果的DataTable  
             </summary>  
             <param name="sql">要执行的查询语句</param>  
+            <param name="dbPath">dbPath</param>  
             <param name="parameters">执行SQL查询语句所需要的参数，参数必须以它们在SQL语句中的顺序为准</param>  
             <returns></returns>  
         </member>
@@ -2223,6 +3204,7 @@
             执行一个查询语句，返回查询结果的第一行第一列  
             </summary>  
             <param name="sql">要执行的查询语句</param>  
+            <param name="dbPath">dbPath</param>  
             <param name="parameters">执行SQL查询语句所需要的参数，参数必须以它们在SQL语句中的顺序为准</param>  
             <returns></returns>  
         </member>
@@ -2237,11 +3219,202 @@
             协程管理器
             </summary>
         </member>
+        <member name="T:MFramework_Unity.Tools.CoroutineTaskManager.TaskState">
+            <summary>
+            TaskState
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.Tools.CoroutineTaskManager.TaskState.Running">
+            <summary>
+            Running
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.Tools.CoroutineTaskManager.TaskState.Paused">
+            <summary>
+            Paused
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.CoroutineTaskManager.TaskState.FinishedHandler">
+            <summary>
+            FinishedHandler
+            </summary>
+            <param name="manual"></param>
+        </member>
+        <member name="E:MFramework_Unity.Tools.CoroutineTaskManager.TaskState.Finished">
+            <summary>
+            Finished
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CoroutineTaskManager.TaskState.#ctor(System.Collections.IEnumerator)">
+            <summary>
+            TaskState
+            </summary>
+            <param name="c"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CoroutineTaskManager.TaskState.Pause">
+            <summary>
+            Pause
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CoroutineTaskManager.TaskState.Unpause">
+            <summary>
+            Unpause
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CoroutineTaskManager.TaskState.Start">
+            <summary>
+            Start
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CoroutineTaskManager.TaskState.Stop">
+            <summary>
+            Stop
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.Tools.CoroutineTaskManager.Instance">
+            <summary>
+            Instance
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CoroutineTaskManager.SayHello">
+            <summary>
+            SayHello
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.CoroutineTaskManager.taskStateDict">
+            <summary>
+            taskStateDict
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CoroutineTaskManager.CreateTask(System.Collections.IEnumerator)">
+            <summary>
+            CreateTask
+            </summary>
+            <param name="coroutine"></param>
+            <returns></returns>
+        </member>
         <member name="M:MFramework_Unity.Tools.CoroutineTaskManager.CreateAndExecuteTask(System.Collections.IEnumerator)">
             <summary>
             功能未实现
             </summary>
             <param name="coroutine"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CoroutineTaskManager.StopAllTasks">
+            <summary>
+            StopAllTasks
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CoroutineTaskManager.StopTask(System.Collections.IEnumerator)">
+            <summary>
+            StopTask
+            </summary>
+            <param name="coroutine"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.DOTweenTimerManager">
+            <summary>
+            DOTweenTimerManager
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.DOTweenTimerManager.SayHello">
+            <summary>
+            SayHello
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.DOTweenTimerManager.AddDelayCallback(System.Action,System.Single,System.Boolean)">
+            <summary>
+            AddDelayCallback
+            </summary>
+            <param name="callbackAction"></param>
+            <param name="delayDur"></param>
+            <param name="isFocusAdd"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.DOTweenTimerManager.AddDelayCallback(System.Action)">
+            <summary>
+            AddDelayCallback
+            </summary>
+            <param name="callbackAction"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.TimerGo">
+            <summary>
+            时间定时器
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.TimerGo.timerType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.TimerGo.onStart">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.TimerGo.onEnd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.TimerGo.enGoing">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TimerGo.Start">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TimerGo.Stop">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TimerGo.Pause">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.TimerManager">
+            <summary>
+            TimerManager 时间定时器，延迟定时器，（有限/无限）循环定时器，秒定时器
+            帧定时器，特定帧定时器，倒计时
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.TimerManager.timerQueue">
+            <summary>
+            时间定时器队列
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TimerManager.SayHello">
+            <summary>
+            SayHello
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.Tools.TimerManager.Instance">
+            <summary>
+            Instance
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.TimerType">
+            <summary>
+            时间定时器类型
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.OnTimerGoStartEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.OnTimerGoEndEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.OnTimerGoingEvent">
+            <summary>
+            
+            </summary>
         </member>
         <member name="T:MFramework_Unity.Tools.EventSystemTools">
             <summary>
@@ -2432,6 +3605,12 @@
             <param name="tr"></param>
             <returns></returns>
         </member>
+        <member name="M:MFramework_Unity.Tools.UGUITools.IsClickUI">
+            <summary>
+            检测是否点击在UI上
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:MFramework_Unity.InputSystem.MouseInputStick">
             <summary>
             MouseInputStick
@@ -2617,6 +3796,52 @@
         <member name="T:MFramework_Unity.InputSystem.MouseBMoveType">
             <summary>
             MouseBMoveType
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.IMono">
+            <summary>
+            IMono
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.IMono.OnCreate">
+            <summary>
+            OnCreate
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.IMono.OnGet">
+            <summary>
+            OnGet
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.IMono.OnReset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.IMono.OnInit(System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:MFramework_Unity.IMono.OnInit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.IMono.OnEnter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.IMono.OnExit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.IMono.OnDie">
+            <summary>
+            
             </summary>
         </member>
     </members>

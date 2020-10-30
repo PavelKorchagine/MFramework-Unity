@@ -20,20 +20,32 @@ CreateTime/创建时间:        2020/4/17 19:54:49
 
 namespace MFramework_Unity
 {
-
     /// <summary>
     /// UIPanelBase
     /// </summary>
-    public class UIPanelBase : UIBase
+    public class UIBasePanel : UIBaseMono
     {
+        /// <summary>
+        /// isFirstEnter
+        /// </summary>
         protected bool isFirstEnter = true;
+        /// <summary>
+        /// rectTran
+        /// </summary>
         protected RectTransform rectTran;
 
+        /// <summary>
+        /// GetComponentOV
+        /// </summary>
         public virtual void GetComponentOV()
         {
 
         }
 
+        /// <summary>
+        /// OnInit
+        /// </summary>
+        /// <param name="paras"></param>
         public override void OnInit(params object[] paras)
         {
             base.OnInit(paras);
@@ -44,6 +56,9 @@ namespace MFramework_Unity
 
         }
 
+        /// <summary>
+        /// OnInit
+        /// </summary>
         public override void OnInit()
         {
             base.OnInit();
@@ -52,8 +67,9 @@ namespace MFramework_Unity
         /// <summary>
         /// 界面被显示出来 被实例化时
         /// </summary>
-        public virtual void OnEnter()
+        public override void OnEnter()
         {
+            base.OnEnter();
             transform.SetAsLastSibling();
             if (isFirstEnter)
             {
@@ -81,11 +97,15 @@ namespace MFramework_Unity
         /// <summary>
         /// 界面不显示,退出这个界面，界面被关系
         /// </summary>
-        public virtual void OnExit()
+        public override void OnExit()
         {
+            base.OnExit();
             transform.SetAsFirstSibling();
         }
 
+        /// <summary>
+        /// FirstOnEnter
+        /// </summary>
         protected virtual void FirstOnEnter()
         {
             rectTran = transform as RectTransform;

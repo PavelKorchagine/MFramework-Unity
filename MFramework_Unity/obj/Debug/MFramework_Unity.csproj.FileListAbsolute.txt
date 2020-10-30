@@ -33,7 +33,6 @@ C:\Users\Administrator\Desktop\FramworksLib\MFramework_Unity\MFramework_Unity\bi
 C:\Users\Administrator\Desktop\FramworksLib\MFramework_Unity\MFramework_Unity\bin\Debug\Mono.Data.Sqlite.dll
 C:\Users\Administrator\Desktop\FramworksLib\MFramework_Unity\MFramework_Unity\bin\Debug\UnityEngine.AudioModule.dll
 C:\Users\Administrator\Desktop\FramworksLib\MFramework_Unity\MFramework_Unity\bin\Debug\MFramework_Unity.xml
-H:\git-pros\MFramework-Unity\MFramework_Unity\obj\Debug\MFramework_Unity.csprojAssemblyReference.cache
 H:\git-pros\MFramework-Unity\MFramework_Unity\obj\Debug\MFramework_Unity.csproj.CoreCompileInputs.cache
 H:\git-pros\MFramework-Unity\MFramework_Unity\obj\Debug\MFramework_Unity.dll
 H:\git-pros\MFramework-Unity\MFramework_Unity\obj\Debug\MFramework_Unity.pdb

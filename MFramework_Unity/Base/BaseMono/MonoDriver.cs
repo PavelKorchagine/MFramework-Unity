@@ -20,6 +20,9 @@ CreateTime/创建时间:        2020/6/3 16:12:27
 
 namespace MFramework_Unity
 {
+    /// <summary>
+    /// MonoDriver
+    /// </summary>
     public class MonoDriver : MonoBehaviour
     {
         #region Awake
@@ -41,12 +44,22 @@ namespace MFramework_Unity
 
         private List<BaseMonoAbstract> baseMonos = new List<BaseMonoAbstract>();
 
+        /// <summary>
+        /// CloneBaseMonoColl
+        /// </summary>
+        /// <returns></returns>
         public List<BaseMonoAbstract> CloneBaseMonoColl()
         {
             List<BaseMonoAbstract> temp = new List<BaseMonoAbstract>();
             temp.AddRange(baseMonos);
             return temp;
         }
+
+        /// <summary>
+        /// Register
+        /// </summary>
+        /// <param name="baseMono"></param>
+        /// <returns></returns>
         public bool Register(BaseMonoAbstract baseMono)
         {
             if (!baseMonos.Contains(baseMono))
@@ -59,6 +72,12 @@ namespace MFramework_Unity
                 return false;
             }
         }
+
+        /// <summary>
+        /// Remove
+        /// </summary>
+        /// <param name="baseMono"></param>
+        /// <returns></returns>
         public bool Remove(BaseMonoAbstract baseMono)
         {
             if (baseMonos.Contains(baseMono))
@@ -71,15 +90,27 @@ namespace MFramework_Unity
                 return false;
             }
         }
+
+        /// <summary>
+        /// Clear
+        /// </summary>
         public void Clear()
         {
             baseMonos.Clear();
         }
+
+        /// <summary>
+        /// GetLastItem
+        /// </summary>
+        /// <returns></returns>
         public BaseMonoAbstract GetLastItem()
         {
             return baseMonos[baseMonos.Count - 2];
         }
 
+        /// <summary>
+        /// Update
+        /// </summary>
         public void Update()
         {
             int count = baseMonos.Count;
@@ -90,6 +121,10 @@ namespace MFramework_Unity
                 else baseMonos[i].OnUpdateAbstract();
             }
         }
+
+        /// <summary>
+        /// FixedUpdate
+        /// </summary>
         public void FixedUpdate()
         {
             int count = baseMonos.Count;
@@ -100,6 +135,10 @@ namespace MFramework_Unity
                 else baseMonos[i].OnFixUpdateAbstract();
             }
         }
+
+        /// <summary>
+        /// LateUpdate
+        /// </summary>
         public void LateUpdate()
         {
             int count = baseMonos.Count;
@@ -110,6 +149,8 @@ namespace MFramework_Unity
                 else baseMonos[i].OnLateUpdateAbstract();
             }
         }
+
+
         #region UNITY_EDITOR
 #if UNITY_EDITOR
 
@@ -171,5 +212,7 @@ namespace MFramework_Unity
         }
 #endif
         #endregion
+
+
     }
 }

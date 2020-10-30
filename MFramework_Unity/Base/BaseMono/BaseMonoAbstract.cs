@@ -12,15 +12,32 @@ namespace MFramework_Unity
     /// <summary>
     /// BaseMonoAbstract
     /// </summary>
-    public abstract class BaseMonoAbstract : MonoBehaviour
+    public abstract class BaseMonoAbstract : MonoBehaviour, IMono
     {
         /// <summary>
         /// driver
         /// </summary>
         protected MonoDriver driver;
 
+        #region Unity API
+
         /// <summary>
-        /// 
+        /// OnValidate
+        /// </summary>
+        protected virtual void OnValidate()
+        {
+
+        }
+
+        /// <summary>
+        /// Reset
+        /// </summary>
+        protected virtual void Reset()
+        {
+        }
+
+        /// <summary>
+        /// Awake
         /// </summary>
         protected virtual void Awake()
         {
@@ -32,7 +49,7 @@ namespace MFramework_Unity
         }
 
         /// <summary>
-        /// 
+        /// OnDestroy
         /// </summary>
         protected virtual void OnDestroy()
         {
@@ -41,7 +58,7 @@ namespace MFramework_Unity
         }
 
         /// <summary>
-        /// 
+        /// OnEnable
         /// </summary>
         protected virtual void OnEnable()
         {
@@ -49,7 +66,7 @@ namespace MFramework_Unity
         }
 
         /// <summary>
-        /// 
+        /// OnDisable
         /// </summary>
         protected virtual void OnDisable()
         {
@@ -63,6 +80,52 @@ namespace MFramework_Unity
         {
             OnStart();
         }
+
+        /// <summary>
+        /// OnPreRender
+        /// </summary>
+        protected virtual void OnPreRender()
+        {
+
+        }
+
+        /// <summary>
+        /// OnPostRender
+        /// </summary>
+        protected virtual void OnPostRender()
+        {
+
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="focus"></param>
+        protected virtual void OnApplicationFocus(bool focus)
+        {
+
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="pause"></param>
+        protected virtual void OnApplicationPause(bool pause)
+        {
+
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        protected virtual void OnApplicationQuit()
+        {
+
+        }
+
+        #endregion
+
+        #region 扩展方法
 
         /// <summary>
         /// 
@@ -87,31 +150,6 @@ namespace MFramework_Unity
         {
             OnLateUpdate();
         }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public abstract void OnInit();
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public abstract void OnInit(params object[] args);
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public abstract void OnGet();
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public abstract void OnDie();
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public abstract void OnReset();
 
         /// <summary>
         /// 
@@ -142,6 +180,50 @@ namespace MFramework_Unity
         /// 
         /// </summary>
         protected abstract void OnGODestroy();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public abstract void OnCreate();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public abstract void OnGet();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public abstract void OnReset();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public abstract void OnInit(params object[] args);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public abstract void OnInit();
+
+        /// <summary>
+        /// OnEnter
+        /// </summary>
+        public abstract void OnEnter();
+
+        /// <summary>
+        /// OnExit
+        /// </summary>
+        public abstract void OnExit();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public abstract void OnDie();
+
+
+        #endregion
+
 
     }
 }

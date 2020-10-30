@@ -4,8 +4,11 @@ using System.IO;
 using UnityEditorInternal;
 using UnityEngine;
 
-namespace MFramework_UnityEditor.Extend
+namespace MFramework_UnityEditor.Tools
 {
+    /// <summary>
+    /// PathUtilEditor
+    /// </summary>
     public class PathUtilEditor
     {
         /// <summary>
@@ -86,11 +89,12 @@ namespace MFramework_UnityEditor.Extend
         }
 
         /// <summary>
-        /// Retrieves path of an external script editor. e.g) path of where VisualStudio etc.
+        /// Retrieves path of an external script editor.e.g) path of where VisualStudio etc.
         /// </summary>
-        //public static string GetExternalScriptEditorPath()
-        //{
-        //    return InternalEditorUtility.GetExternalScriptEditor();
-        //}
+        public static string GetExternalScriptEditorPath()
+        {
+            return "";
+            //return InternalEditorUtility.GetExternalScriptEditor();
+        }
     }
 }

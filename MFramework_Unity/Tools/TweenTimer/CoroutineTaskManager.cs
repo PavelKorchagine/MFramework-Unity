@@ -70,8 +70,14 @@ namespace MFramework_Unity.Tools
     public class CoroutineTaskManager : MonoBehaviour
     {
         private static bool initialized;
+        /// <summary>
+        /// TaskState
+        /// </summary>
         public class TaskState
         {
+            /// <summary>
+            /// Running
+            /// </summary>
             public bool Running
             {
                 get
@@ -80,6 +86,9 @@ namespace MFramework_Unity.Tools
                 }
             }
 
+            /// <summary>
+            /// Paused
+            /// </summary>
             public bool Paused
             {
                 get
@@ -87,7 +96,16 @@ namespace MFramework_Unity.Tools
                     return paused;
                 }
             }
+
+            /// <summary>
+            /// FinishedHandler
+            /// </summary>
+            /// <param name="manual"></param>
             public delegate void FinishedHandler(bool manual);
+
+            /// <summary>
+            /// Finished
+            /// </summary>
             public event FinishedHandler Finished;
 
             private IEnumerator coroutine;
@@ -95,27 +113,44 @@ namespace MFramework_Unity.Tools
             private bool paused;
             private bool stopped;
 
+            /// <summary>
+            /// TaskState
+            /// </summary>
+            /// <param name="c"></param>
             public TaskState(IEnumerator c)
             {
                 coroutine = c;
             }
 
+            /// <summary>
+            /// Pause
+            /// </summary>
             public void Pause()
             {
                 paused = true;
             }
 
+            /// <summary>
+            /// Unpause
+            /// </summary>
             public void Unpause()
             {
                 paused = false;
             }
 
+            /// <summary>
+            /// Start
+            /// </summary>
+            /// <returns></returns>
             public Coroutine Start()
             {
                 running = true;
                 return singleton.StartCoroutine(CallWrapper());
             }
 
+            /// <summary>
+            /// Stop
+            /// </summary>
             public void Stop()
             {
                 stopped = true;
@@ -151,6 +186,9 @@ namespace MFramework_Unity.Tools
 
         private static CoroutineTaskManager singleton;
 
+        /// <summary>
+        /// Instance
+        /// </summary>
         public static CoroutineTaskManager Instance
         {
             get
@@ -159,6 +197,7 @@ namespace MFramework_Unity.Tools
                 return singleton;
             }
         }
+
         private void Awake()
         {
             if (gameObject.scene.name != "DontDestroyOnLoad")
@@ -168,10 +207,15 @@ namespace MFramework_Unity.Tools
             initialized = true;
             singleton = this;
         }
+
+        /// <summary>
+        /// SayHello
+        /// </summary>
         public void SayHello()
         {
             Debug.LogWarningFormat("[{0}] say: Hello，World !!", this);
         }
+
         private static void Initialize()
         {
             if (!initialized)
@@ -184,7 +228,17 @@ namespace MFramework_Unity.Tools
                 singleton = g.AddComponent<CoroutineTaskManager>();
             }
         }
+
+        /// <summary>
+        /// taskStateDict
+        /// </summary>
         public readonly Dictionary<IEnumerator, TaskState> taskStateDict = new Dictionary<IEnumerator, TaskState>();
+
+        /// <summary>
+        /// CreateTask
+        /// </summary>
+        /// <param name="coroutine"></param>
+        /// <returns></returns>
         public TaskState CreateTask(IEnumerator coroutine)
         {
             if (singleton == null)
@@ -197,6 +251,7 @@ namespace MFramework_Unity.Tools
 
             return taskStateDict.TryGet(coroutine);
         }
+
         /// <summary>
         /// 功能未实现
         /// </summary>
@@ -206,10 +261,19 @@ namespace MFramework_Unity.Tools
             TaskState taskState = CreateTask(coroutine);
             return taskState.Start();
         }
+
+        /// <summary>
+        /// StopAllTasks
+        /// </summary>
         public void StopAllTasks()
         {
 
         }
+
+        /// <summary>
+        /// StopTask
+        /// </summary>
+        /// <param name="coroutine"></param>
         public void StopTask(IEnumerator coroutine)
         {
             if (taskStateDict.TryGet(coroutine) == null)
@@ -217,6 +281,7 @@ namespace MFramework_Unity.Tools
             else
                 taskStateDict.TryGet(coroutine).Stop();
         }
+
         private void TaskFinished(bool manual)
         {
 

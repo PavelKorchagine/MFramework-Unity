@@ -244,7 +244,7 @@ namespace MFramework_Unity
     /// EventTriggerButton
     /// </summary>
     [RequireComponent(typeof(EventTrigger))]
-    public class EventTriggerButton : UIBase
+    public class EventTriggerButton : UIBaseMono
     {
         /// <summary>
         /// 
@@ -421,7 +421,7 @@ namespace MFramework_Unity
         /// <summary>
         /// Awake
         /// </summary>
-        protected override void Awake()
+        protected override void OnAwake()
         {
             defaultScale = transform.localScale;
 
@@ -530,7 +530,7 @@ namespace MFramework_Unity
         /// <summary>
         /// Update
         /// </summary>
-        protected override void Update()
+        protected override void OnUpdate()
         {
             if (m_AllowTouchTriggerring == false)
             {

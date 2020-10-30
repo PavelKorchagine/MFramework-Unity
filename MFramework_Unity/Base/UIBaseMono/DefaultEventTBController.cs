@@ -30,7 +30,7 @@ namespace MFramework_Unity
     /// EventTriggerButton
     /// </summary>
     [RequireComponent(typeof(EventTriggerButton))]
-    public class DefaultEventTBController : UIBase
+    public class DefaultEventTBController : UIBaseMono
     {
         /// <summary>
         /// 
@@ -42,9 +42,9 @@ namespace MFramework_Unity
         /// <summary>
         /// Start
         /// </summary>
-        protected override void Start()
+        protected override void OnStart()
         {
-            base.Start();
+            base.OnStart();
 
             eventTrigger = gameObject.GetComponentReal<EventTriggerButton>();
             eventTrigger.SetDefaultTouchState(rate, dur);

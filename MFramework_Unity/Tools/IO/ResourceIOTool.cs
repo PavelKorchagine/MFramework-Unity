@@ -32,6 +32,14 @@ namespace MFramework_Unity.Tools
             return instance;
         }
 
+        /// <summary>
+        /// SayHello
+        /// </summary>
+        public void SayHello()
+        {
+            Debug.LogWarningFormat("[{0}] say: Hello，World !! {1}", this, System.DateTime.Now);
+        }
+
         #region 读操作
         /// <summary>
         /// ReadStringByFile
@@ -62,6 +70,7 @@ namespace MFramework_Unity.Tools
 
             return line.ToString();
         }
+
         /// <summary>
         /// ReadStringByBundle
         /// </summary>
@@ -106,6 +115,13 @@ namespace MFramework_Unity.Tools
             }
         }
 
+        /// <summary>
+        /// ReadTextureByFile
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="width"></param>
+        /// <param name="height"></param>
+        /// <returns></returns>
         public static Texture2D ReadTextureByFile(string path, int width, int height)
         {
             //创建文件读取流
@@ -171,12 +187,23 @@ namespace MFramework_Unity.Tools
             GetInstance().MonoLoadMethod(path, callback);
         }
 
+        /// <summary>
+        /// MonoLoadMethod
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="callback"></param>
         public void MonoLoadMethod(string path, LoadCallBack callback)
         {
             StartCoroutine(MonoLoadByResourcesAsync(path, callback));
         }
 
         LoadState m_loadState = new LoadState();
+        /// <summary>
+        /// MonoLoadByResourcesAsync
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="callback"></param>
+        /// <returns></returns>
         public IEnumerator MonoLoadByResourcesAsync(string path, LoadCallBack callback)
         {
             ResourceRequest status = Resources.LoadAsync(path);
@@ -203,11 +230,22 @@ namespace MFramework_Unity.Tools
             GetInstance().MonoLoadAssetsBundleMethod(path, callback);
         }
 
+        /// <summary>
+        /// MonoLoadAssetsBundleMethod
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="callback"></param>
         public void MonoLoadAssetsBundleMethod(string path, AssetBundleLoadCallBack callback)
         {
             StartCoroutine(MonoLoadByAssetsBundleAsync(path, callback));
         }
 
+        /// <summary>
+        /// MonoLoadByAssetsBundleAsync
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="callback"></param>
+        /// <returns></returns>
         public IEnumerator MonoLoadByAssetsBundleAsync(string path, AssetBundleLoadCallBack callback)
         {
 #if !UNITY_WEBGL
@@ -291,7 +329,13 @@ namespace MFramework_Unity.Tools
 
         #region 写操作
 #if !UNITY_WEBGL || UNITY_EDITOR
+
         //web Player 不支持写操作
+        /// <summary>
+        /// 写操作 web Player 不支持写操作
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="content"></param>
         public static void WriteStringByFile(string path, string content)
         {
             byte[] dataByte = Encoding.GetEncoding("UTF-8").GetBytes(content);
@@ -299,6 +343,11 @@ namespace MFramework_Unity.Tools
             CreateFile(path, dataByte);
         }
 
+        /// <summary>
+        /// WriteTexture2DByFile
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="texture"></param>
         public static void WriteTexture2DByFile(string path, Texture2D texture)
         {
             byte[] dataByte = texture.EncodeToPNG();
@@ -306,6 +355,10 @@ namespace MFramework_Unity.Tools
             CreateFile(path, dataByte);
         }
 
+        /// <summary>
+        /// DeleteFile
+        /// </summary>
+        /// <param name="path"></param>
         public static void DeleteFile(string path)
         {
             if (File.Exists(path))
@@ -318,13 +371,18 @@ namespace MFramework_Unity.Tools
             }
         }
 
-
+        /// <summary>
+        /// CreateFile
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="byt"></param>
         public static void CreateFile(string path, byte[] byt)
         {
             try
             {
                 FileTool.CreatFilePath(path);
                 File.WriteAllBytes(path, byt);
+
             }
             catch (Exception e)
             {
@@ -338,19 +396,42 @@ namespace MFramework_Unity.Tools
 
     }
 
+    /// <summary>
+    /// AssetBundleLoadCallBack
+    /// </summary>
+    /// <param name="state"></param>
+    /// <param name="bundlle"></param>
     public delegate void AssetBundleLoadCallBack(LoadState state, AssetBundle bundlle);
 #if UNITY_5 || UNITY_2017
     public delegate void WWWLoadCallBack(LoadState loadState, WWW www);
 #elif UNITY_2018 || UNITY_2019
 
 #endif
+
+    /// <summary>
+    /// UnityRequestCallBack
+    /// </summary>
+    /// <param name="loadState"></param>
+    /// <param name="www"></param>
     public delegate void UnityRequestCallBack(LoadState loadState, UnityWebRequest www);
+
+    /// <summary>
+    /// LoadCallBack
+    /// </summary>
+    /// <param name="loadState"></param>
+    /// <param name="resObject"></param>
     public delegate void LoadCallBack(LoadState loadState, object resObject);
 
+    /// <summary>
+    /// LoadState
+    /// </summary>
     public class LoadState
     {
         private static LoadState completeState;
 
+        /// <summary>
+        /// CompleteState
+        /// </summary>
         public static LoadState CompleteState
         {
             get
@@ -366,15 +447,30 @@ namespace MFramework_Unity.Tools
         }
 
         //public object asset;
+        /// <summary>
+        /// isDone
+        /// </summary>
         public bool isDone;
+
+        /// <summary>
+        /// progress
+        /// </summary>
         public float progress;
 
+        /// <summary>
+        /// UpdateProgress
+        /// </summary>
+        /// <param name="resourceRequest"></param>
         public void UpdateProgress(ResourceRequest resourceRequest)
         {
             isDone = resourceRequest.isDone;
             progress = resourceRequest.progress;
         }
 
+        /// <summary>
+        /// UpdateProgress
+        /// </summary>
+        /// <param name="assetBundleCreateRequest"></param>
         public void UpdateProgress(AssetBundleCreateRequest assetBundleCreateRequest)
         {
             isDone = assetBundleCreateRequest.isDone;

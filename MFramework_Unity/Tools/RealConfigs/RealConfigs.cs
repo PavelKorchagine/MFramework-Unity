@@ -4,13 +4,9 @@ using System.Collections.Generic;
 namespace MFramework_Unity.Tools
 {
     /// <summary>
-    /// 
+    /// RealConfigs
     /// </summary>
-    public interface IMonoCreate
+    public class RealConfigs
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        void OnMonoCreate();
     }
 }

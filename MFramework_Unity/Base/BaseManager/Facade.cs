@@ -27,11 +27,23 @@ namespace MFramework_Unity
     /// </summary>
     public abstract class Facade : MonoBehaviour
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public static Facade Instance { get; private set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static Dictionary<string, object> hasDicts = new Dictionary<string, object>();
+        /// <summary>
+        /// 
+        /// </summary>
         public static Hashtable hashtable = new Hashtable();
 
+        /// <summary>
+        /// 
+        /// </summary>
         protected virtual void Awake()
         {
             Instance = this;
@@ -40,19 +52,31 @@ namespace MFramework_Unity
             DOTweenTimerManager.Instance.SayHello();
             ObjectPoolManager.Instance.SayHello();
             Loom.Current.SayHello();
+            ResourceIOTool.GetInstance().SayHello();
+            TimerManager.Instance.SayHello();
+
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         protected virtual void Start()
         {
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         protected virtual void OnDestroy()
         {
 
         }
-
+        
+        /// <summary>
+        /// 
+        /// </summary>
         protected virtual void Update()
         {
 

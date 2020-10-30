@@ -9,9 +9,579 @@
             BaseManager
             </summary>
         </member>
+        <member name="F:MFramework_Unity.BaseManager.facade">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.Get">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnInit(System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="paras"></param>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnInit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnEnter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnExit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnResetRealtime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnUpdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnLateUpdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnFixedUpdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnGOjDestroy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.Reset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.Awake">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnEnable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnDisable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.Start">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.Update">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.LateUpdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.FixedUpdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnApplicationPause(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="pause"></param>
+        </member>
+        <member name="M:MFramework_Unity.BaseManager.OnDestroy">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:MFramework_Unity.Facade">
             <summary>
             GameFacade
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.Facade.Instance">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Facade.hasDicts">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Facade.hashtable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Facade.Awake">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Facade.Start">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Facade.OnDestroy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Facade.Update">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.BaseMono">
+            <summary>
+            所有Mono物体组件的基类
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.BaseMono.autoToInit">
+            <summary>
+            自动初始化
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnValidate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.Reset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.Awake">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnDestroy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnEnable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnDisable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.Start">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnPreRender">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnPostRender">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnApplicationFocus(System.Boolean)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnApplicationPause(System.Boolean)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnApplicationQuit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnAwake">
+            <summary>
+            OnAwake 在自动初始化时，带参的OnInit方法传入的是null
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnGODestroy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnStart">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnUpdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnFixUpdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnLateUpdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnCreate">
+            <summary>
+            OnCreate
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnGet">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnReset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnInit(System.Object[])">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnInit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnEnter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnExit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMono.OnDie">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.BaseMonoAbstract">
+            <summary>
+            BaseMonoAbstract
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.BaseMonoAbstract.driver">
+            <summary>
+            driver
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnValidate">
+            <summary>
+            OnValidate
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.Reset">
+            <summary>
+            Reset
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.Awake">
+            <summary>
+            Awake
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnDestroy">
+            <summary>
+            OnDestroy
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnEnable">
+            <summary>
+            OnEnable
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnDisable">
+            <summary>
+            OnDisable
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.Start">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnPreRender">
+            <summary>
+            OnPreRender
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnPostRender">
+            <summary>
+            OnPostRender
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnApplicationFocus(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="focus"></param>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnApplicationPause(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="pause"></param>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnApplicationQuit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnUpdateAbstract">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnFixUpdateAbstract">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnLateUpdateAbstract">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnAwake">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnStart">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnUpdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnFixUpdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnLateUpdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnGODestroy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnCreate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnGet">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnReset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnInit(System.Object[])">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnInit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnEnter">
+            <summary>
+            OnEnter
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnExit">
+            <summary>
+            OnExit
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.BaseMonoAbstract.OnDie">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.MonoDriver">
+            <summary>
+            MonoDriver
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.MonoDriver.CloneBaseMonoColl">
+            <summary>
+            CloneBaseMonoColl
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.MonoDriver.Register(MFramework_Unity.BaseMonoAbstract)">
+            <summary>
+            Register
+            </summary>
+            <param name="baseMono"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.MonoDriver.Remove(MFramework_Unity.BaseMonoAbstract)">
+            <summary>
+            Remove
+            </summary>
+            <param name="baseMono"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.MonoDriver.Clear">
+            <summary>
+            Clear
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.MonoDriver.GetLastItem">
+            <summary>
+            GetLastItem
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.MonoDriver.Update">
+            <summary>
+            Update
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.MonoDriver.FixedUpdate">
+            <summary>
+            FixedUpdate
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.MonoDriver.LateUpdate">
+            <summary>
+            LateUpdate
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.InterateBaseModule">
+            <summary>
+            模块化
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseModule.OnInit(System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseModule.OnInit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseModule.ListenMethod(System.Type,System.Int64,System.Object)">
+            <summary>
+            ListenMethod
+            </summary>
+            <param name="observeType"></param>
+            <param name="code"></param>
+            <param name="msg"></param>
+        </member>
+        <member name="T:MFramework_Unity.InterateBaseMono">
+            <summary>
+            InterateBaseMono
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseMono.OnAwake">
+            <summary>
+            OnAwake
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseMono.OnGODestroy">
+            <summary>
+            OnGODestroy
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseMono.OnEnable">
+            <summary>
+            OnEnable
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseMono.OnDisable">
+            <summary>
+            OnDisable
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseMono.OnStart">
+            <summary>
+            OnStart
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseMono.OnUpdate">
+            <summary>
+            OnUpdate
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseMono.OnInit(System.Object[])">
+            <summary>
+            有参数的初始化方法
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseMono.OnInit">
+            <summary>
+            无参数的初始化方法
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseMono.OnEnter">
+            <summary>
+            进入/启用/激活 方法
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InterateBaseMono.OnExit">
+            <summary>
+            退出/禁止/灭活 方法
             </summary>
         </member>
         <member name="T:MFramework_Unity.DefaultEventTBController">
@@ -19,10 +589,372 @@
             EventTriggerButton
             </summary>
         </member>
+        <member name="F:MFramework_Unity.DefaultEventTBController.eventTrigger">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.DefaultEventTBController.OnStart">
+            <summary>
+            Start
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.OnTriggerTouchDown">
+            <summary>
+            
+            </summary>
+            <param name="eventData"></param>
+        </member>
+        <member name="T:MFramework_Unity.OnTriggerTouch">
+            <summary>
+            
+            </summary>
+            <param name="eventData"></param>
+        </member>
+        <member name="T:MFramework_Unity.OnTriggerTouchUp">
+            <summary>
+            
+            </summary>
+            <param name="eventData"></param>
+        </member>
+        <member name="T:MFramework_Unity.OnTriggerTouchClick">
+            <summary>
+            
+            </summary>
+            <param name="eventData"></param>
+        </member>
+        <member name="T:MFramework_Unity.OnTriggerTouchEnter">
+            <summary>
+            
+            </summary>
+            <param name="eventData"></param>
+        </member>
+        <member name="T:MFramework_Unity.OnTriggerTouchExit">
+            <summary>
+            
+            </summary>
+            <param name="eventData"></param>
+        </member>
+        <member name="T:MFramework_Unity.OnTriggerTouchStay">
+            <summary>
+            
+            </summary>
+            <param name="eventData"></param>
+        </member>
+        <member name="T:MFramework_Unity.TriggerTouchClickedEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.TriggerTouchClickedEvent.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.TriggerTouchEnterEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.TriggerTouchEnterEvent.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.TriggerTouchExitEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.TriggerTouchExitEvent.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.TriggerTouchStayEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.TriggerTouchStayEvent.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.TriggerTouchDownEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.TriggerTouchDownEvent.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.TriggerTouchUpEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.TriggerTouchUpEvent.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.TriggerTouchEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.TriggerTouchEvent.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.TriggerTouchDoubleClickedEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.TriggerTouchDoubleClickedEvent.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.TriggerTouchThreeClickedEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.TriggerTouchThreeClickedEvent.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.TriggerBeginDragEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.TriggerBeginDragEvent.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.TriggerEndDragEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.TriggerEndDragEvent.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.TriggerOnDragEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.TriggerOnDragEvent.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:MFramework_Unity.EventTriggerButton">
             <summary>
             EventTriggerButton
             </summary>
+        </member>
+        <member name="P:MFramework_Unity.EventTriggerButton.EventTrigger">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.EventTriggerButton.m_EventTrigger">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.EventTriggerButton.m_AllowTouchTriggerring">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.EventTriggerButton.b_Triggerring">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.EventTriggerButton.b_TouchStaying">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.EventTriggerButton.onTriggerTouchDown">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.EventTriggerButton.onTriggerTouch">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.EventTriggerButton.onTriggerTouchUp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.EventTriggerButton.onTriggerTouchClick">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.EventTriggerButton.onTriggerTouchEnter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.EventTriggerButton.onTriggerTouchExit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.EventTriggerButton.onTriggerTouchStay">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.EventTriggerButton.eventData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.EventTriggerButton.defaultScale">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.EventTriggerButton.rate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.EventTriggerButton.dur">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.EventTriggerButton.onClick">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.EventTriggerButton.onTouchDown">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.EventTriggerButton.onTouchUp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.EventTriggerButton.onTouchEnter">
+            <summary>
+            鼠标载入
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.EventTriggerButton.onTouchExit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.EventTriggerButton.onTouchStay">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.EventTriggerButton.onTouch">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.EventTriggerButton.onTouchDoubleClicked">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.EventTriggerButton.onTriggerBeginDrag">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.EventTriggerButton.onTriggerEndDrag">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.EventTriggerButton.onTriggerDrag">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.EventTriggerButton.GetEventTrigger">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.EventTriggerButton.SetDefaultTouchState(System.Single,System.Single)">
+            <summary>
+            SetDefaultTouchState
+            </summary>
+            <param name="rate"></param>
+            <param name="dur"></param>
+        </member>
+        <member name="M:MFramework_Unity.EventTriggerButton.OnTriggerTouchEnterDefault(UnityEngine.EventSystems.BaseEventData)">
+            <summary>
+            OnTriggerTouchEnterDefault
+            </summary>
+            <param name="eventData"></param>
+        </member>
+        <member name="M:MFramework_Unity.EventTriggerButton.OnTriggerTouchExitDefault(UnityEngine.EventSystems.BaseEventData)">
+            <summary>
+            OnTriggerTouchExitDefault
+            </summary>
+            <param name="eventData"></param>
+        </member>
+        <member name="M:MFramework_Unity.EventTriggerButton.RemoveAllTouchStateListeners">
+            <summary>
+            RemoveAllTouchStateListeners
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.EventTriggerButton.OnAwake">
+            <summary>
+            Awake
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.EventTriggerButton.OnUpdate">
+            <summary>
+            Update
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.EventTriggerButton.RegisterEventTrigger(UnityEngine.EventSystems.EventTrigger,UnityEngine.EventSystems.EventTriggerType,UnityEngine.Events.UnityAction{UnityEngine.EventSystems.BaseEventData})">
+            <summary>
+            RegisterEventTrigger
+            </summary>
+            <param name="trigger"></param>
+            <param name="eventTriggerType"></param>
+            <param name="callback"></param>
+        </member>
+        <member name="M:MFramework_Unity.EventTriggerButton.RemoveEventTrigger(UnityEngine.EventSystems.EventTrigger,UnityEngine.EventSystems.EventTriggerType)">
+            <summary>
+            RegisterEventTrigger
+            </summary>
+            <param name="trigger"></param>
+            <param name="eventTriggerType"></param>
         </member>
         <member name="M:MFramework_Unity.EventTriggerButton.RemoveEventTrigger(UnityEngine.EventSystems.EventTrigger,UnityEngine.EventSystems.EventTriggerType,UnityEngine.Events.UnityAction{UnityEngine.EventSystems.BaseEventData})">
             <summary>
@@ -32,83 +964,663 @@
             <param name="eventTriggerType"></param>
             <param name="callback"></param>
         </member>
-        <member name="T:MFramework_Unity.UIBase">
+        <member name="M:MFramework_Unity.EventTriggerButton.RemoveEventTrigger(UnityEngine.EventSystems.EventTrigger)">
+            <summary>
+            RemoveEventTrigger
+            </summary>
+            <param name="trigger"></param>
+        </member>
+        <member name="T:MFramework_Unity.UIBaseMono">
             <summary>
             UIBase
             </summary>
         </member>
-        <member name="T:MFramework_Unity.UIPanelBase">
+        <member name="M:MFramework_Unity.UIBaseMono.OnAwake">
+            <summary>
+            OnAwake
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIBaseMono.OnGODestroy">
+            <summary>
+            OnGODestroy
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIBaseMono.OnEnable">
+            <summary>
+            OnEnable
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIBaseMono.OnDisable">
+            <summary>
+            OnDisable
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIBaseMono.OnStart">
+            <summary>
+            OnStart
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIBaseMono.OnUpdate">
+            <summary>
+            OnUpdate
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIBaseMono.OnInit(System.Object[])">
+            <summary>
+            有参数的初始化方法
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:MFramework_Unity.UIBaseMono.OnInit">
+            <summary>
+            无参数的初始化方法
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIBaseMono.OnEnter">
+            <summary>
+            进入/启用/激活 方法
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIBaseMono.OnExit">
+            <summary>
+            退出/禁止/灭活 方法
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.UIBasePanel">
             <summary>
             UIPanelBase
             </summary>
         </member>
-        <member name="M:MFramework_Unity.UIPanelBase.OnEnter">
+        <member name="F:MFramework_Unity.UIBasePanel.isFirstEnter">
+            <summary>
+            isFirstEnter
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.UIBasePanel.rectTran">
+            <summary>
+            rectTran
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIBasePanel.GetComponentOV">
+            <summary>
+            GetComponentOV
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIBasePanel.OnInit(System.Object[])">
+            <summary>
+            OnInit
+            </summary>
+            <param name="paras"></param>
+        </member>
+        <member name="M:MFramework_Unity.UIBasePanel.OnInit">
+            <summary>
+            OnInit
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIBasePanel.OnEnter">
             <summary>
             界面被显示出来 被实例化时
             </summary>
         </member>
-        <member name="M:MFramework_Unity.UIPanelBase.OnPause">
+        <member name="M:MFramework_Unity.UIBasePanel.OnPause">
             <summary>
             界面暂停
             </summary>
         </member>
-        <member name="M:MFramework_Unity.UIPanelBase.OnResume">
+        <member name="M:MFramework_Unity.UIBasePanel.OnResume">
             <summary>
             界面继续
             </summary>
         </member>
-        <member name="M:MFramework_Unity.UIPanelBase.OnExit">
+        <member name="M:MFramework_Unity.UIBasePanel.OnExit">
             <summary>
             界面不显示,退出这个界面，界面被关系
             </summary>
         </member>
-        <member name="T:MFramework_Unity.InputSystem.MobileTouchInputModule">
+        <member name="M:MFramework_Unity.UIBasePanel.FirstOnEnter">
             <summary>
-            abstract
+            FirstOnEnter
             </summary>
         </member>
-        <member name="M:MFramework_Unity.InputSystem.MobileTouchInputModule.GetRayCast">
+        <member name="T:MFramework_Unity.Tools.CSharpExtension2">
             <summary>
-            获取射线 和 摄取物体
+            CSharpExtension2
             </summary>
         </member>
-        <member name="M:MFramework_Unity.InputSystem.MobileTouchInputModule.IsClickUI">
+        <member name="M:MFramework_Unity.Tools.CSharpExtension2.MergerArray(UnityEngine.Vector3[],UnityEngine.Vector3[])">
             <summary>
-            检测是否点击在UI上
+            MergerArray 合并 String 数组
             </summary>
+            <param name="First"></param>
+            <param name="Second"></param>
             <returns></returns>
         </member>
-        <member name="T:MFramework_Unity.InputSystem.PCMouseInputModule">
+        <member name="M:MFramework_Unity.Tools.CSharpExtension2.Concat(UnityEngine.Vector3[],UnityEngine.Vector3[])">
             <summary>
-            abstract
+            Connect 合并 Vector3 数组
             </summary>
-        </member>
-        <member name="M:MFramework_Unity.InputSystem.PCMouseInputModule.GetRayCast">
-            <summary>
-            获取射线 和 摄取物体
-            </summary>
-        </member>
-        <member name="M:MFramework_Unity.InputSystem.PCMouseInputModule.IsClickUI">
-            <summary>
-            检测是否点击在UI上
-            </summary>
+            <param name="source"></param>
+            <param name="target"></param>
             <returns></returns>
         </member>
-        <member name="T:MFramework_Unity.InputSystem._Ray">
+        <member name="M:MFramework_Unity.Tools.CSharpExtension2.MergerArray(System.String[],System.String)">
             <summary>
-            自定义的射线
+            数组追加
             </summary>
+            <param name="Source">原数组</param>
+            <param name="str">字符串</param>
+            <returns>合并后的数组(数组+字符串)</returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CSharpExtension2.SplitArray(System.String[],System.Int32,System.Int32)">
+            <summary>
+            从数组中截取一部分成新的数组
+            </summary>
+            <param name="Source">原数组</param>
+            <param name="StartIndex">原数组的起始位置</param>
+            <param name="EndIndex">原数组的截止位置</param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CSharpExtension2.MergerArray(System.String[],System.Int32)">
+            <summary>
+            不足长度的前面补空格,超出长度的前面部分去掉
+            </summary>
+            <param name="First">要处理的数组</param>
+            <param name="byteLen">数组长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CSharpExtension2.Concat``1(``0[],``0[])">
+            <summary>
+            Connect 合并数组
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="source"></param>
+            <param name="target"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CSharpExtension2.Concat``1(``0[],``0)">
+            <summary>
+            数组追加
+            </summary>
+            <param name="source">原数组</param>
+            <param name="data">字符串</param>
+            <returns>合并后的数组(数组+字符串)</returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CSharpExtension2.Split``1(``0[],System.Int32,System.Int32)">
+            <summary>
+            从数组中截取一部分成新的数组
+            </summary>
+            <param name="Source">原数组</param>
+            <param name="StartIndex">原数组的起始位置</param>
+            <param name="EndIndex">原数组的截止位置</param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CSharpExtension2.SplitSafe``1(``0[],System.Int32,System.Int32)">
+            <summary>
+            从数组中截取一部分成新的数组
+            </summary>
+            <param name="Source">原数组</param>
+            <param name="StartIndex">原数组的起始位置</param>
+            <param name="EndIndex">原数组的截止位置</param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CSharpExtension2.Merger``1(``0[],System.Int32)">
+            <summary>
+            不足长度的前面补空格,超出长度的前面部分去掉
+            </summary>
+            <param name="First">要处理的数组</param>
+            <param name="byteLen">数组长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CSharpExtension2.Insert``1(``0[],System.Int32)">
+            <summary>
+            数组插入数值
+            </summary>
+            <param name="source">原数组</param>
+            <param name="insertIndex">字符串</param>
+            <returns>合并后的数组(数组+字符串)</returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CSharpExtension2.Insert``1(``0[],``0,System.Int32)">
+            <summary>
+            数组插入数值
+            </summary>
+            <param name="source">原数组</param>
+            <param name="insertIndex">字符串</param>
+            <param name="data">字符串</param>
+            <returns>合并后的数组(数组+字符串)</returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CSharpExtension2.Insert``1(``0[],``0[],System.Int32)">
+            <summary>
+            数组插入数值
+            </summary>
+            <param name="source">原数组</param>
+            <param name="insertIndex">字符串</param>
+            <param name="datas">字符串</param>
+            <returns>合并后的数组(数组+字符串)</returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CSharpExtension2.CopyToSafe``1(``0[],``0[],System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            数组插入数值
+            </summary>
+            <param name="source">原数组</param>
+            <param name="startIndex">字符串</param>
+            <param name="target">字符串</param>
+            <param name="autoRaise">target长度自动增长</param>
+            <param name="autoReduce">target长度自动缩进</param>
+            <returns>合并后的数组(数组+字符串)</returns>
+        </member>
+        <member name="T:MFramework_Unity.Tools.EventTriggerExtension">
+            <summary>
+            EventTriggerExtension
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.EventTriggerExtension.RegisterEventTrigger(UnityEngine.EventSystems.EventTrigger,UnityEngine.EventSystems.EventTriggerType,UnityEngine.Events.UnityAction{UnityEngine.EventSystems.BaseEventData})">
+            <summary>
+            RegisterEventTrigger
+            </summary>
+            <param name="trigger"></param>
+            <param name="eventTriggerType"></param>
+            <param name="callback"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.EventTriggerExtension.RemoveEventTrigger(UnityEngine.EventSystems.EventTrigger,UnityEngine.EventSystems.EventTriggerType)">
+            <summary>
+            RegisterEventTrigger
+            </summary>
+            <param name="trigger"></param>
+            <param name="eventTriggerType"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.GameObjectExtension">
+            <summary>
+            GameObjectExtension
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.GameObjectExtension.GetComponentReal``1(UnityEngine.GameObject)">
+            <summary>
+            GetComponentReal
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="go"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.GameObjectExtension.FindInChildrenExpend(UnityEngine.GameObject,System.String)">
+            <summary>
+            静态方法 获取目标子物体（包括隐藏物体），返回第一个找到的物体
+            </summary>
+            <param name="obj"></param>
+            <param name="target"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.GameObjectExtension.FindInChildrenWithTagExpend(UnityEngine.GameObject,System.String)">
+            <summary>
+            静态方法 获取目标子物体（包括隐藏物体），返回第一个找到的物体
+            </summary>
+            <param name="obj"></param>
+            <param name="tag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.GameObjectExtension.GetComponentRealInChildren``1(UnityEngine.GameObject)">
+            <summary>
+            静态方法 获取子指定类型物体目标（包括隐藏物体），返回第一个找到的物体
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.GameObjectExtension.GetComponentRealInChildren``1(UnityEngine.Object)">
+            <summary>
+            静态方法 获取子指定类型物体目标（包括隐藏物体），返回第一个找到的物体
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.GameObjectExtension.GetComponentsRealInChildren``1(UnityEngine.GameObject,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            静态方法 获取子指定类型物体目标（包括隐藏物体），返回所有找到的物体
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <param name="excludeSelf"></param>
+            <param name="unActi"></param>
+            <param name="firstChild"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.GameObjectExtension.GetComsRealInChr``1(UnityEngine.GameObject,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            静态方法 获取子指定类型物体目标（包括隐藏物体），返回所有找到的物体
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <param name="excludeSelf"></param>
+            <param name="unActi"></param>
+            <param name="firstChild"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MFramework_Unity.Tools.IEnumerableExtension">
+            <summary>
+            IEnumerableExtension
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.IEnumerableExtension.Foreach(System.Collections.IEnumerable,System.Action{System.Object})">
+            <summary>
+            Foreach
+            </summary>
+            <param name="array"></param>
+            <param name="callback"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.IEnumerableExtension.FindTarget``1(System.Collections.IEnumerable)">
+            <summary>
+            公共方法 从集合中找到指定类型的组件,返回第一个找到的组件
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="ra"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.IEnumerableExtension.FindTargets``1(System.Collections.IEnumerable)">
+            <summary>
+            公共方法 从集合中找到指定类型的组件,返回所有的组件
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="ra"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MFramework_Unity.Tools.TransformExtensionConfig">
+            <summary>
+            TransformConfig Transform 配置信息结构体
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.TransformExtensionConfig.parent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.TransformExtensionConfig.localPosition">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.TransformExtensionConfig.localEulerAngles">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.TransformExtensionConfig.localScale">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TransformExtensionConfig.#ctor(UnityEngine.Transform)">
+            <summary>
+            Transform 配置信息结构体 构造函数
+            </summary>
+            <param name="tran"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TransformExtensionConfig.#ctor(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Transform)">
+            <summary>
+            Transform 配置信息结构体 构造函数
+            </summary>
+            <param name="localpos"></param>
+            <param name="localeular"></param>
+            <param name="localscale"></param>
+            <param name="parent"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.Loom">
+            <summary>
+            Loom
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.Tools.Loom.Current">
+            <summary>
+            Current
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.Loom.maxThreads">
+            <summary>
+            最大线程数
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.Loom.DelayedQueueItem">
+            <summary>
+            延迟方法队列元素
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.Loom.DelayedQueueItem.time">
+            <summary>
+            延迟时间
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.Loom.DelayedQueueItem.action">
+            <summary>
+            延迟方法
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.Loom.SayHello">
+            <summary>
+            SayHello
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.Tools.Loom.GetActions">
+            <summary>
+            GetActions
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.Loom.QueueOnMainThread(System.Action)">
+            <summary>
+            QueueOnMainThread
+            </summary>
+            <param name="action"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.Loom.QueueOnMainThread(System.Action,System.Single)">
+            <summary>
+            QueueOnMainThread
+            </summary>
+            <param name="action"></param>
+            <param name="time"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.Loom.RunAsync(System.Action)">
+            <summary>
+            RunAsync
+            </summary>
+            <param name="a"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MFramework_Unity.Tools.NetTool">
+            <summary>
+            NetTool
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.NetTool.HttpPost(System.String)">
+            <summary>
+            HttpPost
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.NetTool.HttpPost(System.String,System.String)">
+            <summary>
+            HttpPost
+            </summary>
+            <param name="url"></param>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.NetTool.HttpPost(System.String,System.Byte[])">
+            <summary>
+            HttpPost
+            </summary>
+            <param name="url"></param>
+            <param name="data"></param>
+            <returns></returns>
         </member>
         <member name="M:MFramework_Unity.Tools.NetTool.HttpGet(System.String,System.String)">
             <summary>
             GET请求与获取结果
             </summary>
         </member>
+        <member name="T:MFramework_Unity.Tools.RealConfigs">
+            <summary>
+            RealConfigs
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.RealConfigsManager">
+            <summary>
+            RealConfigsManager
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.RealConfigsManager.initialized">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.RealConfigsManager.instance">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.Tools.RealConfigsManager.Instance">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.RealConfigsManager.Initialize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.RealConfigsManager.Awake">
+            <summary>
+            Awake
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.RealConfigsManager.SayHello">
+            <summary>
+            SayHello
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.SQLBaseManager">
+            <summary>
+            SQLBaseManager
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLBaseManager.#ctor">
+            <summary>
+            SQLBaseManager
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLBaseManager.Connect(System.String)">
+            <summary>
+            Connect
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLBaseManager.Close">
+            <summary>
+            Close
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLBaseManager.Dispose">
+            <summary>
+            Dispose
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.SQLiteManager">
+            <summary>
+            SQLiteManager
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.SQLiteManager.connection">
+            <summary>
+            SqliteConnection
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLiteManager.#ctor">
+            <summary>
+            SQLiteManager
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLiteManager.CreateDB(System.String)">
+            <summary>
+            CreateDB
+            </summary>
+            <param name="_dbPath"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLiteManager.DeleteDB(System.String)">
+            <summary>
+            DeleteDB
+            </summary>
+            <param name="_dbPath"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLiteManager.GetSqlConnectState">
+            <summary>
+            GetSqlConnectState
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLiteManager.Connect(System.String)">
+            <summary>
+            Connect
+            </summary>
+            <param name="_path"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLiteManager.Test">
+            <summary>
+            Test
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLiteManager.TestCreateTable(System.String)">
+            <summary>
+            TestCreateTable
+            </summary>
+            <param name="tableName"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLiteManager.Dispose">
+            <summary>
+            Dispose
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.SqliteConnectionExtension">
+            <summary>
+            SqliteConnectionExtension
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SqliteConnectionExtension.CreateAndExecuteCommand(Mono.Data.Sqlite.SqliteConnection,System.String,System.String@)">
+            <summary>
+            CreateAndExecuteCommandc
+            </summary>
+            <param name="connection"></param>
+            <param name="cmdStr"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
         <member name="M:MFramework_Unity.Tools.SqliteConnectionExtension.Order(Mono.Data.Sqlite.SqliteConnection,System.String@)">
             <summary>
             整理数据库
             </summary>
             <param name="connection"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.SqliteTool">
+            <summary>
+            SqliteTool
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SqliteTool.GetExecuteReaderStr(System.String,System.String)">
+            <summary>
+            GetExecuteReaderStr
+            </summary>
+            <param name="_type"></param>
+            <param name="_name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SqliteTool.CreateDB(System.String)">
+            <summary>
+            CreateDB
+            </summary>
+            <param name="_dbName"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SqliteTool.DeleteDB(System.String)">
+            <summary>
+            DeleteDB
+            </summary>
+            <param name="_dbName"></param>
         </member>
         <member name="M:MFramework_Unity.Tools.SqliteTool.ChangeTableName(Mono.Data.Sqlite.SqliteConnection,System.String,System.String)">
             <summary>
@@ -146,16 +1658,20 @@
             </summary>
             <param name="cn"></param>
         </member>
-        <!-- 对于成员“M:MFramework_Unity.Tools.CSharpEx.TryGet``2(System.Collections.Generic.Dictionary{``0,``1},``0)”忽略有格式错误的 XML 注释 -->
-        <member name="M:MFramework_Unity.Tools.CSharpEx.ToStringFromArray(System.Char[])">
+        <member name="T:MFramework_Unity.Tools.CSharpExtension">
+            <summary>
+            CSharpExtension
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CSharpExtension.ToStringFromArray(System.Char[])">
             <summary>
             对char[]的 ToStringFromArray 方法 （转字符串）
             </summary>
             <param name="chArray"></param>
             <returns></returns>
         </member>
-        <!-- 对于成员“M:MFramework_Unity.Tools.CSharpEx.ToSort(System.Collections.Generic.List{System.Char})”忽略有格式错误的 XML 注释 -->
-        <member name="M:MFramework_Unity.Tools.CSharpEx.ToNormal(System.String)">
+        <!-- 对于成员“M:MFramework_Unity.Tools.CSharpExtension.ToSort(System.Collections.Generic.List{System.Char})”忽略有格式错误的 XML 注释 -->
+        <member name="M:MFramework_Unity.Tools.CSharpExtension.ToNormal(System.String)">
             <summary>
             公共方法 _Normal 格式化一个字符串，自动去掉前面和后面的空格字符
             </summary>
@@ -163,14 +1679,14 @@
             <param name="useRecursive">是否使用递归</param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.Tools.CSharpEx.ToFormatJsonString(System.String)">
+        <member name="M:MFramework_Unity.Tools.CSharpExtension.ToFormatJsonString(System.String)">
             <summary>
             格式化Json字符串
             </summary>
             <param name="str"></param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.Tools.CSharpEx._Normal(System.String)">
+        <member name="M:MFramework_Unity.Tools.CSharpExtension._Normal(System.String)">
             <summary>
             私有方法 _Normal 格式化一个字符串，自动去掉前面和后面的空格字符
             </summary>
@@ -178,7 +1694,7 @@
             <param name="useRecursive">是否使用递归</param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.Tools.CSharpEx._Getlast``1(``0[])">
+        <member name="M:MFramework_Unity.Tools.CSharpExtension._Getlast``1(``0[])">
             <summary>
             公共方法 SelectLast 选择最后一个 数据
             </summary>
@@ -186,27 +1702,60 @@
             <param name="str"></param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.Tools.CSharpEx.FindTarget``1(System.Collections.IEnumerable)">
+        <member name="T:MFramework_Unity.Tools.DictionaryExtension">
             <summary>
-            公共方法 从集合中找到指定类型的组件,返回第一个找到的组件
+            DictionaryExtension
             </summary>
-            <typeparam name="T"></typeparam>
-            <param name="ra"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.DictionaryExtension.Merge``2(System.Collections.Generic.Dictionary{``0,``1},System.Collections.Generic.Dictionary{``0,``1}[])">
+            <summary>
+            Merge
+            </summary>
+            <typeparam name="TKey"></typeparam>
+            <typeparam name="TValue"></typeparam>
+            <param name="dictionary"></param>
+            <param name="dictionaries"></param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.Tools.CSharpEx.FindTargets``1(System.Collections.IEnumerable)">
+        <member name="M:MFramework_Unity.Tools.DictionaryExtension.ForEach``2(System.Collections.Generic.Dictionary{``0,``1},System.Action{``0,``1})">
             <summary>
-            公共方法 从集合中找到指定类型的组件,返回所有的组件
+            ForEach
             </summary>
-            <typeparam name="T"></typeparam>
-            <param name="ra"></param>
+            <typeparam name="K"></typeparam>
+            <typeparam name="V"></typeparam>
+            <param name="self"></param>
+            <param name="action"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.DictionaryExtension.AddRange``2(System.Collections.Generic.Dictionary{``0,``1},System.Collections.Generic.Dictionary{``0,``1},System.Boolean)">
+            <summary>
+            AddRange
+            </summary>
+            <typeparam name="K"></typeparam>
+            <typeparam name="V"></typeparam>
+            <param name="self"></param>
+            <param name="addInDict"></param>
+            <param name="isOverride"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.DictionaryExtension.TryGet``2(System.Collections.Generic.Dictionary{``0,``1},``0)">
+            <summary>
+             尝试根据key得到value，得到了的话直接返回value，没有得到直接返回null
+            </summary>
+            <typeparam name="Tkey"></typeparam>
+            <typeparam name="Tvalue"></typeparam>
+            <param name="dict"></param>
+            <param name="key"></param>
             <returns></returns>
+        </member>
+        <member name="T:MFramework_Unity.Tools.FileTool">
+            <summary>
+            FileTool
+            </summary>
         </member>
         <member name="M:MFramework_Unity.Tools.FileTool.CreatFile(System.String,System.Byte[])">
             <summary>
             创建文件
             </summary>
-            <param name="filePath">文件路径</param>
+            <param name="filepath">文件路径</param>
             <param name="bytes">文件内容</param>
         </member>
         <member name="M:MFramework_Unity.Tools.FileTool.CreateDirectory(System.String)">
@@ -225,7 +1774,7 @@
             <summary>
             判断有没有这个路径，如果没有则创建它
             </summary>
-            <param name="filepath"></param>
+            <param name="path"></param>
         </member>
         <member name="M:MFramework_Unity.Tools.FileTool.DeleteDirectory(System.String)">
             <summary>
@@ -349,14 +1898,54 @@
             <param name="expandNames"></param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.Tools.ObjectEx.GetVarName(UnityEngine.Object)">
+        <member name="T:MFramework_Unity.Tools.FileExecuteHandle">
+            <summary>
+            FileExecuteHandle
+            </summary>
+            <param name="filePath"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.CameraExtension">
+            <summary>
+            CameraExtension
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CameraExtension.CaptureCamera(UnityEngine.Camera,UnityEngine.Rect)">
+            <summary>
+            CaptureCamera 截屏
+            </summary>
+            <param name="camera"></param>
+            <param name="rect"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CameraExtension.MouseToWorldPosition(UnityEngine.Camera,UnityEngine.Vector3)">
+            <summary>
+            MouseToWorldPosition
+            </summary>
+            <param name="eventCamera"></param>
+            <param name="pos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CameraExtension.MouseToWorldPosition(UnityEngine.Camera,UnityEngine.Transform)">
+            <summary>
+            MouseToWorldPosition
+            </summary>
+            <param name="eventCamera"></param>
+            <param name="tra"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MFramework_Unity.Tools.ObjectExtension">
+            <summary>
+            ObjectEx
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.GetVarName(UnityEngine.Object)">
             <summary>
             获取变量名称
             </summary>
             <param name="obj"></param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.Tools.ObjectEx.GetVarName``1(``0)">
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.GetVarName``1(``0)">
             <summary>
             获取变量名称
             </summary>
@@ -364,7 +1953,7 @@
             <param name="t"></param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.Tools.ObjectEx.GetVarName``1(``0,System.Linq.Expressions.Expression{System.Func{``0,``0}})">
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.GetVarName``1(``0,System.Linq.Expressions.Expression{System.Func{``0,``0}})">
             <summary>
             扩展 获取变量名称(字符串)
             </summary>
@@ -372,14 +1961,41 @@
             <param name="exp">可以使lamda表达式</param>
             <returns>return string</returns>
         </member>
-        <member name="M:MFramework_Unity.Tools.ObjectEx.GetVarName``1(System.Linq.Expressions.Expression{System.Func{``0,``0}})">
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.GetVarName``1(System.Linq.Expressions.Expression{System.Func{``0,``0}})">
             <summary>
             获取变量名称
             </summary>
             <param name="exp"></param>
             <returns>return string</returns>
         </member>
-        <member name="M:MFramework_Unity.Tools.ObjectEx.GetVarNameReal``1(``0)">
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.GetName``1(UnityEngine.Object,``0)">
+            <summary>
+            获取变量名称(字符串)
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <param name="it"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.GetName2``1(UnityEngine.Object,System.Linq.Expressions.Expression{System.Func{``0}})">
+            <summary>
+            获取变量名称(字符串)
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <param name="expr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.GetName3``1(UnityEngine.Object,System.Func{``0})">
+            <summary>
+            获取变量名称(字符串)
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <param name="expr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.GetVarNameReal``1(``0)">
             <summary>
             获取变量名称(字符串)
             警告不能在匿名方法里写其它否则报错
@@ -387,12 +2003,215 @@
             <param name="var_name">要获取变量名的变量</param>
             <returns>变量名</returns>
         </member>
-        <member name="M:MFramework_Unity.Tools.ObjectEx.GetExpression``1(System.Linq.Expressions.Expression{System.Func{``0,``0}})">
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.GetExpression``1(System.Linq.Expressions.Expression{System.Func{``0,``0}})">
             <summary>
             获取对应的数据结构
             </summary>
             <typeparam name="T"></typeparam>
             <param name="exp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.FindObjsOfTyEx``1">
+            <summary>
+            FindObjectsOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.FindObjsOfBehavEx``1">
+            <summary>
+            FindObjectsOfBehaviourExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.FindObjsOfTyExInScene``1">
+            <summary>
+            FindObjectsOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.FindAllObjsOfTyExInScene``1">
+            <summary>
+            FindAllObjectsOfTypeInScene 寻找当前场景中所有的 T 的物体
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.FindObjsOfTyExInSceneUnDestr``1">
+            <summary>
+            FindObjectsOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.FindObjsOfTyExInSceneDestr``1">
+            <summary>
+            FindObjectsOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.FindObjsOfTyEx``1(UnityEngine.Object,System.Boolean)">
+            <summary>
+            FindObjectsOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <param name="justChildren"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.FindObjsOfTyEx``1(System.Boolean,UnityEngine.Transform)">
+            <summary>
+            FindObjectsOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="justChildren"></param>
+            <param name="root"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.FindObjOfTyEx``1">
+            <summary>
+            FindObjectOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.FindObjOfTyEx``1(UnityEngine.Transform)">
+            <summary>
+            FindObjectOfTypeExpend in root
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.FindPrefObjOfTyEx``1">
+            <summary>
+            FindPrefabObjectOfTypeExpend 返回相关类型的预制体
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.FindPrefObjsOfTyEx``1">
+            <summary>
+            FindPrefabObjectOfTypeExpend 返回相关类型的预制体数组
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.FindPrefObjOfBehavEx``1">
+            <summary>
+            FindPrefabObjectOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform,System.Action{System.Boolean})">
+            <summary>
+            实例化对象
+            </summary>
+            <param name="original"></param>
+            <param name="position"></param>
+            <param name="rotation"></param>
+            <param name="parent"></param>
+            <param name="callback"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.Instantiate(UnityEngine.Object,UnityEngine.Transform,System.Action{System.Boolean})">
+            <summary>
+            实例化对象
+            </summary>
+            <param name="original"></param>
+            <param name="parent"></param>
+            <param name="callback"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.Instantiate(UnityEngine.Object,System.Action{System.Boolean})">
+            <summary>
+            实例化对象
+            </summary>
+            <param name="original"></param>
+            <param name="callback"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion,System.Action{System.Boolean})">
+            <summary>
+            实例化对象
+            </summary>
+            <param name="original"></param>
+            <param name="position"></param>
+            <param name="rotation"></param>
+            <param name="callback"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.Instantiate(UnityEngine.Object,UnityEngine.Transform,System.Boolean,System.Action{System.Boolean})">
+            <summary>
+            实例化对象
+            </summary>
+            <param name="original"></param>
+            <param name="parent"></param>
+            <param name="instantiateInWorldSpace"></param>
+            <param name="callback"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.FindObjectsOfTypeExpend``1">
+            <summary>
+            FindObjectsOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.FindObjectsOfBehaviourExpend``1">
+            <summary>
+            FindObjectsOfBehaviourExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.FindObjectsOfTypeExpendInScene``1">
+            <summary>
+            FindObjectsOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.FindObjectsOfTypeExpend``1(UnityEngine.Object,System.Boolean)">
+            <summary>
+            FindObjectsOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <param name="justChildren"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.FindObjectsOfTypeExpend``1(System.Boolean,UnityEngine.Transform)">
+            <summary>
+            FindObjectsOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="justChildren"></param>
+            <param name="root"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.FindObjectOfTypeExpend``1">
+            <summary>
+            FindObjectOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.FindPrefabObjectOfTypeExpend``1">
+            <summary>
+            FindPrefabObjectOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectExtension.FindPrefabObjectOfBehaviourExpend``1">
+            <summary>
+            FindPrefabObjectOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
             <returns></returns>
         </member>
         <member name="T:MFramework_Unity.Tools.PathUtil">
@@ -427,6 +2246,14 @@
             <param name="path"></param>
             <param name="fileName"></param>
             <param name="expandName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.PathUtil.Combine(System.String,System.String)">
+            <summary>
+            Combine
+            </summary>
+            <param name="path1"></param>
+            <param name="path2"></param>
             <returns></returns>
         </member>
         <member name="M:MFramework_Unity.Tools.PathUtil.GetTemporaryCacheFolderPath">
@@ -474,15 +2301,253 @@
             
             </summary>
         </member>
-        <member name="T:MFramework_Unity.Tools.RayEx">
+        <member name="M:MFramework_Unity.Tools.PathUtil.Combine1(System.String,System.String)">
+            <summary>
+            Combine1
+            </summary>
+            <param name="str1"></param>
+            <param name="str2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.PathUtil.Combine1(System.String,System.String,System.String)">
+            <summary>
+            Combine1
+            </summary>
+            <param name="str1"></param>
+            <param name="str2"></param>
+            <param name="str3"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.PathUtil.Normallize(System.String)">
+            <summary>
+            Normallize
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MFramework_Unity.Tools.RayExtensionCast">
+            <summary>
+            RayExtensionCast 结构体
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.RayExtensionCast.IsRayCast">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.RayExtensionCast.GameObjRayCast">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.RayExtensionCast.GameObjRayCastName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.RayExtensionCast.Vector3RayCastPoint">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.RayExtensionCast.Distance">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.RayExtensionCast.RealRay">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.RayExtension">
             <summary>
             自定义的射线
             </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.RayExtension.isDebugDrawLine">
+            <summary>
+            是否在Scene场景中画线
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.RayExtension.GetMouseRayCast(UnityEngine.Camera)">
+            <summary>
+            GetMouseRayCast
+            </summary>
+            <param name="mainCamera"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.RayExtension.PhysicsRayCast(UnityEngine.Ray)">
+            <summary>
+            RayExtensionCast
+            </summary>
+            <param name="ray"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.RayExtension.GetCast(UnityEngine.Ray)">
+            <summary>
+            GetCast
+            </summary>
+            <param name="ray"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.RayExtension.GetCast(UnityEngine.Ray,System.Single,System.Int32)">
+            <summary>
+            GetCast
+            </summary>
+            <param name="ray"></param>
+            <param name="maxDistance"></param>
+            <param name="myLayerMask"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.RayExtension.GetMouseRayCast(UnityEngine.Camera,System.Single,System.Int32)">
+            <summary>
+            GetMouseRayCast
+            </summary>
+            <param name="mainCamera"></param>
+            <param name="maxDistance"></param>
+            <param name="myLayerMask"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.RayExtension.PhysicsRayCast(UnityEngine.Ray,System.Single,System.Int32)">
+            <summary>
+            PhysicsRayCast
+            </summary>
+            <param name="ray"></param>
+            <param name="maxDistance"></param>
+            <param name="myLayerMask"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.RayExtension.GetRayCast(UnityEngine.Transform,System.Single,System.Int32)">
+            <summary>
+            GetRayCast
+            </summary>
+            <param name="tran"></param>
+            <param name="maxDistance"></param>
+            <param name="myLayerMask"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.RayExtension.GetRayCast(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Int32)">
+            <summary>
+            GetRayCast
+            </summary>
+            <param name="pos"></param>
+            <param name="forward"></param>
+            <param name="maxDistance"></param>
+            <param name="myLayerMask"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MFramework_Unity.Tools.RectTransformExtension">
+            <summary>
+            RectTransformExtension
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.RectTransformExtension.GetPosInRootTrans(UnityEngine.RectTransform,UnityEngine.Transform)">
+            <summary>
+            GetPosInRootTrans
+            </summary>
+            <param name="self"></param>
+            <param name="rootTrans"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.RectTransformExtension.AnchorPosX(UnityEngine.RectTransform,System.Single)">
+            <summary>
+            AnchorPosX
+            </summary>
+            <param name="self"></param>
+            <param name="anchorPosX"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.RectTransformExtension.SetSizeWidth(UnityEngine.RectTransform,System.Single)">
+            <summary>
+            SetSizeWidth
+            </summary>
+            <param name="self"></param>
+            <param name="sizeWidth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.RectTransformExtension.SetSizeHeight(UnityEngine.RectTransform,System.Single)">
+            <summary>
+            SetSizeHeight
+            </summary>
+            <param name="self"></param>
+            <param name="sizeHeight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.RectTransformExtension.GetWorldSize(UnityEngine.RectTransform)">
+            <summary>
+            GetWorldSize
+            </summary>
+            <param name="self"></param>
+            <returns></returns>
         </member>
         <member name="T:MFramework_Unity.Tools.ResourceIOTool">
             <summary>
             资源读取器，负责从不同路径读取资源
             </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.GetInstance">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.SayHello">
+            <summary>
+            SayHello
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.ReadStringByFile(System.String)">
+            <summary>
+            ReadStringByFile
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.ReadStringByBundle(System.String)">
+            <summary>
+            ReadStringByBundle
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.ReadStringByResource(System.String)">
+            <summary>
+            ReadStringByResource
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.ReadTextureByFile(System.String,System.Int32,System.Int32)">
+            <summary>
+            ReadTextureByFile
+            </summary>
+            <param name="path"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.ResourceLoadAsync(System.String,MFramework_Unity.Tools.LoadCallBack)">
+            <summary>
+            ResourceLoadAsync
+            </summary>
+            <param name="path"></param>
+            <param name="callback"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.MonoLoadMethod(System.String,MFramework_Unity.Tools.LoadCallBack)">
+            <summary>
+            MonoLoadMethod
+            </summary>
+            <param name="path"></param>
+            <param name="callback"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.MonoLoadByResourcesAsync(System.String,MFramework_Unity.Tools.LoadCallBack)">
+            <summary>
+            MonoLoadByResourcesAsync
+            </summary>
+            <param name="path"></param>
+            <param name="callback"></param>
+            <returns></returns>
         </member>
         <member name="M:MFramework_Unity.Tools.ResourceIOTool.AssetsBundleLoadAsync(System.String,MFramework_Unity.Tools.AssetBundleLoadCallBack)">
             <summary>
@@ -491,45 +2556,157 @@
             <param name="path"></param>
             <param name="callback"></param>
         </member>
-        <member name="M:MFramework_Unity.Tools.TranformEx.FindInChr(UnityEngine.Transform,System.String,System.Boolean)">
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.MonoLoadAssetsBundleMethod(System.String,MFramework_Unity.Tools.AssetBundleLoadCallBack)">
             <summary>
-            静态方法
+            MonoLoadAssetsBundleMethod
             </summary>
-            <param name="target"></param>
+            <param name="path"></param>
+            <param name="callback"></param>
         </member>
-        <member name="M:MFramework_Unity.Tools.TranformEx.FindInChr``1(UnityEngine.Transform,System.Boolean)">
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.MonoLoadByAssetsBundleAsync(System.String,MFramework_Unity.Tools.AssetBundleLoadCallBack)">
             <summary>
-            静态方法
+            MonoLoadByAssetsBundleAsync
             </summary>
-            <param name="target"></param>
+            <param name="path"></param>
+            <param name="callback"></param>
+            <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.Tools.TranformEx.FindInChr``1(UnityEngine.Transform,System.String,System.Boolean)">
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.WriteStringByFile(System.String,System.String)">
             <summary>
-            静态方法
+            写操作 web Player 不支持写操作
             </summary>
-            <param name="target"></param>
+            <param name="path"></param>
+            <param name="content"></param>
         </member>
-        <member name="M:MFramework_Unity.Tools.TranformEx.FindInChrUnActi(UnityEngine.Transform,System.String)">
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.WriteTexture2DByFile(System.String,UnityEngine.Texture2D)">
             <summary>
-            静态方法
+            WriteTexture2DByFile
             </summary>
-            <param name="target"></param>
+            <param name="path"></param>
+            <param name="texture"></param>
         </member>
-        <member name="M:MFramework_Unity.Tools.TranformEx.ToClone(System.String)">
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.DeleteFile(System.String)">
+            <summary>
+            DeleteFile
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.CreateFile(System.String,System.Byte[])">
+            <summary>
+            CreateFile
+            </summary>
+            <param name="path"></param>
+            <param name="byt"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.AssetBundleLoadCallBack">
+            <summary>
+            AssetBundleLoadCallBack
+            </summary>
+            <param name="state"></param>
+            <param name="bundlle"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.UnityRequestCallBack">
+            <summary>
+            UnityRequestCallBack
+            </summary>
+            <param name="loadState"></param>
+            <param name="www"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.LoadCallBack">
+            <summary>
+            LoadCallBack
+            </summary>
+            <param name="loadState"></param>
+            <param name="resObject"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.LoadState">
+            <summary>
+            LoadState
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.Tools.LoadState.CompleteState">
+            <summary>
+            CompleteState
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.LoadState.isDone">
+            <summary>
+            isDone
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.LoadState.progress">
+            <summary>
+            progress
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.LoadState.UpdateProgress(UnityEngine.ResourceRequest)">
+            <summary>
+            UpdateProgress
+            </summary>
+            <param name="resourceRequest"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.LoadState.UpdateProgress(UnityEngine.AssetBundleCreateRequest)">
+            <summary>
+            UpdateProgress
+            </summary>
+            <param name="assetBundleCreateRequest"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.TranformExtension">
+            <summary>
+            TranformEx
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformExtension.FindInChr(UnityEngine.Transform,System.String,System.Boolean)">
+            <summary>
+            FindInChr
+            </summary>
+            <param name="tran"></param>
+            <param name="target"></param>
+            <param name="unActi"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformExtension.FindInChr``1(UnityEngine.Transform,System.Boolean)">
+            <summary>
+            FindInChr
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="tran"></param>
+            <param name="unActi"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformExtension.FindInChr``1(UnityEngine.Transform,System.String,System.Boolean)">
+            <summary>
+            FindInChr
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="tran"></param>
+            <param name="target"></param>
+            <param name="unActi"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformExtension.FindInChrUnActi(UnityEngine.Transform,System.String)">
+            <summary>
+            FindInChrUnActi
+            </summary>
+            <param name="tran"></param>
+            <param name="target"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformExtension.ToClone(System.String)">
             <summary>
             ToClone
             </summary>
             <param name="str"></param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.Tools.TranformEx.ClearChildren(UnityEngine.Transform)">
+        <member name="M:MFramework_Unity.Tools.TranformExtension.ClearChildren(UnityEngine.Transform)">
             <summary>
             ClearChildren
             </summary>
             <param name="tra"></param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.Tools.TranformEx.FindOrClone(UnityEngine.Transform,System.String)">
+        <member name="M:MFramework_Unity.Tools.TranformExtension.FindOrClone(UnityEngine.Transform,System.String)">
             <summary>
             FindOrClone
             </summary>
@@ -537,7 +2714,7 @@
             <param name="str"></param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.Tools.TranformEx.FindOrCreate(UnityEngine.Transform,System.String)">
+        <member name="M:MFramework_Unity.Tools.TranformExtension.FindOrCreate(UnityEngine.Transform,System.String)">
             <summary>
             FindOrCreate
             </summary>
@@ -545,13 +2722,15 @@
             <param name="str"></param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.Tools.TranformEx.FindInChildrenExpend(UnityEngine.Transform,System.String)">
+        <member name="M:MFramework_Unity.Tools.TranformExtension.FindInChildrenExpend(UnityEngine.Transform,System.String)">
             <summary>
             静态方法 获取目标子物体（包括隐藏物体），返回第一个找到的物体
             </summary>
+            <param name="tran"></param>
             <param name="target">目标物体的名字</param>
+            <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.Tools.TranformEx.FindInChildrenExpend``1(UnityEngine.Transform,System.String)">
+        <member name="M:MFramework_Unity.Tools.TranformExtension.FindInChildrenExpend``1(UnityEngine.Transform,System.String)">
             <summary>
             静态方法 获取目标子物体（包括隐藏物体），返回第一个找到的物体的泛型型脚本
             </summary>
@@ -560,136 +2739,202 @@
             <param name="target"></param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.Tools.TranformEx.FindInChildrenExpend``1(UnityEngine.Transform)">
+        <member name="M:MFramework_Unity.Tools.TranformExtension.FindInChildrenExpend``1(UnityEngine.Transform)">
             <summary>
             静态方法 获取目标子物体（包括隐藏物体），返回所有的物体的泛型型脚本
             </summary>
             <typeparam name="T"></typeparam>
             <param name="tran"></param>
-            <param name="target"></param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.Tools.TranformEx.FindInChildrenWithTagExpend(UnityEngine.Transform,System.String)">
+        <member name="M:MFramework_Unity.Tools.TranformExtension.FindInChildrenWithTagExpend(UnityEngine.Transform,System.String)">
             <summary>
             静态方法 获取目标子物体（包括隐藏物体），返回第一个找到的物体
             </summary>
+            <param name="tran"></param>
             <param name="target">目标物体的名字</param>
         </member>
-        <member name="M:MFramework_Unity.Tools.TranformEx.GetChildren(UnityEngine.Transform)">
-            <summary>
-            
-            </summary>
-            <param name="tra"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MFramework_Unity.Tools.TranformEx._GetChildren(UnityEngine.Transform)">
+        <member name="M:MFramework_Unity.Tools.TranformExtension.GetChildren(UnityEngine.Transform)">
             <summary>
             GetChildren
             </summary>
             <param name="tra"></param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.Tools.TranformEx.FindInChildren(UnityEngine.RectTransform,System.String)">
+        <member name="M:MFramework_Unity.Tools.TranformExtension._GetChildren(UnityEngine.Transform,System.Collections.Generic.List{UnityEngine.Transform}@)">
+            <summary>
+            _GetChildren
+            </summary>
+            <param name="tra"></param>
+            <param name="tempChildren"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformExtension.FindInChildren(UnityEngine.RectTransform,System.String)">
             <summary>
             静态方法
             </summary>
+            <param name="tran"></param>
             <param name="target"></param>
         </member>
-        <member name="M:MFramework_Unity.Tools.TranformEx.SetTransformConfig(UnityEngine.Transform,MFramework_Unity.Tools.TransformConfig)">
+        <member name="M:MFramework_Unity.Tools.TranformExtension.SetTransformConfig(UnityEngine.Transform,MFramework_Unity.Tools.TransformExtensionConfig)">
             <summary>
             设置Tranform属性
             </summary>
-            <param name="trans"></param>
+            <param name="tran"></param>
             <param name="config"></param>
         </member>
-        <member name="M:MFramework_Unity.Tools.TranformEx.GetTransformConfig(UnityEngine.Transform)">
+        <member name="M:MFramework_Unity.Tools.TranformExtension.GetTransformConfig(UnityEngine.Transform)">
             <summary>
             获取Tranform属性
             </summary>
-            <param name="trans"></param>
-            <param name="config"></param>
+            <param name="tran"></param>
         </member>
-        <member name="M:MFramework_Unity.Tools.TranformEx.Find``1(UnityEngine.Transform,System.Boolean,System.Boolean)">
+        <member name="M:MFramework_Unity.Tools.TranformExtension.FindTarget``1(UnityEngine.Transform,System.Boolean,System.Boolean,System.Boolean)">
             <summary>
-            寻找子物体组件
+            寻找子物体组件（第一个）
             </summary>
             <typeparam name="T">类型</typeparam>
             <param name="tran"></param>
+            <param name="excludeSelf">是否排除自身</param>
             <param name="unActi">是否包含隐藏的子物体</param>
             <param name="firstChild">是否是第一层的子物体</param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.Tools.TranformEx.Centralizate(UnityEngine.Transform)">
+        <member name="M:MFramework_Unity.Tools.TranformExtension.FindTargets``1(UnityEngine.Transform,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            寻找子物体组件（数组）
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="tran"></param>
+            <param name="excludeSelf">是否排除自身</param>
+            <param name="unActi">是否包含隐藏的子物体</param>
+            <param name="firstChild">是否是第一层的子物体</param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformExtension.Centralizate(UnityEngine.Transform)">
             <summary>
             位置重置
             </summary>
             <param name="tran"></param>
         </member>
-        <member name="M:MFramework_Unity.Tools.GameObjectExpend.FindInChildrenExpend(UnityEngine.GameObject,System.String)">
+        <member name="M:MFramework_Unity.Tools.TranformExtension.GetCanvas(UnityEngine.Transform)">
             <summary>
-            静态方法 获取目标子物体（包括隐藏物体），返回第一个找到的物体
-            </summary>
-            <param name="target">目标物体的名字</param>
-        </member>
-        <member name="M:MFramework_Unity.Tools.GameObjectExpend.FindInChildrenWithTagExpend(UnityEngine.GameObject,System.String)">
-            <summary>
-            静态方法 获取目标子物体（包括隐藏物体），返回第一个找到的物体
-            </summary>
-            <param name="target">目标物体的标签</param>
-        </member>
-        <member name="M:MFramework_Unity.Tools.GameObjectExpend.GetComponentRealInChildren``1(UnityEngine.GameObject)">
-            <summary>
-            静态方法 获取子指定类型物体目标（包括隐藏物体），返回第一个找到的物体
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="obj"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MFramework_Unity.Tools.GameObjectExpend.GetComponentRealInChildren``1(UnityEngine.Object)">
-            <summary>
-            静态方法 获取子指定类型物体目标（包括隐藏物体），返回第一个找到的物体
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="obj"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MFramework_Unity.Tools.GameObjectExpend.GetComponentsRealInChildren``1(UnityEngine.GameObject,System.Boolean)">
-            <summary>
-            静态方法 获取子指定类型物体目标（包括隐藏物体），返回所有找到的物体
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="obj"></param>
-            <returns></returns>
-        </member>
-        <member name="T:MFramework_Unity.Tools.TransformConfig">
-            <summary>
-            TransformConfig Transform 配置信息结构体
-            </summary>
-        </member>
-        <member name="M:MFramework_Unity.Tools.TransformConfig.#ctor(UnityEngine.Transform)">
-            <summary>
-            Transform 配置信息结构体 构造函数
+            GetCanvas
             </summary>
             <param name="tran"></param>
         </member>
-        <member name="M:MFramework_Unity.Tools.TransformConfig.#ctor(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Transform)">
+        <member name="M:MFramework_Unity.Tools.TranformExtension.GetCanvasTran(UnityEngine.Transform)">
             <summary>
-            Transform 配置信息结构体 构造函数
+            GetCanvasTran
             </summary>
-            <param name="localpos"></param>
-            <param name="localeular"></param>
-            <param name="localscale"></param>
-            <param name="parent"></param>
+            <param name="tran"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformExtension.GetComponentReal``1(UnityEngine.Transform)">
+            <summary>
+            GetComponentReal
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="tr"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MFramework_Unity.Tools.UnityExtension">
+            <summary>
+            UnityEx
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.UnityExtension.GetComponentReal``1(UnityEngine.Component)">
+            <summary>
+            GetComponentReal
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="com"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.UnityExtension.ViewportPointToAnchoredPosition(UnityEngine.Vector2,UnityEngine.Vector2)">
+            <summary>
+            ViewportPointToAnchoredPosition
+            </summary>
+            <param name="ori"></param>
+            <param name="widthhight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.UnityExtension.ScaleTexture(UnityEngine.Texture2D,System.Int32,System.Int32,System.String)">
+            <summary>
+            生成缩略图 指定目标的长宽
+            </summary>
+            <param name="source"></param>
+            <param name="targetWidth"></param>
+            <param name="targetHeight"></param>
+            <param name="savePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.UnityExtension.ScaleTexture(UnityEngine.Texture2D,System.Double,System.String)">
+            <summary>
+            生成缩略图 指定目标的缩放的百分比
+            </summary>
+            <param name="source"></param>
+            <param name="percent"></param>
+            <param name="savePath"></param>
+            <returns></returns>
         </member>
         <member name="F:MFramework_Unity.Tools.IMGUIPerformanceDebugger.AllowDebugging">
             <summary>
             是否允许调试
             </summary>
         </member>
+        <member name="T:MFramework_Unity.Tools.ObjectPool`1">
+            <summary>
+            ObjectPool
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="F:MFramework_Unity.Tools.ObjectPool`1.t">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.ObjectPool`1.pool">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="F:MFramework_Unity.Tools.ObjectPool`1.bornPointTran">
             <summary>
             物体出生点
             </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.ObjectPool`1.type">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectPool`1.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectPool`1.#ctor(MFramework_Unity.Tools.ObjectType)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectPool`1.#ctor(`0,System.Int32,UnityEngine.Transform,MFramework_Unity.Tools.ObjectType)">
+            <summary>
+            ObjectPool
+            </summary>
+            <param name="t"></param>
+            <param name="volume"></param>
+            <param name="bornPointTran"></param>
+            <param name="type"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectPool`1.#ctor(`0,System.Int32,MFramework_Unity.Tools.ObjectType)">
+            <summary>
+            ObjectPool
+            </summary>
+            <param name="t"></param>
+            <param name="volume"></param>
+            <param name="type"></param>
         </member>
         <member name="M:MFramework_Unity.Tools.ObjectPool`1.GetObject">
             <summary>
@@ -703,9 +2948,166 @@
             </summary>
             <param name="t"></param>
         </member>
+        <member name="M:MFramework_Unity.Tools.ObjectPool`1.Clear">
+            <summary>
+            Clear
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.ObjectType">
+            <summary>
+            ObjectType
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.ObjectType.WorldObject">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.ObjectType.UI">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:MFramework_Unity.Tools.ObjectPoolManager">
             <summary>
             ObjectPoolManager
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.ObjectPoolManager.initialized">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.ObjectPoolManager.instance">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.Tools.ObjectPoolManager.Instance">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectPoolManager.Initialize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectPoolManager.Awake">
+            <summary>
+            Awake
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectPoolManager.SayHello">
+            <summary>
+            SayHello
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.ObjectPoolManager.objectPoolDict">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.ObjectPoolManager.poolDict">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.ObjectPoolManager._showParameter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.Tools.ObjectPoolManager.ObjectPoolsRoot">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.ObjectPoolManager._objectPoolsRoot">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.Tools.ObjectPoolManager.ObjectPoolsUIRoot">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.ObjectPoolManager._objectPoolsUIRoot">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectPoolManager.SetRootTran(UnityEngine.Transform,MFramework_Unity.Tools.ObjectType)">
+            <summary>
+            SetRootTran
+            </summary>
+            <param name="tar"></param>
+            <param name="type"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectPoolManager.GetBornPointTran``1">
+            <summary>
+            GetBornPointTran
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectPoolManager.GetObjectPool``1(``0,System.Int32,UnityEngine.Transform,MFramework_Unity.Tools.ObjectType)">
+            <summary>
+            GetObjectPool
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="it"></param>
+            <param name="ori"></param>
+            <param name="bornPointTran"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectPoolManager.GetObjectPool``1(``0,System.Int32,MFramework_Unity.Tools.ObjectType)">
+            <summary>
+            GetObjectPool
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="it"></param>
+            <param name="ori"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectPoolManager.GetObjectPool``1(``0,MFramework_Unity.Tools.ObjectType)">
+            <summary>
+            GetObjectPool
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="it"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectPoolManager.ResumeObjectPool``1(MFramework_Unity.Tools.ObjectPool{``0})">
+            <summary>
+            ResumeObjectPool
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="objectPool"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.MonoSingleton`1">
+            <summary>
+            MonoSingleton
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:MFramework_Unity.Tools.MonoSingleton`1.Instance">
+            <summary>
+            Instance
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.MonoSingleton`1.Awake">
+            <summary>
+            Awake
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.MonoSingleton`1.DestroyInstance">
+            <summary>
+            DestroyInstance
             </summary>
         </member>
         <member name="M:MFramework_Unity.Tools.MonoSingleton`1.ClearDestroy">
@@ -722,7 +3124,47 @@
             </summary>
         </member>
         <member name="M:MFramework_Unity.Tools.MonoSingleton`1.OnInit">
-            <summary>Awake 初始化完成之后 </summary>
+            <summary>
+             Awake 初始化完成之后
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.AutoSingletonAttribute">
+            <summary>
+            AutoSingletonAttribute
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.AutoSingletonAttribute.autoCreate">
+            <summary>
+            autoCreate 是否自动创建单例
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.AutoSingletonAttribute.resPath">
+            <summary>
+            resPath 从指定的预制体路径生成单例
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.AutoSingletonAttribute.#ctor(System.Boolean,System.String)">
+            <summary>
+            AutoSingletonAttribute
+            </summary>
+            <param name="_autoCreate"></param>
+            <param name="_resPath"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.MonoSingletonSimple`1">
+            <summary>
+            MonoSingletonSimple
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:MFramework_Unity.Tools.MonoSingletonSimple`1.Instance">
+            <summary>
+            Instance
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.MonoSingletonSimple`1.OnDestroy">
+            <summary>
+            OnDestroy
+            </summary>
         </member>
         <member name="T:MFramework_Unity.Tools.SQLiteDBHelper">
             <summary>  
@@ -734,6 +3176,7 @@
             <summary>  
             对SQLite数据库执行增删改操作，返回受影响的行数。  
             </summary>  
+            <param name="dbPath">dbPath</param>  
             <param name="sql">要执行的增删改的SQL语句</param>  
             <param name="parameters">执行增删改语句所需要的参数，参数必须以它们在SQL语句中的顺序为准</param>  
             <returns></returns>  
@@ -743,6 +3186,7 @@
             执行一个查询语句，返回一个关联的SQLiteDataReader实例  
             </summary>  
             <param name="sql">要执行的查询语句</param>  
+            <param name="dbPath">dbPath</param>  
             <param name="parameters">执行SQL查询语句所需要的参数，参数必须以它们在SQL语句中的顺序为准</param>  
             <returns></returns>  
         </member>
@@ -751,6 +3195,7 @@
             执行一个查询语句，返回一个包含查询结果的DataTable  
             </summary>  
             <param name="sql">要执行的查询语句</param>  
+            <param name="dbPath">dbPath</param>  
             <param name="parameters">执行SQL查询语句所需要的参数，参数必须以它们在SQL语句中的顺序为准</param>  
             <returns></returns>  
         </member>
@@ -759,6 +3204,7 @@
             执行一个查询语句，返回查询结果的第一行第一列  
             </summary>  
             <param name="sql">要执行的查询语句</param>  
+            <param name="dbPath">dbPath</param>  
             <param name="parameters">执行SQL查询语句所需要的参数，参数必须以它们在SQL语句中的顺序为准</param>  
             <returns></returns>  
         </member>
@@ -773,11 +3219,202 @@
             协程管理器
             </summary>
         </member>
+        <member name="T:MFramework_Unity.Tools.CoroutineTaskManager.TaskState">
+            <summary>
+            TaskState
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.Tools.CoroutineTaskManager.TaskState.Running">
+            <summary>
+            Running
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.Tools.CoroutineTaskManager.TaskState.Paused">
+            <summary>
+            Paused
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.CoroutineTaskManager.TaskState.FinishedHandler">
+            <summary>
+            FinishedHandler
+            </summary>
+            <param name="manual"></param>
+        </member>
+        <member name="E:MFramework_Unity.Tools.CoroutineTaskManager.TaskState.Finished">
+            <summary>
+            Finished
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CoroutineTaskManager.TaskState.#ctor(System.Collections.IEnumerator)">
+            <summary>
+            TaskState
+            </summary>
+            <param name="c"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CoroutineTaskManager.TaskState.Pause">
+            <summary>
+            Pause
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CoroutineTaskManager.TaskState.Unpause">
+            <summary>
+            Unpause
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CoroutineTaskManager.TaskState.Start">
+            <summary>
+            Start
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CoroutineTaskManager.TaskState.Stop">
+            <summary>
+            Stop
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.Tools.CoroutineTaskManager.Instance">
+            <summary>
+            Instance
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CoroutineTaskManager.SayHello">
+            <summary>
+            SayHello
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.CoroutineTaskManager.taskStateDict">
+            <summary>
+            taskStateDict
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CoroutineTaskManager.CreateTask(System.Collections.IEnumerator)">
+            <summary>
+            CreateTask
+            </summary>
+            <param name="coroutine"></param>
+            <returns></returns>
+        </member>
         <member name="M:MFramework_Unity.Tools.CoroutineTaskManager.CreateAndExecuteTask(System.Collections.IEnumerator)">
             <summary>
             功能未实现
             </summary>
             <param name="coroutine"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CoroutineTaskManager.StopAllTasks">
+            <summary>
+            StopAllTasks
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CoroutineTaskManager.StopTask(System.Collections.IEnumerator)">
+            <summary>
+            StopTask
+            </summary>
+            <param name="coroutine"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.DOTweenTimerManager">
+            <summary>
+            DOTweenTimerManager
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.DOTweenTimerManager.SayHello">
+            <summary>
+            SayHello
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.DOTweenTimerManager.AddDelayCallback(System.Action,System.Single,System.Boolean)">
+            <summary>
+            AddDelayCallback
+            </summary>
+            <param name="callbackAction"></param>
+            <param name="delayDur"></param>
+            <param name="isFocusAdd"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.DOTweenTimerManager.AddDelayCallback(System.Action)">
+            <summary>
+            AddDelayCallback
+            </summary>
+            <param name="callbackAction"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.TimerGo">
+            <summary>
+            时间定时器
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.TimerGo.timerType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.TimerGo.onStart">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.TimerGo.onEnd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.TimerGo.enGoing">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TimerGo.Start">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TimerGo.Stop">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TimerGo.Pause">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.TimerManager">
+            <summary>
+            TimerManager 时间定时器，延迟定时器，（有限/无限）循环定时器，秒定时器
+            帧定时器，特定帧定时器，倒计时
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.TimerManager.timerQueue">
+            <summary>
+            时间定时器队列
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TimerManager.SayHello">
+            <summary>
+            SayHello
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.Tools.TimerManager.Instance">
+            <summary>
+            Instance
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.TimerType">
+            <summary>
+            时间定时器类型
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.OnTimerGoStartEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.OnTimerGoEndEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.OnTimerGoingEvent">
+            <summary>
+            
+            </summary>
         </member>
         <member name="T:MFramework_Unity.Tools.EventSystemTools">
             <summary>
@@ -790,257 +3427,422 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.UnityEx.GetComponentReal``1(UnityEngine.GameObject)">
+        <member name="T:MFramework_Unity.Tools.IObserver">
             <summary>
-            GetComponentReal
+            
             </summary>
-            <typeparam name="T"></typeparam>
-            <param name="go"></param>
-            <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.UnityEx.GetComponentReal``1(UnityEngine.Transform)">
+        <member name="M:MFramework_Unity.Tools.IObserver.ListenMethod(System.Type,System.Int64,System.Object)">
             <summary>
-            GetComponentReal
+            
+            </summary>
+            <param name="observeType"></param>
+            <param name="code"></param>
+            <param name="msg"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.ObNull">
+            <summary>
+            ObNull
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.ObNull.type">
+            <summary>
+            type
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.ObNull.observer">
+            <summary>
+            observer
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObNull.#ctor(System.Type,MFramework_Unity.Tools.IObserver)">
+            <summary>
+            ObNull
+            </summary>
+            <param name="type"></param>
+            <param name="observer"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.ObserveManager">
+            <summary>
+            ObserveManager
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.ObserveManager.pairs">
+            <summary>
+            pairs
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.ObserveManager.pairsBools">
+            <summary>
+            pairsBools
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.ObserveManager.ShowParameter">
+            <summary>
+            ShowParameter
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObserveManager.SayHello">
+            <summary>
+            SayHello
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.Tools.ObserveManager.Instance">
+            <summary>
+            Instance
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObserveManager.Update">
+            <summary>
+            Update
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.ObserveManager.checkInterval">
+            <summary>
+            检查的时间间隔
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObserveManager.CheckNull">
+            <summary>
+            CheckNull
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObserveManager.CheckNullOnce">
+            <summary>
+            CheckNullOnce
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObserveManager.AddListener``1(MFramework_Unity.Tools.IObserver)">
+            <summary>
+            AddListener
             </summary>
             <typeparam name="T"></typeparam>
+            <param name="observer"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObserveManager.AddListener``1(``0,MFramework_Unity.Tools.IObserver)">
+            <summary>
+            AddListener
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="t"></param>
+            <param name="observer"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObserveManager.RemoveListener``1(MFramework_Unity.Tools.IObserver)">
+            <summary>
+            RemoveListener
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="observer"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObserveManager.RemoveListener``1(``0,MFramework_Unity.Tools.IObserver)">
+            <summary>
+            RemoveListener
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="t"></param>
+            <param name="observer"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObserveManager.RemoveListener(MFramework_Unity.Tools.IObserver)">
+            <summary>
+            RemoveListener 少用
+            </summary>
+            <param name="observer"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObserveManager.Notify``1(System.Int64,System.Object)">
+            <summary>
+            Notify
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="code"></param>
+            <param name="msg"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObserveManager.Notify``1(``0,System.Int64,System.Object)">
+            <summary>
+            Notify
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="t"></param>
+            <param name="code"></param>
+            <param name="msg"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObserveManager.DelayedNodify``1(System.Int64,System.Object)">
+            <summary>
+            DelayedNodify
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="code"></param>
+            <param name="msg"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObserveManager.DelayedNodify``1(``0,System.Int64,System.Object)">
+            <summary>
+            DelayedNodify
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="t"></param>
+            <param name="code"></param>
+            <param name="msg"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.UGUITools">
+            <summary>
+            UGUITools
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.UGUITools.GetUGUIArPos(UnityEngine.Camera,UnityEngine.Canvas,UnityEngine.Transform)">
+            <summary>
+            GetUGUIArPos
+            </summary>
+            <param name="_sceneCamera"></param>
+            <param name="_sceneCanvas"></param>
             <param name="tr"></param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.UnityEx.GetComponentReal``1(UnityEngine.Component)">
+        <member name="M:MFramework_Unity.Tools.UGUITools.GetUGUIArPos(UnityEngine.Camera,UnityEngine.Canvas,UnityEngine.Vector3)">
             <summary>
-            GetComponentReal
+            GetUGUIArPos
             </summary>
-            <typeparam name="T"></typeparam>
-            <param name="com"></param>
+            <param name="_sceneCamera"></param>
+            <param name="_sceneCanvas"></param>
+            <param name="tr"></param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.UnityEx.FindObjsOfTyEx``1">
+        <member name="M:MFramework_Unity.Tools.UGUITools.IsClickUI">
             <summary>
-            FindObjectsOfTypeExpend
+            检测是否点击在UI上
             </summary>
-            <typeparam name="T"></typeparam>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.UnityEx.FindObjsOfBehavEx``1">
+        <member name="T:MFramework_Unity.InputSystem.MouseInputStick">
             <summary>
-            FindObjectsOfBehaviourExpend
+            MouseInputStick
             </summary>
-            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:MFramework_Unity.InputSystem.BaseStandaloneInputModule">
+            <summary>
+            abstract
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.InputSystem.BaseStandaloneInputModule.rayDistance">
+            <summary>
+            rayDistance
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.InputSystem.BaseStandaloneInputModule.objRayCast">
+            <summary>
+            objRayCast
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.InputSystem.BaseStandaloneInputModule.rayCast">
+            <summary>
+            rayCast
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InputSystem.BaseStandaloneInputModule.Awake">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InputSystem.BaseStandaloneInputModule.OnInit(System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="paras"></param>
+        </member>
+        <member name="M:MFramework_Unity.InputSystem.BaseStandaloneInputModule.OnInit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InputSystem.BaseStandaloneInputModule.UpdateEventMainCamera(UnityEngine.Camera,UnityEngine.Transform)">
+            <summary>
+            UpdateEventMainCamera
+            </summary>
+            <param name="mainCamera"></param>
+            <param name="inputStickTra"></param>
+        </member>
+        <member name="M:MFramework_Unity.InputSystem.BaseStandaloneInputModule.ExecuteHandler(UnityEngine.GameObject)">
+            <summary>
+            ExecuteHandler
+            </summary>
+            <param name="go"></param>
+        </member>
+        <member name="M:MFramework_Unity.InputSystem.BaseStandaloneInputModule.CheckCondition">
+            <summary>
+            检查是否满足条件
+            </summary>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.UnityEx.FindObjsOfTyExInScene``1">
+        <member name="M:MFramework_Unity.InputSystem.BaseStandaloneInputModule.GetRayCast">
             <summary>
-            FindObjectsOfTypeExpend
+            获取射线 和 摄取物体
             </summary>
-            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:MFramework_Unity.InputSystem.BaseStandaloneInputModule.Start">
+            <summary>
+            Start
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InputSystem.BaseStandaloneInputModule.GetMainCamera">
+            <summary>
+            GetMainCamera
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InputSystem.BaseStandaloneInputModule.Update">
+            <summary>
+            Start
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InputSystem.BaseStandaloneInputModule.IsClickUI">
+            <summary>
+            检测是否点击在UI上
+            </summary>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.UnityEx.FindAllObjsOfTyExInScene``1">
+        <member name="M:MFramework_Unity.InputSystem.BaseStandaloneInputModule.FixedUpdate">
             <summary>
-            FindAllObjectsOfTypeInScene 寻找当前场景中所有的 T 的物体
+            FixedUpdate
             </summary>
-            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:MFramework_Unity.InputSystem.BaseStandaloneInputModule.OnGUI">
+            <summary>
+            OnGUI
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.InputSystem.RayCast">
+            <summary>
+            RayCast
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.InputSystem._Ray">
+            <summary>
+            自定义的射线
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.InputSystem._Ray.isDebugDrawLine">
+            <summary>
+            是否在Scene场景中画线
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InputSystem._Ray.GetMouseRayCast(UnityEngine.Camera)">
+            <summary>
+            GetMouseRayCast
+            </summary>
+            <param name="mainCamera"></param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.UnityEx.FindObjsOfTyExInSceneUnDestr``1">
+        <member name="M:MFramework_Unity.InputSystem._Ray.GetCast(UnityEngine.Ray)">
             <summary>
-            FindObjectsOfTypeExpend
+            GetCast
             </summary>
-            <typeparam name="T"></typeparam>
+            <param name="ray"></param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.UnityEx.FindObjsOfTyExInSceneDestr``1">
+        <member name="M:MFramework_Unity.InputSystem._Ray.GetCast(UnityEngine.Ray,System.Single,System.Int32)">
             <summary>
-            FindObjectsOfTypeExpend
+            GetCast
             </summary>
-            <typeparam name="T"></typeparam>
+            <param name="ray"></param>
+            <param name="maxDistance"></param>
+            <param name="myLayerMask"></param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.UnityEx.FindObjsOfTyEx``1(UnityEngine.Object,System.Boolean)">
+        <member name="M:MFramework_Unity.InputSystem._Ray.GetMouseRayCast(UnityEngine.Camera,System.Single,System.Int32,System.Boolean)">
             <summary>
-            FindObjectsOfTypeExpend
+            GetMouseRayCast
             </summary>
-            <typeparam name="T"></typeparam>
-            <param name="obj"></param>
+            <param name="mainCamera"></param>
+            <param name="maxDistance"></param>
+            <param name="myLayerMask"></param>
+            <param name="isdebugLine"></param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.UnityEx.FindObjsOfTyEx``1(System.Boolean,UnityEngine.Transform)">
+        <member name="M:MFramework_Unity.InputSystem._Ray.GetMouseVirtualRayCast(UnityEngine.Camera,System.Single,System.Int32)">
             <summary>
-            FindObjectsOfTypeExpend
+            GetMouseVirtualRayCast
             </summary>
-            <typeparam name="T"></typeparam>
-            <param name="justChildren"></param>
-            <param name="root"></param>
+            <param name="mainCamera"></param>
+            <param name="maxDistance"></param>
+            <param name="myLayerMask"></param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.UnityEx.FindObjOfTyEx``1">
+        <member name="M:MFramework_Unity.InputSystem._Ray.PhysicsRayCast(UnityEngine.Ray,System.Single,System.Int32,System.Boolean)">
             <summary>
-            FindObjectOfTypeExpend
+            PhysicsRayCast
             </summary>
-            <typeparam name="T"></typeparam>
+            <param name="ray"></param>
+            <param name="maxDistance"></param>
+            <param name="myLayerMask"></param>
+            <param name="isdebugLine"></param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.UnityEx.FindObjOfTyEx``1(UnityEngine.Transform)">
+        <member name="M:MFramework_Unity.InputSystem._Ray.GetRayCast(UnityEngine.Transform,System.Single,System.Int32)">
             <summary>
-            FindObjectOfTypeExpend in root
+            GetRayCast
             </summary>
-            <typeparam name="T"></typeparam>
+            <param name="tran"></param>
+            <param name="maxDistance"></param>
+            <param name="myLayerMask"></param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.UnityEx.FindPrefObjOfTyEx``1">
+        <member name="M:MFramework_Unity.InputSystem._Ray.GetRayCast(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Int32)">
             <summary>
-            FindPrefabObjectOfTypeExpend 返回相关类型的预制体
+            GetRayCast
             </summary>
-            <typeparam name="T"></typeparam>
+            <param name="pos"></param>
+            <param name="forward"></param>
+            <param name="maxDistance"></param>
+            <param name="myLayerMask"></param>
             <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.UnityEx.FindPrefObjsOfTyEx``1">
+        <member name="T:MFramework_Unity.InputSystem.MouseBMoveType">
             <summary>
-            FindPrefabObjectOfTypeExpend 返回相关类型的预制体数组
+            MouseBMoveType
             </summary>
-            <typeparam name="T"></typeparam>
-            <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.UnityEx.FindPrefObjOfBehavEx``1">
+        <member name="T:MFramework_Unity.IMono">
             <summary>
-            FindPrefabObjectOfTypeExpend
+            IMono
             </summary>
-            <typeparam name="T"></typeparam>
-            <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.UnityEx.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform,System.Action{System.Boolean})">
+        <member name="M:MFramework_Unity.IMono.OnCreate">
             <summary>
-            实例化对象
+            OnCreate
             </summary>
-            <param name="original"></param>
-            <param name="position"></param>
-            <param name="rotation"></param>
-            <param name="parent"></param>
-            <param name="callback"></param>
-            <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.UnityEx.Instantiate(UnityEngine.Object,UnityEngine.Transform,System.Action{System.Boolean})">
+        <member name="M:MFramework_Unity.IMono.OnGet">
             <summary>
-            实例化对象
+            OnGet
             </summary>
-            <param name="original"></param>
-            <param name="parent"></param>
-            <param name="callback"></param>
-            <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.UnityEx.Instantiate(UnityEngine.Object,System.Action{System.Boolean})">
+        <member name="M:MFramework_Unity.IMono.OnReset">
             <summary>
-            实例化对象
+            
             </summary>
-            <param name="original"></param>
-            <param name="callback"></param>
-            <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.UnityEx.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion,System.Action{System.Boolean})">
+        <member name="M:MFramework_Unity.IMono.OnInit(System.Object[])">
             <summary>
-            实例化对象
+            
             </summary>
-            <param name="original"></param>
-            <param name="position"></param>
-            <param name="rotation"></param>
-            <param name="callback"></param>
-            <returns></returns>
+            <param name="args"></param>
         </member>
-        <member name="M:MFramework_Unity.UnityEx.Instantiate(UnityEngine.Object,UnityEngine.Transform,System.Boolean,System.Action{System.Boolean})">
+        <member name="M:MFramework_Unity.IMono.OnInit">
             <summary>
-            实例化对象
+            
             </summary>
-            <param name="original"></param>
-            <param name="parent"></param>
-            <param name="instantiateInWorldSpace"></param>
-            <param name="callback"></param>
-            <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.UnityEx.FindObjectsOfTypeExpend``1">
+        <member name="M:MFramework_Unity.IMono.OnEnter">
             <summary>
-            FindObjectsOfTypeExpend
+            
             </summary>
-            <typeparam name="T"></typeparam>
-            <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.UnityEx.FindObjectsOfBehaviourExpend``1">
+        <member name="M:MFramework_Unity.IMono.OnExit">
             <summary>
-            FindObjectsOfBehaviourExpend
+            
             </summary>
-            <typeparam name="T"></typeparam>
-            <returns></returns>
         </member>
-        <member name="M:MFramework_Unity.UnityEx.FindObjectsOfTypeExpendInScene``1">
+        <member name="M:MFramework_Unity.IMono.OnDie">
             <summary>
-            FindObjectsOfTypeExpend
+            
             </summary>
-            <typeparam name="T"></typeparam>
-            <returns></returns>
-        </member>
-        <member name="M:MFramework_Unity.UnityEx.FindObjectsOfTypeExpend``1(UnityEngine.Object,System.Boolean)">
-            <summary>
-            FindObjectsOfTypeExpend
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="obj"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MFramework_Unity.UnityEx.FindObjectsOfTypeExpend``1(System.Boolean,UnityEngine.Transform)">
-            <summary>
-            FindObjectsOfTypeExpend
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="justChildren"></param>
-            <param name="root"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MFramework_Unity.UnityEx.FindObjectOfTypeExpend``1">
-            <summary>
-            FindObjectOfTypeExpend
-            </summary>
-            <typeparam name="T"></typeparam>
-            <returns></returns>
-        </member>
-        <member name="M:MFramework_Unity.UnityEx.FindPrefabObjectOfTypeExpend``1">
-            <summary>
-            FindPrefabObjectOfTypeExpend
-            </summary>
-            <typeparam name="T"></typeparam>
-            <returns></returns>
-        </member>
-        <member name="M:MFramework_Unity.UnityEx.FindPrefabObjectOfBehaviourExpend``1">
-            <summary>
-            FindPrefabObjectOfTypeExpend
-            </summary>
-            <typeparam name="T"></typeparam>
-            <returns></returns>
-        </member>
-        <member name="M:MFramework_Unity.UnityEx.ViewportPointToAnchoredPosition(UnityEngine.Vector2,UnityEngine.Vector2)">
-            <summary>
-            ViewportPointToAnchoredPosition
-            </summary>
-            <param name="ori"></param>
-            <param name="widthhight"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MFramework_Unity.UnityEx.ScaleTexture(UnityEngine.Texture2D,System.Int32,System.Int32,System.String)">
-            <summary>
-            生成缩略图 指定目标的长宽
-            </summary>
-            <param name="source"></param>
-            <param name="targetWidth"></param>
-            <param name="targetHeight"></param>
-            <param name="savePath"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MFramework_Unity.UnityEx.ScaleTexture(UnityEngine.Texture2D,System.Double,System.String)">
-            <summary>
-            生成缩略图 指定目标的缩放的百分比
-            </summary>
-            <param name="source"></param>
-            <param name="percent"></param>
-            <param name="savePath"></param>
-            <returns></returns>
         </member>
     </members>
 </doc>

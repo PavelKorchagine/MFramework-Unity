@@ -4,11 +4,18 @@ using UnityEngine;
 
 namespace MFramework_Unity.Tools
 {
+    /// <summary>
+    /// MonoSingleton
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     [AutoSingleton(true)]
     public class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
     {
         private static T _instance;
         private static object _lock = new object();
+        /// <summary>
+        /// Instance
+        /// </summary>
         public static T Instance
         {
             get
@@ -69,6 +76,9 @@ namespace MFramework_Unity.Tools
             }
         }
 
+        /// <summary>
+        /// Awake
+        /// </summary>
         protected virtual void Awake()
         {
             if (_instance != null && _instance.gameObject != gameObject)
@@ -94,6 +104,9 @@ namespace MFramework_Unity.Tools
             }
         }
 
+        /// <summary>
+        /// DestroyInstance
+        /// </summary>
         public static void DestroyInstance()
         {
             if (_instance != null)
@@ -114,6 +127,7 @@ namespace MFramework_Unity.Tools
         }
 
         private static bool _destroyed = false;
+
         /// <summary>
         /// 当播放停止时，Unity 会以随机顺序销毁对象
         /// 若单例 gameObject 先于其他对象销毁，不排除这个单例再次被调用的可能性。
@@ -129,7 +143,9 @@ namespace MFramework_Unity.Tools
             }
         }
 
-        /// <summary>Awake 初始化完成之后 </summary>
+        /// <summary>
+        ///  Awake 初始化完成之后
+        /// </summary>
         public virtual void OnInit()
         {
             Debug.Log("OnInit");
@@ -137,12 +153,26 @@ namespace MFramework_Unity.Tools
 
     }
 
+    /// <summary>
+    /// AutoSingletonAttribute
+    /// </summary>
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
     public class AutoSingletonAttribute : Attribute
     {
+        /// <summary>
+        /// autoCreate 是否自动创建单例
+        /// </summary>
         public bool autoCreate; //是否自动创建单例
+        /// <summary>
+        /// resPath 从指定的预制体路径生成单例
+        /// </summary>
         public string resPath;  //从指定的预制体路径生成单例
 
+        /// <summary>
+        /// AutoSingletonAttribute
+        /// </summary>
+        /// <param name="_autoCreate"></param>
+        /// <param name="_resPath"></param>
         public AutoSingletonAttribute(bool _autoCreate, string _resPath = "")
         {
             this.autoCreate = _autoCreate;

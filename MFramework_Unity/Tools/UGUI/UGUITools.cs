@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace MFramework_Unity.Tools
 {
@@ -104,5 +105,23 @@ namespace MFramework_Unity.Tools
                                 screenPoint, _sceneCanvas.worldCamera, out vector);
             return vector;
         }
+
+        /// <summary>
+        /// 检测是否点击在UI上
+        /// </summary>
+        /// <returns></returns>
+        public static bool IsClickUI()
+        {
+            if (EventSystem.current != null)
+            {
+                PointerEventData eventData = new PointerEventData(EventSystem.current);
+                eventData.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+                List<RaycastResult> results = new List<RaycastResult>();
+                EventSystem.current.RaycastAll(eventData, results);
+                return results.Count > 0;
+            }
+            return false;
+        }
+
     }
 }

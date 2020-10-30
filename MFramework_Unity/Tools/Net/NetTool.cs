@@ -7,9 +7,17 @@ using UnityEngine;
 
 namespace MFramework_Unity.Tools
 {
+    /// <summary>
+    /// NetTool
+    /// </summary>
     public class NetTool
     {
         #region 发送post请求
+        /// <summary>
+        /// HttpPost
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
         public static string HttpPost(string str)
         {
             string url = "http://localhost:8563/nfo/dd";
@@ -18,12 +26,24 @@ namespace MFramework_Unity.Tools
             return HttpPost(url, data);
         }
 
+        /// <summary>
+        /// HttpPost
+        /// </summary>
+        /// <param name="url"></param>
+        /// <param name="str"></param>
+        /// <returns></returns>
         public static string HttpPost(string url, string str)
         {
             byte[] data = Encoding.UTF8.GetBytes(str);//把字符串转换为字节
             return HttpPost(url, data);
         }
 
+        /// <summary>
+        /// HttpPost
+        /// </summary>
+        /// <param name="url"></param>
+        /// <param name="data"></param>
+        /// <returns></returns>
         public static string HttpPost(string url, byte[] data)
         {
             string result = "";

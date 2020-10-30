@@ -9,16 +9,29 @@ using System.IO;
 
 namespace MFramework_Unity.Tools
 {
+    /// <summary>
+    /// SQLiteManager
+    /// </summary>
     public class SQLiteManager : SQLBaseManager
     {
         //连接
+        /// <summary>
+        /// SqliteConnection
+        /// </summary>
         public SqliteConnection connection;
 
+        /// <summary>
+        /// SQLiteManager
+        /// </summary>
         public SQLiteManager() : base()
         {
 
         }
 
+        /// <summary>
+        /// CreateDB
+        /// </summary>
+        /// <param name="_dbPath"></param>
         public void CreateDB(string _dbPath)
         {
             try
@@ -45,9 +58,12 @@ namespace MFramework_Unity.Tools
             {
                 Debug.LogError("在进行创建和连接数据库时： " + e);
             }
-
         }
 
+        /// <summary>
+        /// DeleteDB
+        /// </summary>
+        /// <param name="_dbPath"></param>
         public void DeleteDB(string _dbPath)
         {
             if (File.Exists(_dbPath))
@@ -56,11 +72,19 @@ namespace MFramework_Unity.Tools
             }
         }
 
+        /// <summary>
+        /// GetSqlConnectState
+        /// </summary>
+        /// <returns></returns>
         public ConnectionState GetSqlConnectState()
         {
             return connection.State;
         }
 
+        /// <summary>
+        /// Connect
+        /// </summary>
+        /// <param name="_path"></param>
         public override void Connect(string _path)
         {
             //初始化地址
@@ -80,6 +104,9 @@ namespace MFramework_Unity.Tools
 
         }
 
+        /// <summary>
+        /// Test
+        /// </summary>
         public void Test()
         {
             //打开数据库
@@ -131,6 +158,10 @@ namespace MFramework_Unity.Tools
             }
         }
 
+        /// <summary>
+        /// TestCreateTable
+        /// </summary>
+        /// <param name="tableName"></param>
         public void TestCreateTable(string tableName = "test")
         {
             //打开数据库
@@ -182,15 +213,28 @@ namespace MFramework_Unity.Tools
             }
         }
 
+        /// <summary>
+        /// Dispose
+        /// </summary>
         protected override void Dispose()
         {
             connection.Close();
         }
+
     }
 
-
+    /// <summary>
+    /// SqliteConnectionExtension
+    /// </summary>
     public static class SqliteConnectionExtension
     {
+        /// <summary>
+        /// CreateAndExecuteCommandc
+        /// </summary>
+        /// <param name="connection"></param>
+        /// <param name="cmdStr"></param>
+        /// <param name="msg"></param>
+        /// <returns></returns>
         public static bool CreateAndExecuteCommand(this SqliteConnection connection, string cmdStr, out string msg)
         {
             msg = "";
@@ -244,8 +288,17 @@ namespace MFramework_Unity.Tools
         }
     }
 
+    /// <summary>
+    /// SqliteTool
+    /// </summary>
     public class SqliteTool
     {
+        /// <summary>
+        /// GetExecuteReaderStr
+        /// </summary>
+        /// <param name="_type"></param>
+        /// <param name="_name"></param>
+        /// <returns></returns>
         public static string GetExecuteReaderStr(string _type, string _name)
         {
             StringBuilder stringBuilder = new StringBuilder();
@@ -261,6 +314,10 @@ namespace MFramework_Unity.Tools
 
         }
 
+        /// <summary>
+        /// CreateDB
+        /// </summary>
+        /// <param name="_dbName"></param>
         public static void CreateDB(string _dbName)
         {
             string path = Application.dataPath + "/" + _dbName;
@@ -271,6 +328,10 @@ namespace MFramework_Unity.Tools
             cn.Close();
         }
 
+        /// <summary>
+        /// DeleteDB
+        /// </summary>
+        /// <param name="_dbName"></param>
         public static void DeleteDB(string _dbName)
         {
             string path = Application.dataPath + "/" + _dbName;
@@ -486,7 +547,6 @@ namespace MFramework_Unity.Tools
             cn.Close();
         }
 
-
         public static void Insert(params object[] datas)
         {
             string path = @"d:\test\123.sqlite";
@@ -504,7 +564,6 @@ namespace MFramework_Unity.Tools
             cmd.Dispose();
             cn.Close();
         }
-
 
         public static void Replace()
         {

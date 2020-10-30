@@ -11,15 +11,21 @@ using UnityEditor;
 
 namespace MFramework_Unity.Tools
 {
-    //有了Loom这个工具类，在很多涉及UnityEngine对象的耗时计算还是可以得到一个解决方法的：
-    //   如在场景中用A* 算法进行大量的数据计算
-    //   变形网格中操作大量的顶点
-    //   持续的要运行上传数据到服务器
-    //   二维码识别等图像处理
-    //Loom简单而又巧妙，佩服Loom的作者。
+    //  有了Loom这个工具类，在很多涉及UnityEngine对象的耗时计算还是可以得到一个解决方法的：
+    //  如在场景中用A* 算法进行大量的数据计算
+    //  变形网格中操作大量的顶点
+    //  持续的要运行上传数据到服务器
+    //  二维码识别等图像处理
+    //  Loom简单而又巧妙，佩服Loom的作者。
+    /// <summary>
+    /// Loom
+    /// </summary>
     public class Loom : MonoBehaviour
     {
         private static Loom _current;
+        /// <summary>
+        /// Current
+        /// </summary>
         public static Loom Current
         {
             get
@@ -30,6 +36,9 @@ namespace MFramework_Unity.Tools
         }
 
         private int _count;
+        /// <summary>
+        /// 最大线程数
+        /// </summary>
         public static int maxThreads = 8;
         private static int numThreads;
         private List<DelayedQueueItem> _currentDelayed = new List<DelayedQueueItem>();
@@ -38,9 +47,18 @@ namespace MFramework_Unity.Tools
         private List<Action> _actions = new List<Action>();
         private List<DelayedQueueItem> _delayed = new List<DelayedQueueItem>();
 
+        /// <summary>
+        /// 延迟方法队列元素
+        /// </summary>
         public struct DelayedQueueItem
         {
+            /// <summary>
+            /// 延迟时间
+            /// </summary>
             public float time;
+            /// <summary>
+            /// 延迟方法
+            /// </summary>
             public Action action;
         }
 
@@ -54,6 +72,9 @@ namespace MFramework_Unity.Tools
             initialized = true;
         }
 
+        /// <summary>
+        /// SayHello
+        /// </summary>
         public void SayHello()
         {
             Debug.LogWarningFormat("[{0}] say: Hello，World !! {1}", this, System.DateTime.Now);
@@ -66,6 +87,7 @@ namespace MFramework_Unity.Tools
                 _current = null;
             }
         }
+
         private void Update()
         {
             lock (_actions)
@@ -95,10 +117,14 @@ namespace MFramework_Unity.Tools
             }
         }
 
+        /// <summary>
+        /// GetActions
+        /// </summary>
         public List<Action> GetActions
         {
             get { return _actions; }
         }
+
         private static void Initialize()
         {
             if (!initialized)
@@ -111,12 +137,23 @@ namespace MFramework_Unity.Tools
                 _current = g.AddComponent<Loom>();
             }
         }
+
+        /// <summary>
+        /// QueueOnMainThread
+        /// </summary>
+        /// <param name="action"></param>
         public static void QueueOnMainThread(Action action)
         {
             Initialize();
 
             QueueOnMainThread(action, 0f);
         }
+
+        /// <summary>
+        /// QueueOnMainThread
+        /// </summary>
+        /// <param name="action"></param>
+        /// <param name="time"></param>
         public static void QueueOnMainThread(Action action, float time)
         {
             Initialize();
@@ -136,6 +173,12 @@ namespace MFramework_Unity.Tools
                 }
             }
         }
+
+        /// <summary>
+        /// RunAsync
+        /// </summary>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static Thread RunAsync(Action a)
         {
             Initialize();
@@ -148,6 +191,7 @@ namespace MFramework_Unity.Tools
             ThreadPool.QueueUserWorkItem(RunAction, a);
             return null;
         }
+
         private static void RunAction(object action)
         {
             try

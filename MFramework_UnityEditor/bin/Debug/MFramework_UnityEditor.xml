@@ -4,36 +4,101 @@
         <name>MFramework_UnityEditor</name>
     </assembly>
     <members>
-        <member name="M:MFramework_UnityEditor.Extend.PathUtilEditor.GetPreferencesFolderPath">
+        <member name="T:MFramework_UnityEditor.MonoDriverEditor">
+            <summary>
+            MonoDriverEditor
+            </summary>
+        </member>
+        <member name="T:MFramework_UnityEditor.Tools.PathUtilEditor">
+            <summary>
+            PathUtilEditor
+            </summary>
+        </member>
+        <member name="M:MFramework_UnityEditor.Tools.PathUtilEditor.GetPreferencesFolderPath">
             <summary>
             preferences folder 
             </summary>
         </member>
-        <member name="M:MFramework_UnityEditor.Extend.PathUtilEditor.GetEditorAssemblyPath">
+        <member name="M:MFramework_UnityEditor.Tools.PathUtilEditor.GetEditorAssemblyPath">
             <summary>
             editor assembly path 
             </summary>
             <returns></returns>
         </member>
-        <member name="M:MFramework_UnityEditor.Extend.PathUtilEditor.GetEngineAssemblyPath">
+        <member name="M:MFramework_UnityEditor.Tools.PathUtilEditor.GetEngineAssemblyPath">
             <summary>
             engine assembly path 
             </summary>
         </member>
-        <member name="M:MFramework_UnityEditor.Extend.PathUtilEditor.GetLayoutFolderPath">
+        <member name="M:MFramework_UnityEditor.Tools.PathUtilEditor.GetLayoutFolderPath">
             <summary>
             layout folder path 
             </summary>
             <returns></returns>
         </member>
-        <member name="M:MFramework_UnityEditor.Extend.PathUtilEditor.GetAssetstoreDownloadPath">
+        <member name="M:MFramework_UnityEditor.Tools.PathUtilEditor.GetAssetstoreDownloadPath">
             <summary>
             Assetstore download folder path 
             </summary>
         </member>
-        <member name="M:MFramework_UnityEditor.Extend.PathUtilEditor.GetEditorLogPath">
+        <member name="M:MFramework_UnityEditor.Tools.PathUtilEditor.GetEditorLogPath">
             <summary>
             editor log path
+            </summary>
+        </member>
+        <member name="M:MFramework_UnityEditor.Tools.PathUtilEditor.GetExternalScriptEditorPath">
+            <summary>
+            Retrieves path of an external script editor.e.g) path of where VisualStudio etc.
+            </summary>
+        </member>
+        <member name="T:MFramework_UnityEditor.Tools.LoomEditor">
+            <summary>
+            LoomEditor ExecuteInEditMode CanEditMultipleObjects CustomEditor(typeof(Loom))
+            </summary>
+        </member>
+        <member name="M:MFramework_UnityEditor.Tools.LoomEditor.OnInspectorGUI">
+            <summary>
+            OnInspectorGUI
+            </summary>
+        </member>
+        <member name="T:MFramework_UnityEditor.Tools.ObserveManagerEditor">
+            <summary>
+            ObserveManager CanEditMultipleObjects CustomEditor(typeof(ObserveManager))
+            </summary>
+        </member>
+        <member name="M:MFramework_UnityEditor.Tools.ObserveManagerEditor.OnInspectorGUI">
+            <summary>
+            OnInspectorGUI
+            </summary>
+        </member>
+        <member name="T:MFramework_UnityEditor.Tools.CoroutineTaskManagerEditor">
+            <summary>
+            CoroutineTaskManagerEditor
+            </summary>
+        </member>
+        <member name="M:MFramework_UnityEditor.Tools.CoroutineTaskManagerEditor.OnInspectorGUI">
+            <summary>
+            OnInspectorGUI
+            </summary>
+        </member>
+        <member name="T:MFramework_UnityEditor.Tools.DOTweenTimerManagerEditor">
+            <summary>
+            DOTweenTimerManager
+            </summary>
+        </member>
+        <member name="M:MFramework_UnityEditor.Tools.DOTweenTimerManagerEditor.OnInspectorGUI">
+            <summary>
+            OnInspectorGUI
+            </summary>
+        </member>
+        <member name="T:MFramework_UnityEditor.ObjectPoolManagerEditor">
+            <summary>
+            ObjectPoolManagerEditor CanEditMultipleObjects CustomEditor(typeof(ObjectPoolManager))
+            </summary>
+        </member>
+        <member name="M:MFramework_UnityEditor.ObjectPoolManagerEditor.OnInspectorGUI">
+            <summary>
+            OnInspectorGUI
             </summary>
         </member>
     </members>
