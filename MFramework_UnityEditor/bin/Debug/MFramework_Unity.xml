@@ -1,0 +1,1046 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MFramework_Unity</name>
+    </assembly>
+    <members>
+        <member name="T:MFramework_Unity.BaseManager">
+            <summary>
+            BaseManager
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Facade">
+            <summary>
+            GameFacade
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.DefaultEventTBController">
+            <summary>
+            EventTriggerButton
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.EventTriggerButton">
+            <summary>
+            EventTriggerButton
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.EventTriggerButton.RemoveEventTrigger(UnityEngine.EventSystems.EventTrigger,UnityEngine.EventSystems.EventTriggerType,UnityEngine.Events.UnityAction{UnityEngine.EventSystems.BaseEventData})">
+            <summary>
+            RemoveEventTrigger 功能未实现
+            </summary>
+            <param name="trigger"></param>
+            <param name="eventTriggerType"></param>
+            <param name="callback"></param>
+        </member>
+        <member name="T:MFramework_Unity.UIBase">
+            <summary>
+            UIBase
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.UIPanelBase">
+            <summary>
+            UIPanelBase
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIPanelBase.OnEnter">
+            <summary>
+            界面被显示出来 被实例化时
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIPanelBase.OnPause">
+            <summary>
+            界面暂停
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIPanelBase.OnResume">
+            <summary>
+            界面继续
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.UIPanelBase.OnExit">
+            <summary>
+            界面不显示,退出这个界面，界面被关系
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.InputSystem.MobileTouchInputModule">
+            <summary>
+            abstract
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InputSystem.MobileTouchInputModule.GetRayCast">
+            <summary>
+            获取射线 和 摄取物体
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InputSystem.MobileTouchInputModule.IsClickUI">
+            <summary>
+            检测是否点击在UI上
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MFramework_Unity.InputSystem.PCMouseInputModule">
+            <summary>
+            abstract
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InputSystem.PCMouseInputModule.GetRayCast">
+            <summary>
+            获取射线 和 摄取物体
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.InputSystem.PCMouseInputModule.IsClickUI">
+            <summary>
+            检测是否点击在UI上
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MFramework_Unity.InputSystem._Ray">
+            <summary>
+            自定义的射线
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.NetTool.HttpGet(System.String,System.String)">
+            <summary>
+            GET请求与获取结果
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SqliteConnectionExtension.Order(Mono.Data.Sqlite.SqliteConnection,System.String@)">
+            <summary>
+            整理数据库
+            </summary>
+            <param name="connection"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SqliteTool.ChangeTableName(Mono.Data.Sqlite.SqliteConnection,System.String,System.String)">
+            <summary>
+            更改表名
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SqliteTool.AddTableColumn(Mono.Data.Sqlite.SqliteConnection,System.String,System.String)">
+            <summary>
+            增添列（字段）
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SqliteTool.ReadCreateTable">
+            <summary>
+            读取创建表时的 SQL 语句
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SqliteTool.ChangeColumnName(Mono.Data.Sqlite.SqliteConnection,System.String,System.String)">
+            <summary>
+            更改列名
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SqliteTool.TransActionOperate(Mono.Data.Sqlite.SqliteConnection,Mono.Data.Sqlite.SqliteCommand)">
+            <summary>
+            ---事务
+            事务就是对数据库一组按逻辑顺序操作的执行单元。
+            用事务的好处就是成熟的数据库都对 密集型的磁盘 IO 操作之类进行优化，而且还能进行撤回回滚操作。其实在上面改变列名的示例中就用过。
+            </summary>
+            <param name="cn"></param>
+            <param name="cmd"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.SqliteTool.Order(Mono.Data.Sqlite.SqliteConnection)">
+            <summary>
+            整理数据库
+            SQLite 的自带命令 VACUUM。用来重新整理整个数据库达到紧凑之用，比如把删除的彻底删掉等等。
+            </summary>
+            <param name="cn"></param>
+        </member>
+        <!-- 对于成员“M:MFramework_Unity.Tools.CSharpEx.TryGet``2(System.Collections.Generic.Dictionary{``0,``1},``0)”忽略有格式错误的 XML 注释 -->
+        <member name="M:MFramework_Unity.Tools.CSharpEx.ToStringFromArray(System.Char[])">
+            <summary>
+            对char[]的 ToStringFromArray 方法 （转字符串）
+            </summary>
+            <param name="chArray"></param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:MFramework_Unity.Tools.CSharpEx.ToSort(System.Collections.Generic.List{System.Char})”忽略有格式错误的 XML 注释 -->
+        <member name="M:MFramework_Unity.Tools.CSharpEx.ToNormal(System.String)">
+            <summary>
+            公共方法 _Normal 格式化一个字符串，自动去掉前面和后面的空格字符
+            </summary>
+            <param name="str">Target</param>
+            <param name="useRecursive">是否使用递归</param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CSharpEx.ToFormatJsonString(System.String)">
+            <summary>
+            格式化Json字符串
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CSharpEx._Normal(System.String)">
+            <summary>
+            私有方法 _Normal 格式化一个字符串，自动去掉前面和后面的空格字符
+            </summary>
+            <param name="str">Target</param>
+            <param name="useRecursive">是否使用递归</param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CSharpEx._Getlast``1(``0[])">
+            <summary>
+            公共方法 SelectLast 选择最后一个 数据
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CSharpEx.FindTarget``1(System.Collections.IEnumerable)">
+            <summary>
+            公共方法 从集合中找到指定类型的组件,返回第一个找到的组件
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="ra"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CSharpEx.FindTargets``1(System.Collections.IEnumerable)">
+            <summary>
+            公共方法 从集合中找到指定类型的组件,返回所有的组件
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="ra"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.FileTool.CreatFile(System.String,System.Byte[])">
+            <summary>
+            创建文件
+            </summary>
+            <param name="filePath">文件路径</param>
+            <param name="bytes">文件内容</param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.FileTool.CreateDirectory(System.String)">
+            <summary>
+            创建目录
+            </summary>
+            <param name="filePath">需要创建的目录路径</param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.FileTool.CreatFilePath(System.String)">
+            <summary>
+            判断有没有这个文件路径，如果没有则创建它(路径会去掉文件名)
+            </summary>
+            <param name="filepath"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.FileTool.CreatPath(System.String)">
+            <summary>
+            判断有没有这个路径，如果没有则创建它
+            </summary>
+            <param name="filepath"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.FileTool.DeleteDirectory(System.String)">
+            <summary>
+            删掉某个目录下的所有子目录和子文件，但是保留这个目录
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.FileTool.CopyDirectory(System.String,System.String)">
+            <summary>
+            复制文件夹（及文件夹下所有子文件夹和文件）
+            </summary>
+            <param name="sourcePath">待复制的文件夹路径</param>
+            <param name="destinationPath">目标路径</param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.FileTool.SafeDeleteDirectory(System.String)">
+            <summary>
+            删除所有可以删除的文件
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.FileTool.SafeCopyDirectory(System.String,System.String)">
+            <summary>
+            复制所有可以复制的文件夹（及文件夹下所有子文件夹和文件）
+            </summary>
+            <param name="sourcePath">待复制的文件夹路径</param>
+            <param name="destinationPath">目标路径</param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.FileTool.RemoveExpandName(System.String)">
+            <summary>
+            移除拓展名
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.FileTool.GetExpandName(System.String)">
+            <summary>
+            获取拓展名
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.FileTool.GetFileNameByPath(System.String)">
+            <summary>
+            取出一个路径下的文件名
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.FileTool.GetFileNameBySring(System.String)">
+            <summary>
+            取出一个相对路径下的文件名
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.FileTool.ChangeFileName(System.String,System.String)">
+            <summary>
+            修改文件名
+            </summary>
+            <param name="path"></param>
+            <param name="newName"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.FileTool.ConvertFileEncoding(System.String,System.String,System.Text.Encoding)">
+            <summary>
+            文件编码转换
+            </summary>
+            <param name="sourceFile">源文件</param>
+            <param name="destFile">目标文件，如果为空，则覆盖源文件</param>
+            <param name="targetEncoding">目标编码</param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.FileTool.GetEncodingType(System.String)">
+            <summary> 
+            给定文件的路径，读取文件的二进制数据，判断文件的编码类型 
+            </summary> 
+            <param name="FILE_NAME">文件路径</param> 
+            <returns>文件的编码类型</returns> 
+        </member>
+        <member name="M:MFramework_Unity.Tools.FileTool.GetEncodingType(System.IO.FileStream)">
+            <summary> 
+            通过给定的文件流，判断文件的编码类型 
+            </summary> 
+            <param name="fs">文件流</param> 
+            <returns>文件的编码类型</returns> 
+        </member>
+        <member name="M:MFramework_Unity.Tools.FileTool.IsUTF8Bytes(System.Byte[])">
+            <summary> 
+            判断是否是不带 BOM 的 UTF8 格式 
+            </summary> 
+            <param name="data"></param> 
+            <returns></returns> 
+        </member>
+        <member name="M:MFramework_Unity.Tools.FileTool.RecursionFileExecute(System.String,System.String,MFramework_Unity.Tools.FileExecuteHandle)">
+            <summary>
+            递归处理某路径及其他的子目录
+            </summary>
+            <param name="path">目标路径</param>
+            <param name="expandName">要处理的特定拓展名</param>
+            <param name="handle">处理函数</param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.FileTool.GetAllFileNamesByPath(System.String,System.String[])">
+            <summary>
+            获取一个路径下的所有文件
+            </summary>
+            <param name="path"></param>
+            <param name="expandNames"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.FileTool.RecursionFind(System.Collections.Generic.List{System.String},System.String,System.String[])">
+            <summary>
+            RecursionFind
+            </summary>
+            <param name="list"></param>
+            <param name="path"></param>
+            <param name="expandNames"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.FileTool.ExpandFilter(System.String,System.String[])">
+            <summary>
+            ExpandFilter
+            </summary>
+            <param name="name"></param>
+            <param name="expandNames"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectEx.GetVarName(UnityEngine.Object)">
+            <summary>
+            获取变量名称
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectEx.GetVarName``1(``0)">
+            <summary>
+            获取变量名称
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectEx.GetVarName``1(``0,System.Linq.Expressions.Expression{System.Func{``0,``0}})">
+            <summary>
+            扩展 获取变量名称(字符串)
+            </summary>
+            <param name="var_name"></param>
+            <param name="exp">可以使lamda表达式</param>
+            <returns>return string</returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectEx.GetVarName``1(System.Linq.Expressions.Expression{System.Func{``0,``0}})">
+            <summary>
+            获取变量名称
+            </summary>
+            <param name="exp"></param>
+            <returns>return string</returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectEx.GetVarNameReal``1(``0)">
+            <summary>
+            获取变量名称(字符串)
+            警告不能在匿名方法里写其它否则报错
+            </summary>
+            <param name="var_name">要获取变量名的变量</param>
+            <returns>变量名</returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectEx.GetExpression``1(System.Linq.Expressions.Expression{System.Func{``0,``0}})">
+            <summary>
+            获取对应的数据结构
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="exp"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MFramework_Unity.Tools.PathUtil">
+            <summary>
+            A class which handles various Unity specific paths.
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.PathUtil.GetDocumentFolderPath">
+            <summary>
+            Retrieves Application.persistentDataPath depends on the given platform.
+            
+            iOS            - /var/mobile/Applications/[program_ID]/Documents : read/write
+            Android        - [External] /mnt/sdcard/Android/data/[bundle id]/files : read/write
+                             [Internal] /data/data/[bundle id]/files/ : read/write
+            WEB Player     - /                
+            Windows Player - [UserDirectory]/AppData/LocalLow/[Company]/[Product Name] : read/write
+            OSX            - [UserDirectory]/Library/Caches/unity.[Company].[Product] : read/write
+            Windows Edtor  - [UserDirectory]/AppData/LocalLow/[Company]/[Product] : read/write
+            Mac Editor     - [UserDirectory]/Library/Caches/unity.[Company].[Product] : read/write
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.PathUtil.GetDocumentFilePath(System.String)">
+            <summary>
+            Retrieves a path of combining Application.persistentDataPath with the given filename.
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.PathUtil.GetRelativelyPath(System.String,System.String,System.String)">
+            <summary>
+            生成完整的带扩展名的文件路径
+            </summary>
+            <param name="path"></param>
+            <param name="fileName"></param>
+            <param name="expandName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.PathUtil.GetTemporaryCacheFolderPath">
+            <summary>
+            Retrieves Application.temporaryCachePath depends on the given platform.
+            
+            iOS            - /var/mobile/Applications/[program_ID]/Library/Caches : read/write
+            Android        - [External] /mnt/sdcard/Android/data/[bundle id]/cache 
+                             [Internal] /data/data/com.xxx.xxx/cache/
+            WEB Player     - C:\Users\username\AppData\Local\Temp\UnityWebPlayer\log\log_UNIQUEID.txt
+            Windows Player - %LocalAppData%/Local/Temp/Temp/%Company%/%Product% 
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.PathUtil.GetTemporaryCacheFilePath(System.String)">
+            <summary>
+            Retrieves a path of combining Application.temporaryCachePath with the given filename.
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.PathUtil.GetStreamingAssetsPath">
+            <summary>
+            Retrieves Application.streamingAssetsPath depends on the given platform.
+            
+            iOS            - /var/mobile/Applications/[program_ID]/[appname].app/Data/Raw  (read only)
+            Android        - [External] jar:file:///data/app/[bundle id].apk!/assets  (read only, accessiable via www)
+                             [Internal] jar:file:///data/app/[bundle id].apk!/assets  (read only, accessiable via www)
+            WEB            - Application.streamingAssetsPath : empty
+            Windows Player - [Exe file]/[Exe file]_Data/StreamingAssets : read/write
+            OSX Player     - [Exe file].app/Contents/Data/StreamingAssets : read/write
+            Windows Edtor  - [ProjectDirectory]/Assets/StreamingAssets	: read/write
+            Mac Editor     - [ProjectDirectory]/Assets/StreamingAssets : read/write
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.PathUtil.GetStreamingAssetsFilePath(System.String)">
+            <summary>
+            Retrieves a path of combining Application.streamingAssetsPath with the given filename.
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.PathUtil.GetApplicationPath">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.PathUtil.GetApplicationFilePath(System.String)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.RayEx">
+            <summary>
+            自定义的射线
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.ResourceIOTool">
+            <summary>
+            资源读取器，负责从不同路径读取资源
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ResourceIOTool.AssetsBundleLoadAsync(System.String,MFramework_Unity.Tools.AssetBundleLoadCallBack)">
+            <summary>
+            异步加载单个assetsbundle
+            </summary>
+            <param name="path"></param>
+            <param name="callback"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformEx.FindInChr(UnityEngine.Transform,System.String,System.Boolean)">
+            <summary>
+            静态方法
+            </summary>
+            <param name="target"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformEx.FindInChr``1(UnityEngine.Transform,System.Boolean)">
+            <summary>
+            静态方法
+            </summary>
+            <param name="target"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformEx.FindInChr``1(UnityEngine.Transform,System.String,System.Boolean)">
+            <summary>
+            静态方法
+            </summary>
+            <param name="target"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformEx.FindInChrUnActi(UnityEngine.Transform,System.String)">
+            <summary>
+            静态方法
+            </summary>
+            <param name="target"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformEx.ToClone(System.String)">
+            <summary>
+            ToClone
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformEx.ClearChildren(UnityEngine.Transform)">
+            <summary>
+            ClearChildren
+            </summary>
+            <param name="tra"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformEx.FindOrClone(UnityEngine.Transform,System.String)">
+            <summary>
+            FindOrClone
+            </summary>
+            <param name="tran"></param>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformEx.FindOrCreate(UnityEngine.Transform,System.String)">
+            <summary>
+            FindOrCreate
+            </summary>
+            <param name="tran"></param>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformEx.FindInChildrenExpend(UnityEngine.Transform,System.String)">
+            <summary>
+            静态方法 获取目标子物体（包括隐藏物体），返回第一个找到的物体
+            </summary>
+            <param name="target">目标物体的名字</param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformEx.FindInChildrenExpend``1(UnityEngine.Transform,System.String)">
+            <summary>
+            静态方法 获取目标子物体（包括隐藏物体），返回第一个找到的物体的泛型型脚本
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="tran"></param>
+            <param name="target"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformEx.FindInChildrenExpend``1(UnityEngine.Transform)">
+            <summary>
+            静态方法 获取目标子物体（包括隐藏物体），返回所有的物体的泛型型脚本
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="tran"></param>
+            <param name="target"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformEx.FindInChildrenWithTagExpend(UnityEngine.Transform,System.String)">
+            <summary>
+            静态方法 获取目标子物体（包括隐藏物体），返回第一个找到的物体
+            </summary>
+            <param name="target">目标物体的名字</param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformEx.GetChildren(UnityEngine.Transform)">
+            <summary>
+            
+            </summary>
+            <param name="tra"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformEx._GetChildren(UnityEngine.Transform)">
+            <summary>
+            GetChildren
+            </summary>
+            <param name="tra"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformEx.FindInChildren(UnityEngine.RectTransform,System.String)">
+            <summary>
+            静态方法
+            </summary>
+            <param name="target"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformEx.SetTransformConfig(UnityEngine.Transform,MFramework_Unity.Tools.TransformConfig)">
+            <summary>
+            设置Tranform属性
+            </summary>
+            <param name="trans"></param>
+            <param name="config"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformEx.GetTransformConfig(UnityEngine.Transform)">
+            <summary>
+            获取Tranform属性
+            </summary>
+            <param name="trans"></param>
+            <param name="config"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformEx.Find``1(UnityEngine.Transform,System.Boolean,System.Boolean)">
+            <summary>
+            寻找子物体组件
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="tran"></param>
+            <param name="unActi">是否包含隐藏的子物体</param>
+            <param name="firstChild">是否是第一层的子物体</param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TranformEx.Centralizate(UnityEngine.Transform)">
+            <summary>
+            位置重置
+            </summary>
+            <param name="tran"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.GameObjectExpend.FindInChildrenExpend(UnityEngine.GameObject,System.String)">
+            <summary>
+            静态方法 获取目标子物体（包括隐藏物体），返回第一个找到的物体
+            </summary>
+            <param name="target">目标物体的名字</param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.GameObjectExpend.FindInChildrenWithTagExpend(UnityEngine.GameObject,System.String)">
+            <summary>
+            静态方法 获取目标子物体（包括隐藏物体），返回第一个找到的物体
+            </summary>
+            <param name="target">目标物体的标签</param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.GameObjectExpend.GetComponentRealInChildren``1(UnityEngine.GameObject)">
+            <summary>
+            静态方法 获取子指定类型物体目标（包括隐藏物体），返回第一个找到的物体
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.GameObjectExpend.GetComponentRealInChildren``1(UnityEngine.Object)">
+            <summary>
+            静态方法 获取子指定类型物体目标（包括隐藏物体），返回第一个找到的物体
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.GameObjectExpend.GetComponentsRealInChildren``1(UnityEngine.GameObject,System.Boolean)">
+            <summary>
+            静态方法 获取子指定类型物体目标（包括隐藏物体），返回所有找到的物体
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MFramework_Unity.Tools.TransformConfig">
+            <summary>
+            TransformConfig Transform 配置信息结构体
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TransformConfig.#ctor(UnityEngine.Transform)">
+            <summary>
+            Transform 配置信息结构体 构造函数
+            </summary>
+            <param name="tran"></param>
+        </member>
+        <member name="M:MFramework_Unity.Tools.TransformConfig.#ctor(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Transform)">
+            <summary>
+            Transform 配置信息结构体 构造函数
+            </summary>
+            <param name="localpos"></param>
+            <param name="localeular"></param>
+            <param name="localscale"></param>
+            <param name="parent"></param>
+        </member>
+        <member name="F:MFramework_Unity.Tools.IMGUIPerformanceDebugger.AllowDebugging">
+            <summary>
+            是否允许调试
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.Tools.ObjectPool`1.bornPointTran">
+            <summary>
+            物体出生点
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectPool`1.GetObject">
+            <summary>
+            获得物体
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.Tools.ObjectPool`1.ResumeObject(`0)">
+            <summary>
+            回收物体
+            </summary>
+            <param name="t"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.ObjectPoolManager">
+            <summary>
+            ObjectPoolManager
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.MonoSingleton`1.ClearDestroy">
+            <summary>
+            清除 _destroyed 锁
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.MonoSingleton`1.OnDestroy">
+            <summary>
+            当播放停止时，Unity 会以随机顺序销毁对象
+            若单例 gameObject 先于其他对象销毁，不排除这个单例再次被调用的可能性。
+            故而在编辑器模式下，即便播放停止了，也可能会生成一个 gameObject 对象残留在编辑器场景中。
+            所以，此方法中加把锁，避免不必要的单例调用
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.MonoSingleton`1.OnInit">
+            <summary>Awake 初始化完成之后 </summary>
+        </member>
+        <member name="T:MFramework_Unity.Tools.SQLiteDBHelper">
+            <summary>  
+            说明：这是一个针对System.Data.SQLite的数据库常规操作封装的通用类。  
+            </summary>  
+        </member>
+        <!-- 对于成员“M:MFramework_Unity.Tools.SQLiteDBHelper.CreateDB(System.String,System.String@)”忽略有格式错误的 XML 注释 -->
+        <member name="M:MFramework_Unity.Tools.SQLiteDBHelper.ExecuteNonQuery(System.String,System.String,Mono.Data.Sqlite.SqliteParameter[],System.String@)">
+            <summary>  
+            对SQLite数据库执行增删改操作，返回受影响的行数。  
+            </summary>  
+            <param name="sql">要执行的增删改的SQL语句</param>  
+            <param name="parameters">执行增删改语句所需要的参数，参数必须以它们在SQL语句中的顺序为准</param>  
+            <returns></returns>  
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLiteDBHelper.ExecuteReader(System.String,System.String,Mono.Data.Sqlite.SqliteParameter[])">
+            <summary>  
+            执行一个查询语句，返回一个关联的SQLiteDataReader实例  
+            </summary>  
+            <param name="sql">要执行的查询语句</param>  
+            <param name="parameters">执行SQL查询语句所需要的参数，参数必须以它们在SQL语句中的顺序为准</param>  
+            <returns></returns>  
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLiteDBHelper.ExecuteDataTable(System.String,System.String,Mono.Data.Sqlite.SqliteParameter[])">
+            <summary>  
+            执行一个查询语句，返回一个包含查询结果的DataTable  
+            </summary>  
+            <param name="sql">要执行的查询语句</param>  
+            <param name="parameters">执行SQL查询语句所需要的参数，参数必须以它们在SQL语句中的顺序为准</param>  
+            <returns></returns>  
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLiteDBHelper.ExecuteScalar(System.String,System.String,Mono.Data.Sqlite.SqliteParameter[])">
+            <summary>  
+            执行一个查询语句，返回查询结果的第一行第一列  
+            </summary>  
+            <param name="sql">要执行的查询语句</param>  
+            <param name="parameters">执行SQL查询语句所需要的参数，参数必须以它们在SQL语句中的顺序为准</param>  
+            <returns></returns>  
+        </member>
+        <member name="M:MFramework_Unity.Tools.SQLiteDBHelper.GetSchema(System.String)">
+            <summary>  
+            查询数据库中的所有数据类型信息  
+            </summary>  
+            <returns></returns>  
+        </member>
+        <member name="T:MFramework_Unity.Tools.CoroutineTaskManager">
+            <summary>
+            协程管理器
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.CoroutineTaskManager.CreateAndExecuteTask(System.Collections.IEnumerator)">
+            <summary>
+            功能未实现
+            </summary>
+            <param name="coroutine"></param>
+        </member>
+        <member name="T:MFramework_Unity.Tools.EventSystemTools">
+            <summary>
+            UIGlobalConfig
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.Tools.EventSystemTools.IsClickUI">
+            <summary>
+            检测是否点击在UI上
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.GetComponentReal``1(UnityEngine.GameObject)">
+            <summary>
+            GetComponentReal
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="go"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.GetComponentReal``1(UnityEngine.Transform)">
+            <summary>
+            GetComponentReal
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="tr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.GetComponentReal``1(UnityEngine.Component)">
+            <summary>
+            GetComponentReal
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="com"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.FindObjsOfTyEx``1">
+            <summary>
+            FindObjectsOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.FindObjsOfBehavEx``1">
+            <summary>
+            FindObjectsOfBehaviourExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.FindObjsOfTyExInScene``1">
+            <summary>
+            FindObjectsOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.FindAllObjsOfTyExInScene``1">
+            <summary>
+            FindAllObjectsOfTypeInScene 寻找当前场景中所有的 T 的物体
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.FindObjsOfTyExInSceneUnDestr``1">
+            <summary>
+            FindObjectsOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.FindObjsOfTyExInSceneDestr``1">
+            <summary>
+            FindObjectsOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.FindObjsOfTyEx``1(UnityEngine.Object,System.Boolean)">
+            <summary>
+            FindObjectsOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.FindObjsOfTyEx``1(System.Boolean,UnityEngine.Transform)">
+            <summary>
+            FindObjectsOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="justChildren"></param>
+            <param name="root"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.FindObjOfTyEx``1">
+            <summary>
+            FindObjectOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.FindObjOfTyEx``1(UnityEngine.Transform)">
+            <summary>
+            FindObjectOfTypeExpend in root
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.FindPrefObjOfTyEx``1">
+            <summary>
+            FindPrefabObjectOfTypeExpend 返回相关类型的预制体
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.FindPrefObjsOfTyEx``1">
+            <summary>
+            FindPrefabObjectOfTypeExpend 返回相关类型的预制体数组
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.FindPrefObjOfBehavEx``1">
+            <summary>
+            FindPrefabObjectOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform,System.Action{System.Boolean})">
+            <summary>
+            实例化对象
+            </summary>
+            <param name="original"></param>
+            <param name="position"></param>
+            <param name="rotation"></param>
+            <param name="parent"></param>
+            <param name="callback"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.Instantiate(UnityEngine.Object,UnityEngine.Transform,System.Action{System.Boolean})">
+            <summary>
+            实例化对象
+            </summary>
+            <param name="original"></param>
+            <param name="parent"></param>
+            <param name="callback"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.Instantiate(UnityEngine.Object,System.Action{System.Boolean})">
+            <summary>
+            实例化对象
+            </summary>
+            <param name="original"></param>
+            <param name="callback"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion,System.Action{System.Boolean})">
+            <summary>
+            实例化对象
+            </summary>
+            <param name="original"></param>
+            <param name="position"></param>
+            <param name="rotation"></param>
+            <param name="callback"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.Instantiate(UnityEngine.Object,UnityEngine.Transform,System.Boolean,System.Action{System.Boolean})">
+            <summary>
+            实例化对象
+            </summary>
+            <param name="original"></param>
+            <param name="parent"></param>
+            <param name="instantiateInWorldSpace"></param>
+            <param name="callback"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.FindObjectsOfTypeExpend``1">
+            <summary>
+            FindObjectsOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.FindObjectsOfBehaviourExpend``1">
+            <summary>
+            FindObjectsOfBehaviourExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.FindObjectsOfTypeExpendInScene``1">
+            <summary>
+            FindObjectsOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.FindObjectsOfTypeExpend``1(UnityEngine.Object,System.Boolean)">
+            <summary>
+            FindObjectsOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.FindObjectsOfTypeExpend``1(System.Boolean,UnityEngine.Transform)">
+            <summary>
+            FindObjectsOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="justChildren"></param>
+            <param name="root"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.FindObjectOfTypeExpend``1">
+            <summary>
+            FindObjectOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.FindPrefabObjectOfTypeExpend``1">
+            <summary>
+            FindPrefabObjectOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.FindPrefabObjectOfBehaviourExpend``1">
+            <summary>
+            FindPrefabObjectOfTypeExpend
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.ViewportPointToAnchoredPosition(UnityEngine.Vector2,UnityEngine.Vector2)">
+            <summary>
+            ViewportPointToAnchoredPosition
+            </summary>
+            <param name="ori"></param>
+            <param name="widthhight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.ScaleTexture(UnityEngine.Texture2D,System.Int32,System.Int32,System.String)">
+            <summary>
+            生成缩略图 指定目标的长宽
+            </summary>
+            <param name="source"></param>
+            <param name="targetWidth"></param>
+            <param name="targetHeight"></param>
+            <param name="savePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_Unity.UnityEx.ScaleTexture(UnityEngine.Texture2D,System.Double,System.String)">
+            <summary>
+            生成缩略图 指定目标的缩放的百分比
+            </summary>
+            <param name="source"></param>
+            <param name="percent"></param>
+            <param name="savePath"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

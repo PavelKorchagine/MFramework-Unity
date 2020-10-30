@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MFramework_UnityEditor</name>
+    </assembly>
+    <members>
+        <member name="M:MFramework_UnityEditor.Extend.PathUtilEditor.GetPreferencesFolderPath">
+            <summary>
+            preferences folder 
+            </summary>
+        </member>
+        <member name="M:MFramework_UnityEditor.Extend.PathUtilEditor.GetEditorAssemblyPath">
+            <summary>
+            editor assembly path 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_UnityEditor.Extend.PathUtilEditor.GetEngineAssemblyPath">
+            <summary>
+            engine assembly path 
+            </summary>
+        </member>
+        <member name="M:MFramework_UnityEditor.Extend.PathUtilEditor.GetLayoutFolderPath">
+            <summary>
+            layout folder path 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MFramework_UnityEditor.Extend.PathUtilEditor.GetAssetstoreDownloadPath">
+            <summary>
+            Assetstore download folder path 
+            </summary>
+        </member>
+        <member name="M:MFramework_UnityEditor.Extend.PathUtilEditor.GetEditorLogPath">
+            <summary>
+            editor log path
+            </summary>
+        </member>
+    </members>
+</doc>
