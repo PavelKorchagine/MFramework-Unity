@@ -54,7 +54,7 @@ namespace MFramework_Unity
             Loom.Current.SayHello();
             ResourceIOTool.GetInstance().SayHello();
             TimerManager.Instance.SayHello();
-
+            CoroutineTaskManager.Instance.SayHello();
 
         }
 

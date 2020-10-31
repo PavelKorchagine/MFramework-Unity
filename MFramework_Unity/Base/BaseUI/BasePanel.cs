@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using MFramework_Unity.Tools;
 #region using UNITY_EDITOR
 #if UNITY_EDITOR
 using UnityEditor;
@@ -23,7 +24,7 @@ namespace MFramework_Unity
     /// <summary>
     /// UIPanelBase
     /// </summary>
-    public class UIBasePanel : UIBaseMono
+    public class BasePanel : BaseMono, IObserver
     {
         /// <summary>
         /// isFirstEnter
@@ -39,7 +40,6 @@ namespace MFramework_Unity
         /// </summary>
         public virtual void GetComponentOV()
         {
-
         }
 
         /// <summary>
@@ -49,11 +49,6 @@ namespace MFramework_Unity
         public override void OnInit(params object[] paras)
         {
             base.OnInit(paras);
-
-            foreach (var item in paras)
-            {
-            }
-
         }
 
         /// <summary>
@@ -111,6 +106,15 @@ namespace MFramework_Unity
             rectTran = transform as RectTransform;
         }
 
+        /// <summary>
+        /// ListenMethod
+        /// </summary>
+        /// <param name="observeType"></param>
+        /// <param name="code"></param>
+        /// <param name="msg"></param>
+        public virtual void ListenMethod(Type observeType, long code, object msg)
+        {
+        }
     }
 
 }

@@ -4,6 +4,11 @@
         <name>MFramework_Unity</name>
     </assembly>
     <members>
+        <member name="T:MFramework_Unity.BaseGameModule">
+            <summary>
+            游戏物体模块
+            </summary>
+        </member>
         <member name="T:MFramework_Unity.BaseManager">
             <summary>
             BaseManager
@@ -458,6 +463,16 @@
             MonoDriver
             </summary>
         </member>
+        <member name="F:MFramework_Unity.MonoDriver._showParameter">
+            <summary>
+            ShowParameter
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.MonoDriver.baseMonos">
+            <summary>
+            baseMonos
+            </summary>
+        </member>
         <member name="M:MFramework_Unity.MonoDriver.CloneBaseMonoColl">
             <summary>
             CloneBaseMonoColl
@@ -504,23 +519,23 @@
             LateUpdate
             </summary>
         </member>
-        <member name="T:MFramework_Unity.InterateBaseModule">
+        <member name="T:MFramework_Unity.BaseModule">
             <summary>
             模块化
             </summary>
         </member>
-        <member name="M:MFramework_Unity.InterateBaseModule.OnInit(System.Object[])">
+        <member name="M:MFramework_Unity.BaseModule.OnInit(System.Object[])">
             <summary>
             
             </summary>
             <param name="args"></param>
         </member>
-        <member name="M:MFramework_Unity.InterateBaseModule.OnInit">
+        <member name="M:MFramework_Unity.BaseModule.OnInit">
             <summary>
             
             </summary>
         </member>
-        <member name="M:MFramework_Unity.InterateBaseModule.ListenMethod(System.Type,System.Int64,System.Object)">
+        <member name="M:MFramework_Unity.BaseModule.ListenMethod(System.Type,System.Int64,System.Object)">
             <summary>
             ListenMethod
             </summary>
@@ -528,60 +543,19 @@
             <param name="code"></param>
             <param name="msg"></param>
         </member>
-        <member name="T:MFramework_Unity.InterateBaseMono">
-            <summary>
-            InterateBaseMono
-            </summary>
-        </member>
-        <member name="M:MFramework_Unity.InterateBaseMono.OnAwake">
-            <summary>
-            OnAwake
-            </summary>
-        </member>
-        <member name="M:MFramework_Unity.InterateBaseMono.OnGODestroy">
-            <summary>
-            OnGODestroy
-            </summary>
-        </member>
-        <member name="M:MFramework_Unity.InterateBaseMono.OnEnable">
-            <summary>
-            OnEnable
-            </summary>
-        </member>
-        <member name="M:MFramework_Unity.InterateBaseMono.OnDisable">
-            <summary>
-            OnDisable
-            </summary>
-        </member>
-        <member name="M:MFramework_Unity.InterateBaseMono.OnStart">
-            <summary>
-            OnStart
-            </summary>
-        </member>
-        <member name="M:MFramework_Unity.InterateBaseMono.OnUpdate">
-            <summary>
-            OnUpdate
-            </summary>
-        </member>
-        <member name="M:MFramework_Unity.InterateBaseMono.OnInit(System.Object[])">
-            <summary>
-            有参数的初始化方法
-            </summary>
-            <param name="args"></param>
-        </member>
-        <member name="M:MFramework_Unity.InterateBaseMono.OnInit">
-            <summary>
-            无参数的初始化方法
-            </summary>
-        </member>
-        <member name="M:MFramework_Unity.InterateBaseMono.OnEnter">
+        <member name="M:MFramework_Unity.BaseModule.OnEnter">
             <summary>
             进入/启用/激活 方法
             </summary>
         </member>
-        <member name="M:MFramework_Unity.InterateBaseMono.OnExit">
+        <member name="M:MFramework_Unity.BaseModule.OnExit">
             <summary>
             退出/禁止/灭活 方法
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.BaseUIModule">
+            <summary>
+            UI物体模块
             </summary>
         </member>
         <member name="T:MFramework_Unity.DefaultEventTBController">
@@ -1026,61 +1000,152 @@
             退出/禁止/灭活 方法
             </summary>
         </member>
-        <member name="T:MFramework_Unity.UIBasePanel">
+        <member name="T:MFramework_Unity.BasePanel">
             <summary>
             UIPanelBase
             </summary>
         </member>
-        <member name="F:MFramework_Unity.UIBasePanel.isFirstEnter">
+        <member name="F:MFramework_Unity.BasePanel.isFirstEnter">
             <summary>
             isFirstEnter
             </summary>
         </member>
-        <member name="F:MFramework_Unity.UIBasePanel.rectTran">
+        <member name="F:MFramework_Unity.BasePanel.rectTran">
             <summary>
             rectTran
             </summary>
         </member>
-        <member name="M:MFramework_Unity.UIBasePanel.GetComponentOV">
+        <member name="M:MFramework_Unity.BasePanel.GetComponentOV">
             <summary>
             GetComponentOV
             </summary>
         </member>
-        <member name="M:MFramework_Unity.UIBasePanel.OnInit(System.Object[])">
+        <member name="M:MFramework_Unity.BasePanel.OnInit(System.Object[])">
             <summary>
             OnInit
             </summary>
             <param name="paras"></param>
         </member>
-        <member name="M:MFramework_Unity.UIBasePanel.OnInit">
+        <member name="M:MFramework_Unity.BasePanel.OnInit">
             <summary>
             OnInit
             </summary>
         </member>
-        <member name="M:MFramework_Unity.UIBasePanel.OnEnter">
+        <member name="M:MFramework_Unity.BasePanel.OnEnter">
             <summary>
             界面被显示出来 被实例化时
             </summary>
         </member>
-        <member name="M:MFramework_Unity.UIBasePanel.OnPause">
+        <member name="M:MFramework_Unity.BasePanel.OnPause">
             <summary>
             界面暂停
             </summary>
         </member>
-        <member name="M:MFramework_Unity.UIBasePanel.OnResume">
+        <member name="M:MFramework_Unity.BasePanel.OnResume">
             <summary>
             界面继续
             </summary>
         </member>
-        <member name="M:MFramework_Unity.UIBasePanel.OnExit">
+        <member name="M:MFramework_Unity.BasePanel.OnExit">
             <summary>
             界面不显示,退出这个界面，界面被关系
             </summary>
         </member>
-        <member name="M:MFramework_Unity.UIBasePanel.FirstOnEnter">
+        <member name="M:MFramework_Unity.BasePanel.FirstOnEnter">
             <summary>
             FirstOnEnter
             </summary>
+        </member>
+        <member name="M:MFramework_Unity.BasePanel.ListenMethod(System.Type,System.Int64,System.Object)">
+            <summary>
+            ListenMethod
+            </summary>
+            <param name="observeType"></param>
+            <param name="code"></param>
+            <param name="msg"></param>
+        </member>
+        <member name="T:MFramework_Unity.OnAnimationProcessEvent">
+            <summary>
+            OnAnimationProcessEvent
+            </summary>
+        </member>
+        <member name="T:MFramework_Unity.AnimationSlider">
+            <summary>
+            AnimationSlider
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.AnimationSlider.excuteClip">
+            <summary>
+            excuteClip
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.AnimationSlider.ani">
+            <summary>
+            ani
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.AnimationSlider._ani">
+            <summary>
+            _ani
+            </summary>
+        </member>
+        <member name="P:MFramework_Unity.AnimationSlider.process">
+            <summary>
+            process
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.AnimationSlider._process">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.AnimationSlider.CurrentTimer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.AnimationSlider.IsTest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.AnimationSlider.onProcessEvent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MFramework_Unity.AnimationSlider.excuteLayer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MFramework_Unity.AnimationSlider.ToTimerSecond(System.Single)">
+            <summary>
+            
+            </summary>
+            <param name="second"></param>
+        </member>
+        <member name="M:MFramework_Unity.AnimationSlider.ToTimerSecond(System.String,System.Int32,System.Single)">
+            <summary>
+            
+            </summary>
+            <param name="excuteClip"></param>
+            <param name="excuteLayer"></param>
+            <param name="second"></param>
+        </member>
+        <member name="M:MFramework_Unity.AnimationSlider.ToProcess(System.Single)">
+            <summary>
+            
+            </summary>
+            <param name="process"></param>
+        </member>
+        <member name="M:MFramework_Unity.AnimationSlider.ToProcess(System.String,System.Int32,System.Single)">
+            <summary>
+            
+            </summary>
+            <param name="excuteClip"></param>
+            <param name="excuteLayer"></param>
+            <param name="process"></param>
         </member>
         <member name="T:MFramework_Unity.Tools.CSharpExtension2">
             <summary>

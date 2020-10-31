@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using MFramework_Unity.Tools;
 #region using UNITY_EDITOR
 #if UNITY_EDITOR
 using UnityEditor;
@@ -45,13 +46,7 @@ namespace MFramework_Unity
         /// <param name="paras"></param>
         public virtual void OnInit(params object[] paras)
         {
-            foreach (var item in paras)
-            {
-                if (item is Facade)
-                {
-                    facade = item as Facade;
-                }
-            }
+            facade = paras.FindTarget<Facade>();
         }
 
         /// <summary>

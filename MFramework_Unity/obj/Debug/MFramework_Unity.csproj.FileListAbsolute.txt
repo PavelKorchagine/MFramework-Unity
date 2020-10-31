@@ -68,3 +68,5 @@ H:\git-pros\MFramework-Unity\MFramework_Unity\bin\Debug\UnityEngine.UnityWebRequ
 H:\git-pros\MFramework-Unity\MFramework_Unity\bin\Debug\UnityEngine.UnityWebRequestTextureModule.dll
 H:\git-pros\MFramework-Unity\MFramework_Unity\bin\Debug\UnityEngine.UnityWebRequestWWWModule.dll
 H:\git-pros\MFramework-Unity\MFramework_Unity\obj\Debug\MFramework_Unity.csproj.CopyComplete
+H:\git-pros\MFramework-Unity\MFramework_Unity\bin\Debug\UnityEngine.AnimationModule.dll
+H:\git-pros\MFramework-Unity\MFramework_Unity\obj\Debug\MFramework_Unity.csprojAssemblyReference.cache

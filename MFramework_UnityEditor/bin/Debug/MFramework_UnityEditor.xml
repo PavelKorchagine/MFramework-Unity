@@ -9,6 +9,11 @@
             MonoDriverEditor
             </summary>
         </member>
+        <member name="M:MFramework_UnityEditor.MonoDriverEditor.OnInspectorGUI">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:MFramework_UnityEditor.Tools.PathUtilEditor">
             <summary>
             PathUtilEditor

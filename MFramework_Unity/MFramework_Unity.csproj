@@ -75,6 +75,9 @@
     <Reference Include="UnityEngine">
       <HintPath>the-Third-part\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>the-Third-part\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.AssetBundleModule">
       <HintPath>the-Third-part\UnityEngine.AssetBundleModule.dll</HintPath>
     </Reference>
@@ -130,17 +133,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\BaseGame\BaseGameModule.cs" />
     <Compile Include="Base\BaseManager\BaseManager.cs" />
     <Compile Include="Base\BaseManager\Facade.cs" />
     <Compile Include="Base\BaseMono\BaseMono.cs" />
     <Compile Include="Base\BaseMono\BaseMonoAbstract.cs" />
     <Compile Include="Base\BaseMono\MonoDriver.cs" />
-    <Compile Include="Base\InterateBaseMono\InterateBaseModule.cs" />
-    <Compile Include="Base\InterateBaseMono\InterateBaseMono.cs" />
-    <Compile Include="Base\UIBaseMono\DefaultEventTBController.cs" />
-    <Compile Include="Base\UIBaseMono\EventTriggerButton.cs" />
-    <Compile Include="Base\UIBaseMono\UIBaseMono.cs" />
-    <Compile Include="Base\UIBaseMono\UIBasePanel.cs" />
+    <Compile Include="Base\BaseMono\BaseModule.cs" />
+    <Compile Include="Base\BaseUI\BaseUIModule.cs" />
+    <Compile Include="Base\BaseUI\DefaultEventTBController.cs" />
+    <Compile Include="Base\BaseUI\EventTriggerButton.cs" />
+    <Compile Include="Base\BaseUI\UIBaseMono.cs" />
+    <Compile Include="Base\BaseUI\BasePanel.cs" />
+    <Compile Include="Extensions\AnimationSlider.cs" />
     <Compile Include="Extensions\CSharpExtension2.cs" />
     <Compile Include="Extensions\EventTriggerExtension.cs" />
     <Compile Include="Extensions\GameObjectExtension.cs" />

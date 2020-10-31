@@ -51,16 +51,20 @@ namespace MFramework_UnityEditor.Tools
                 {
                     return;
                 }
+                GUILayout.BeginVertical("", boxStyle);
                 EditorGUILayout.LabelField("注册的 delayActionDict：" + DOTweenTimerManager.delayActionDict.Count.ToString());
                 foreach (var item in DOTweenTimerManager.delayActionDict)
                 {
                     EditorGUILayout.LabelField(item.Key.Target.ToString() + " :: " + item.Key.Method.Name + " :: " + item.Value.ToString());
                 }
+                GUILayout.EndVertical();
+                GUILayout.BeginVertical("", boxStyle);
                 EditorGUILayout.LabelField("注册的 delayTrans：" + DOTweenTimerManager.delayTrans.Count.ToString());
                 foreach (var item in DOTweenTimerManager.delayTrans)
                 {
                     EditorGUILayout.LabelField(item.ToString());
                 }
+                GUILayout.EndVertical();
                 this.Repaint();
             }
             #endregion

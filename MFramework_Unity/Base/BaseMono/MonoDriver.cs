@@ -42,7 +42,14 @@ namespace MFramework_Unity
         //} 
         #endregion
 
-        private List<BaseMonoAbstract> baseMonos = new List<BaseMonoAbstract>();
+        /// <summary>
+        /// ShowParameter
+        /// </summary>
+        [HideInInspector] public bool _showParameter = true;
+        /// <summary>
+        /// baseMonos
+        /// </summary>
+        [HideInInspector] public List<BaseMonoAbstract> baseMonos = new List<BaseMonoAbstract>();
 
         /// <summary>
         /// CloneBaseMonoColl
